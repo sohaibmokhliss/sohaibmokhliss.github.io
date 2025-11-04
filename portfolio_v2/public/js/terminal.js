@@ -209,7 +209,12 @@ const Terminal = {
     content += '========================\n\n';
 
     data.data.forEach(skill => {
-      content += `• ${skill.title}\n`;
+      const label = skill.title || skill.name;
+      if (!label) {
+        console.warn('Skill missing title/name:', skill);
+        return;
+      }
+      content += `• ${label}\n`;
     });
 
     return content;
@@ -222,7 +227,13 @@ const Terminal = {
     content += '===========================\n\n';
 
     data.data.forEach(cert => {
-      content += `• ${cert.title || cert.name || 'Certification'}\n`;
+      const title = cert.title || cert.name;
+      if (!title) {
+        console.warn('Certification missing title/name:', cert);
+        return;
+      }
+
+      content += `• ${title}\n`;
       if (cert.issuer) content += `  Issuer: ${cert.issuer}\n`;
       if (cert.date) content += `  Status: ${cert.date}\n`;
       if (cert.certificateUrl) content += `  Certificate: ${cert.certificateUrl}\n`;
