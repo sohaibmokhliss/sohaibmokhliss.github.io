@@ -638,6 +638,16 @@ async function displayContent() {
         buttonsContainerElement.appendChild(demoButtonElement);
       }
 
+      if (sectionName === "certifications" && sectionData?.certificateUrl) {
+        const certificateButtonElement = document.createElement("a");
+        certificateButtonElement.classList.add("project-button");
+        certificateButtonElement.href = sectionData.certificateUrl;
+        certificateButtonElement.target = "_blank";
+        certificateButtonElement.rel = "noopener";
+        certificateButtonElement.innerText = "View Certificate";
+        buttonsContainerElement.appendChild(certificateButtonElement);
+      }
+
       if (titleElement.innerHTML != null) {
         topElement.appendChild(titleElement);
       }
@@ -654,7 +664,11 @@ async function displayContent() {
         topElement.appendChild(technologiesContainerElement);
       }
 
-      if (buttonsContainerElement.children.length > 0) {
+      const shouldRenderButtons = buttonsContainerElement.children.length > 0;
+      const shouldRenderViewer =
+        sectionName === "certifications" && sectionData?.certificateUrl;
+
+      if (shouldRenderButtons) {
         topElement.appendChild(buttonsContainerElement);
       }
 
@@ -702,6 +716,29 @@ async function displayContent() {
 
         snippetContainerElement.appendChild(snippetElement);
         innerContainerElement.appendChild(snippetContainerElement);
+      }
+
+      if (shouldRenderViewer) {
+        const certificateViewerWrapper = document.createElement("div");
+        certificateViewerWrapper.style.marginTop = shouldRenderButtons
+          ? "16px"
+          : "24px";
+
+        const certificateViewer = document.createElement("iframe");
+        certificateViewer.src = sectionData.certificateUrl;
+        certificateViewer.title =
+          (sectionData.title || "Certificate") + " preview";
+        certificateViewer.loading = "lazy";
+        certificateViewer.style.width = "100%";
+        certificateViewer.style.minHeight = "520px";
+        certificateViewer.style.border = "1px solid rgba(148, 163, 184, 0.2)";
+        certificateViewer.style.borderRadius = "12px";
+        certificateViewer.style.backgroundColor = "rgba(15, 23, 42, 0.55)";
+        certificateViewer.style.boxShadow =
+          "0 12px 32px rgba(15, 23, 42, 0.35)";
+
+        certificateViewerWrapper.appendChild(certificateViewer);
+        innerContainerElement.appendChild(certificateViewerWrapper);
       }
 
       if (resolvedLang !== LanguageManager.currentLang) {

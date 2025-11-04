@@ -165,14 +165,20 @@ const Terminal = {
 
     const files = {};
     data.data.forEach((project, index) => {
-      if (!project || !project.title) {
-        console.warn('Project missing title:', project);
+      if (!project) {
+        console.warn('Project missing data at index:', index);
         return;
       }
 
-      const filename = `${project.title.toLowerCase().replace(/\s+/g, '_')}.txt`;
-      let content = `${project.title}\n`;
-      content += '='.repeat(project.title.length) + '\n\n';
+      const projectTitle = project.title || project.name;
+      if (!projectTitle) {
+        console.warn('Project missing title/name:', project);
+        return;
+      }
+
+      const filename = `${projectTitle.toLowerCase().replace(/\s+/g, '_')}.txt`;
+      let content = `${projectTitle}\n`;
+      content += '='.repeat(projectTitle.length) + '\n\n';
 
       if (project.year) content += `Built in: ${project.year}\n`;
       if (project.technologies) content += `Technologies: ${project.technologies.join(', ')}\n\n`;
@@ -216,9 +222,10 @@ const Terminal = {
     content += '===========================\n\n';
 
     data.data.forEach(cert => {
-      content += `• ${cert.title}\n`;
-      if (cert.organization) content += `  Organization: ${cert.organization}\n`;
-      if (cert.date) content += `  Date: ${cert.date}\n`;
+      content += `• ${cert.title || cert.name || 'Certification'}\n`;
+      if (cert.issuer) content += `  Issuer: ${cert.issuer}\n`;
+      if (cert.date) content += `  Status: ${cert.date}\n`;
+      if (cert.certificateUrl) content += `  Certificate: ${cert.certificateUrl}\n`;
       content += '\n';
     });
 

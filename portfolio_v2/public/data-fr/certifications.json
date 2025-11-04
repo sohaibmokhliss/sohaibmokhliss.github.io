@@ -1,136 +1,244 @@
 {
   "data": [
     {
-      "name": "Introduction aux outils et cyberattaques de cybersécurité",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Fondamentaux de la cybersécurité",
+      "name": "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
+      "issuer": "Oracle University",
+      "date": "Complété (2025)",
+      "title": "Oracle Cloud Infrastructure DevOps Professional (2025)",
       "content": [
-        "Introduction complète aux outils de cybersécurité et méthodologies d'attaque.",
-        "Compréhension des diverses menaces cybernétiques et stratégies défensives.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/LDPZXF7NPWEM\" target=\"_blank\" class=\"text-blue\">Voir le certificat</a>"
+        "Certification avancée couvrant l'automatisation CI/CD, l'observabilité et la sécurité des opérations sur Oracle Cloud Infrastructure.",
+        "Validation de la conception de workflows DevOps résilients, de pipelines de déploiement et de stratégies de supervision pour OCI.",
+        "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/LDPZXF7NPWEM"
+      "certificateUrl": "/certificates/oracle-oci-devops-2025.pdf"
     },
     {
-      "name": "Les fondamentaux du hacking éthique",
+      "name": "Fondamentaux du hacking éthique",
       "issuer": "Coursera",
       "date": "Complété",
       "title": "Fondamentaux du hacking éthique",
       "content": [
-        "Principes fondamentaux et techniques du hacking éthique.",
-        "Expérience pratique avec les méthodologies de tests d'intrusion.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/SEKUFRZ4MCJL\" target=\"_blank\" class=\"text-blue\">Voir le certificat</a>"
+        "Couverture des méthodologies de tests d'intrusion, de l'évaluation de vulnérabilités et des chaînes d'exploitation.",
+        "Renforcement des principes de divulgation responsable et des stratégies défensives pour les vecteurs d'attaque courants.",
+        "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/SEKUFRZ4MCJL"
+      "certificateUrl": "/certificates/coursera-ethical-hacking-essentials.pdf"
+    },
+    {
+      "name": "Introduction aux outils de cybersécurité et aux cyberattaques",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "Introduction aux outils de cybersécurité et aux cyberattaques",
+      "content": [
+        "Panorama des outils de défense, des workflows de réponse aux incidents et des menaces émergentes.",
+        "Laboratoires pratiques couvrant la reconnaissance, l'exploitation et les stratégies de mitigation.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-intro-cybersecurity-tools-attacks.pdf"
+    },
+    {
+      "name": "Introduction aux conteneurs avec Docker, Kubernetes & OpenShift",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "Introduction aux conteneurs avec Docker, Kubernetes & OpenShift",
+      "content": [
+        "Création de services conteneurisés, orchestration avec Kubernetes et découverte des workflows OpenShift.",
+        "Renforcement des notions de sécurité, de montée en charge et de déploiement automatisé des conteneurs.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-containers-docker-kubernetes-openshift.pdf"
+    },
+    {
+      "name": "Droit du Cloud Computing",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "Droit du Cloud Computing",
+      "content": [
+        "Analyse des cadres juridiques, obligations de conformité et considérations contractuelles liées aux services cloud.",
+        "Évaluation des stratégies de gestion des risques pour la localisation des données, la confidentialité et la gouvernance fournisseurs.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-cloud-computing-law.pdf"
+    },
+    {
+      "name": "Réseaux virtuels sur Azure",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "Réseaux virtuels sur Azure",
+      "content": [
+        "Conception de réseaux virtuels sécurisés sur Microsoft Azure, passerelles VPN et scénarios hybrides.",
+        "Mise en œuvre de la segmentation, du routage et de la supervision pour des architectures cloud natives.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-virtual-networks-azure.pdf"
     },
     {
       "name": "L'atelier Unix",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "Administration système Unix",
+      "title": "L'atelier Unix",
       "content": [
-        "Maîtrise des outils en ligne de commande Unix et administration système.",
-        "Compétence en scripts shell et automatisation.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/CSWHLEGRJ8Y5\" target=\"_blank\" class=\"text-blue\">Voir le certificat</a>"
+        "Développement de la maîtrise des outils en ligne de commande Unix, du scripting shell et de l'automatisation.",
+        "Mise en place de workflows pratiques pour le traitement de fichiers, le contrôle de version et l'administration distante.",
+        "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/CSWHLEGRJ8Y5"
+      "certificateUrl": "/certificates/coursera-unix-workbench.pdf"
     },
     {
-      "name": "Droit du cloud computing",
+      "name": "Python",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "Aspects juridiques du cloud computing",
+      "title": "Python",
       "content": [
-        "Compréhension des cadres juridiques régissant le cloud computing.",
-        "Connaissance des exigences de conformité et réglementaires.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/G8GBSVAUZ7WJ\" target=\"_blank\" class=\"text-blue\">Voir le certificat</a>"
+        "Couverture des bases du scripting Python, des structures de données et des idiomes orientés automatisation.",
+        "Développement d'exercices pratiques pour la résolution de problèmes, le traitement de données et l'intégration d'API.",
+        "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/G8GBSVAUZ7WJ"
+      "certificateUrl": "/certificates/coursera-python.pdf"
     },
     {
-      "name": "Introduction aux conteneurs avec Docker, Kubernetes et OpenShift",
+      "name": "JavaScript",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "Technologies de conteneurisation",
+      "title": "JavaScript",
       "content": [
-        "Expérience pratique avec Docker, Kubernetes et OpenShift.",
-        "Compréhension des principes de conteneurisation et d'orchestration.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/records/PUB7Z3OOK044\" target=\"_blank\" class=\"text-blue\">Voir le certificat</a>"
+        "Maîtrise de la syntaxe moderne, des modèles asynchrones et de la manipulation du DOM en JavaScript.",
+        "Création d'expériences web dynamiques avec un accent sur la lisibilité et la maintenabilité du code.",
+        "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/records/PUB7Z3OOK044"
+      "certificateUrl": "/certificates/coursera-javascript.pdf"
     },
     {
-      "name": "Programmation pour tous (Débuter avec Python)",
+      "name": "Programmation orientée objet (C++)",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "Programmation Python",
+      "title": "Programmation orientée objet (C++)",
       "content": [
-        "Compétences fondamentales en programmation Python.",
-        "Expérience avec les scripts et l'automatisation en Python.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/899D94P7NV7G\" target=\"_blank\" class=\"text-blue\">Voir le certificat</a>"
+        "Application des principes POO en C++, modèles, gestion mémoire et conception de classes réutilisables.",
+        "Étude des considérations de performance pour le développement logiciel système.",
+        "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/899D94P7NV7G"
+      "certificateUrl": "/certificates/coursera-poo-cpp.pdf"
+    },
+    {
+      "name": "Introduction à Java et à la programmation orientée objet",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "Introduction à Java et à la programmation orientée objet",
+      "content": [
+        "Mise en œuvre des concepts POO en Java : encapsulation, héritage et polymorphisme.",
+        "Construction d'applications modulaires privilégiant une architecture propre et réutilisable.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-intro-java-oop.pdf"
+    },
+    {
+      "name": "Bases de React",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "Bases de React",
+      "content": [
+        "Construction d'interfaces utilisateur basées sur des composants React, gestion de l'état et hooks essentiels.",
+        "Optimisation des rendus et prise en compte de l'accessibilité pour des applications React responsives.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-react-basics.pdf"
+    },
+    {
+      "name": "Mesure d'impact et gestion pour les ODD",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "Mesure d'impact et gestion pour les ODD",
+      "content": [
+        "Apprentissage de cadres de mesure d'impact alignés sur les Objectifs de Développement Durable des Nations Unies.",
+        "Conception de plans de suivi des résultats et d'indicateurs pour des initiatives technologiques à impact.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-impact-measurement-sdgs.pdf"
+    },
+    {
+      "name": "CSS3",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "CSS3",
+      "content": [
+        "Pratique de mises en page responsives, de transitions et d'animations modernes en CSS3.",
+        "Mise en œuvre de stratégies de stylisation modulaires pour des interfaces accessibles et maintenables.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-css3.pdf"
+    },
+    {
+      "name": "HTML5",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "HTML5",
+      "content": [
+        "Maîtrise des structures HTML sémantiques, des bonnes pratiques d'accessibilité et de la gestion multimédia.",
+        "Mise en œuvre de l'enrichissement progressif pour des expériences robustes sur tous les appareils.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-html5.pdf"
     },
     {
       "name": "Conception logicielle et gestion de projet",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "Pratiques d'ingénierie logicielle",
+      "title": "Conception logicielle et gestion de projet",
       "content": [
-        "Compréhension des principes et modèles de conception logicielle.",
-        "Connaissance des méthodologies de gestion de projet.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/3FTU2UDGZVGC\" target=\"_blank\" class=\"text-blue\">Voir le certificat</a>"
+        "Exploration des architectures logicielles, de l'analyse des exigences et des pratiques de gestion de projet agile.",
+        "Apprentissage de la gestion de la dette technique, des délais de livraison et de la communication avec les parties prenantes.",
+        "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/3FTU2UDGZVGC"
+      "certificateUrl": "/certificates/coursera-software-design-project-management.pdf"
     },
     {
-      "name": "Introduction à HTML5",
+      "name": "Collaborer efficacement pour réussir professionnellement",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "Fondamentaux du développement web",
+      "title": "Collaborer efficacement pour réussir professionnellement",
       "content": [
-        "Concepts fondamentaux de HTML5 et principes de développement web.",
-        "Base pour créer des applications web modernes.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/LDPZXF7NPWEM\" target=\"_blank\" class=\"text-blue\">Voir le certificat</a>"
+        "Développement des compétences de communication interpersonnelle, de résolution de conflits et d'alignement des parties prenantes.",
+        "Pratique de techniques de conduite d'initiatives collaboratives dans des équipes internationales et à distance.",
+        "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/LDPZXF7NPWEM"
+      "certificateUrl": "/certificates/coursera-collaborate-effectively.pdf"
     },
     {
-      "name": "Introduction à CSS3",
+      "name": "Réussir sa présentation",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "Stylisation et design web",
+      "title": "Réussir sa présentation",
       "content": [
-        "Techniques avancées de CSS3 pour le design web.",
-        "Design responsive et pratiques de stylisation modernes.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/RG6GU5JJKTH7\" target=\"_blank\" class=\"text-blue\">Voir le certificat</a>"
+        "Amélioration du storytelling, de la conception de supports visuels et des techniques de prise de parole.",
+        "Pratique de stratégies de communication persuasive et d'exercices de confiance en soi.",
+        "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/RG6GU5JJKTH7"
+      "certificateUrl": "/certificates/coursera-successful-presentation.pdf"
     },
     {
-      "name": "Interactivité avec JavaScript",
+      "name": "La recherche documentaire",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "Développement JavaScript",
+      "title": "La recherche documentaire",
       "content": [
-        "Développement web interactif avec JavaScript.",
-        "Manipulation du DOM et gestion des événements.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/TGFZZRRVVM2R\" target=\"_blank\" class=\"text-blue\">Voir le certificat</a>"
+        "Développement de stratégies de recherche académique, d'évaluation des sources et de rédaction structurée.",
+        "Renforcement des compétences d'information pour la rédaction technique fondée sur des preuves.",
+        "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/TGFZZRRVVM2R"
+      "certificateUrl": "/certificates/coursera-recherche-documentaire.pdf"
     },
     {
-      "name": "Introduction à la programmation orientée objet",
+      "name": "Villes africaines",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "Programmation orientée objet",
+      "title": "Villes africaines",
       "content": [
-        "Fondamentaux des concepts de programmation orientée objet.",
-        "Modèles de conception et meilleures pratiques POO.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/YJVVRN8TPPAZ\" target=\"_blank\" class=\"text-blue\">Voir le certificat</a>"
+        "Étude des défis du développement urbain et des stratégies de résilience dans les grandes villes africaines.",
+        "Mise en relation des enjeux socio-économiques avec la planification des infrastructures et les solutions smart city.",
+        "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/YJVVRN8TPPAZ"
+      "certificateUrl": "/certificates/coursera-villes-africaines.pdf"
     }
   ]
 }

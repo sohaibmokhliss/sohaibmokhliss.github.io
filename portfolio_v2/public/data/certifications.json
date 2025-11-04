@@ -1,136 +1,244 @@
 {
   "data": [
     {
-      "name": "Introduction to Cybersecurity Tools & Cyberattacks",
-      "issuer": "Coursera",
-      "date": "Completed",
-      "title": "Cybersecurity Fundamentals",
+      "name": "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
+      "issuer": "Oracle University",
+      "date": "Completed (2025)",
+      "title": "Oracle Cloud Infrastructure DevOps Professional (2025)",
       "content": [
-        "Comprehensive introduction to cybersecurity tools and attack methodologies.",
-        "Understanding of various cyber threats and defensive strategies.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/LDPZXF7NPWEM\" target=\"_blank\" class=\"text-blue\">View Certificate</a>"
+        "Advanced certification covering CI/CD automation, observability, and secure operations on Oracle Cloud Infrastructure.",
+        "Validated expertise in designing resilient DevOps workflows, deployment pipelines, and monitoring strategies for OCI.",
+        "Certificate available below."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/LDPZXF7NPWEM"
+      "certificateUrl": "/certificates/oracle-oci-devops-2025.pdf"
     },
     {
       "name": "Ethical Hacking Essentials",
       "issuer": "Coursera",
       "date": "Completed",
-      "title": "Ethical Hacking Fundamentals",
+      "title": "Ethical Hacking Essentials",
       "content": [
-        "Core principles and techniques of ethical hacking.",
-        "Hands-on experience with penetration testing methodologies.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/SEKUFRZ4MCJL\" target=\"_blank\" class=\"text-blue\">View Certificate</a>"
+        "Covered penetration testing methodologies, vulnerability assessment, and exploitation workflows.",
+        "Reinforced responsible disclosure principles and defense strategies for common attack vectors.",
+        "Certificate available below."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/SEKUFRZ4MCJL"
+      "certificateUrl": "/certificates/coursera-ethical-hacking-essentials.pdf"
     },
     {
-      "name": "The Unix Workbench",
+      "name": "Introduction to Cybersecurity Tools & Cyber Attacks",
       "issuer": "Coursera",
       "date": "Completed",
-      "title": "Unix System Administration",
+      "title": "Introduction to Cybersecurity Tools & Cyber Attacks",
       "content": [
-        "Mastery of Unix command-line tools and system administration.",
-        "Proficiency in shell scripting and automation.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/CSWHLEGRJ8Y5\" target=\"_blank\" class=\"text-blue\">View Certificate</a>"
+        "Surveyed defensive tooling, incident response workflows, and evolving cyber threat landscapes.",
+        "Practiced hands-on labs covering reconnaissance, exploitation, and mitigation strategies.",
+        "Certificate available below."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/CSWHLEGRJ8Y5"
-    },
-    {
-      "name": "Cloud Computing Law",
-      "issuer": "Coursera",
-      "date": "Completed",
-      "title": "Legal Aspects of Cloud Computing",
-      "content": [
-        "Understanding of legal frameworks governing cloud computing.",
-        "Knowledge of compliance and regulatory requirements.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/G8GBSVAUZ7WJ\" target=\"_blank\" class=\"text-blue\">View Certificate</a>"
-      ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/G8GBSVAUZ7WJ"
+      "certificateUrl": "/certificates/coursera-intro-cybersecurity-tools-attacks.pdf"
     },
     {
       "name": "Introduction to Containers with Docker, Kubernetes & OpenShift",
       "issuer": "Coursera",
       "date": "Completed",
-      "title": "Container Technologies",
+      "title": "Introduction to Containers with Docker, Kubernetes & OpenShift",
       "content": [
-        "Hands-on experience with Docker, Kubernetes, and OpenShift.",
-        "Understanding of containerization and orchestration principles.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/records/PUB7Z3OOK044\" target=\"_blank\" class=\"text-blue\">View Certificate</a>"
+        "Built containerized services, orchestrated workloads with Kubernetes, and explored OpenShift workflows.",
+        "Strengthened knowledge of container security, scaling, and automated deployment practices.",
+        "Certificate available below."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/records/PUB7Z3OOK044"
+      "certificateUrl": "/certificates/coursera-containers-docker-kubernetes-openshift.pdf"
     },
     {
-      "name": "Programming for Everybody (Getting Started with Python)",
+      "name": "Cloud Computing Law",
       "issuer": "Coursera",
       "date": "Completed",
-      "title": "Python Programming",
+      "title": "Cloud Computing Law",
       "content": [
-        "Foundational Python programming skills.",
-        "Experience with scripting and automation using Python.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/899D94P7NV7G\" target=\"_blank\" class=\"text-blue\">View Certificate</a>"
+        "Explored legal frameworks, compliance obligations, and contractual considerations for cloud services.",
+        "Assessed risk management strategies for data residency, privacy, and vendor governance.",
+        "Certificate available below."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/899D94P7NV7G"
+      "certificateUrl": "/certificates/coursera-cloud-computing-law.pdf"
+    },
+    {
+      "name": "Virtual Networks in Azure",
+      "issuer": "Coursera",
+      "date": "Completed",
+      "title": "Virtual Networks in Azure",
+      "content": [
+        "Designed secure Azure virtual networks, VPN gateways, and hybrid connectivity scenarios.",
+        "Implemented network segmentation, routing, and monitoring for cloud-native architectures.",
+        "Certificate available below."
+      ],
+      "certificateUrl": "/certificates/coursera-virtual-networks-azure.pdf"
+    },
+    {
+      "name": "The Unix Workbench",
+      "issuer": "Coursera",
+      "date": "Completed",
+      "title": "The Unix Workbench",
+      "content": [
+        "Developed fluency with Unix command-line tools, shell scripting, and system automation.",
+        "Built practical workflows for file processing, version control, and remote system management.",
+        "Certificate available below."
+      ],
+      "certificateUrl": "/certificates/coursera-unix-workbench.pdf"
+    },
+    {
+      "name": "Python",
+      "issuer": "Coursera",
+      "date": "Completed",
+      "title": "Python",
+      "content": [
+        "Covered Python scripting fundamentals, data structures, and automation-friendly idioms.",
+        "Developed practical exercises for problem solving, data processing, and API integration.",
+        "Certificate available below."
+      ],
+      "certificateUrl": "/certificates/coursera-python.pdf"
+    },
+    {
+      "name": "JavaScript",
+      "issuer": "Coursera",
+      "date": "Completed",
+      "title": "JavaScript",
+      "content": [
+        "Mastered modern JavaScript syntax, asynchronous patterns, and DOM manipulation techniques.",
+        "Created dynamic web experiences with focus on clean code and maintainable patterns.",
+        "Certificate available below."
+      ],
+      "certificateUrl": "/certificates/coursera-javascript.pdf"
+    },
+    {
+      "name": "Object-Oriented Programming (C++)",
+      "issuer": "Coursera",
+      "date": "Completed",
+      "title": "Object-Oriented Programming (C++)",
+      "content": [
+        "Applied C++ object-oriented programming principles, templates, and memory management techniques.",
+        "Authored reusable class hierarchies and explored performance considerations for systems software.",
+        "Certificate available below."
+      ],
+      "certificateUrl": "/certificates/coursera-poo-cpp.pdf"
+    },
+    {
+      "name": "Introduction to Java and Object-Oriented Programming",
+      "issuer": "Coursera",
+      "date": "Completed",
+      "title": "Introduction to Java and Object-Oriented Programming",
+      "content": [
+        "Implemented core OOP concepts in Java including encapsulation, inheritance, and polymorphism.",
+        "Built modular applications emphasizing clean architecture and reusable components.",
+        "Certificate available below."
+      ],
+      "certificateUrl": "/certificates/coursera-intro-java-oop.pdf"
+    },
+    {
+      "name": "React Basics",
+      "issuer": "Coursera",
+      "date": "Completed",
+      "title": "React Basics",
+      "content": [
+        "Built component-driven user interfaces with React hooks, state management, and routing essentials.",
+        "Optimized rendering patterns and accessibility considerations for responsive React apps.",
+        "Certificate available below."
+      ],
+      "certificateUrl": "/certificates/coursera-react-basics.pdf"
+    },
+    {
+      "name": "Impact Measurement & Management for the SDGs",
+      "issuer": "Coursera",
+      "date": "Completed",
+      "title": "Impact Measurement & Management for the SDGs",
+      "content": [
+        "Learned frameworks for measuring social impact aligned with the United Nations Sustainable Development Goals.",
+        "Designed outcome tracking plans and KPIs for mission-driven technology initiatives.",
+        "Certificate available below."
+      ],
+      "certificateUrl": "/certificates/coursera-impact-measurement-sdgs.pdf"
+    },
+    {
+      "name": "CSS3",
+      "issuer": "Coursera",
+      "date": "Completed",
+      "title": "CSS3",
+      "content": [
+        "Hands-on practice with responsive layouts, transitions, and modern CSS animation techniques.",
+        "Applied modular styling strategies to build accessible, maintainable user interfaces.",
+        "Certificate available below."
+      ],
+      "certificateUrl": "/certificates/coursera-css3.pdf"
+    },
+    {
+      "name": "HTML5",
+      "issuer": "Coursera",
+      "date": "Completed",
+      "title": "HTML5",
+      "content": [
+        "Mastered semantic HTML structures, accessibility best practices, and multimedia handling.",
+        "Implemented progressive enhancement techniques for robust, cross-device experiences.",
+        "Certificate available below."
+      ],
+      "certificateUrl": "/certificates/coursera-html5.pdf"
     },
     {
       "name": "Software Design and Project Management",
       "issuer": "Coursera",
       "date": "Completed",
-      "title": "Software Engineering Practices",
+      "title": "Software Design and Project Management",
       "content": [
-        "Understanding of software design principles and patterns.",
-        "Knowledge of project management methodologies.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/3FTU2UDGZVGC\" target=\"_blank\" class=\"text-blue\">View Certificate</a>"
+        "Explored software architecture patterns, requirement analysis, and agile project management practices.",
+        "Learned to balance technical debt, delivery timelines, and stakeholder communication.",
+        "Certificate available below."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/3FTU2UDGZVGC"
+      "certificateUrl": "/certificates/coursera-software-design-project-management.pdf"
     },
     {
-      "name": "Introduction to HTML5",
+      "name": "Collaborate Effectively for Professional Success",
       "issuer": "Coursera",
       "date": "Completed",
-      "title": "Web Development Fundamentals",
+      "title": "Collaborate Effectively for Professional Success",
       "content": [
-        "Core HTML5 concepts and web development principles.",
-        "Foundation for building modern web applications.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/LDPZXF7NPWEM\" target=\"_blank\" class=\"text-blue\">View Certificate</a>"
+        "Developed interpersonal communication, conflict resolution, and stakeholder alignment skills.",
+        "Practiced techniques for leading collaborative initiatives in multicultural, remote teams.",
+        "Certificate available below."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/LDPZXF7NPWEM"
+      "certificateUrl": "/certificates/coursera-collaborate-effectively.pdf"
     },
     {
-      "name": "Introduction to CSS3",
+      "name": "Successful Presentation",
       "issuer": "Coursera",
       "date": "Completed",
-      "title": "Web Styling and Design",
+      "title": "Successful Presentation",
       "content": [
-        "Advanced CSS3 techniques for web design.",
-        "Responsive design and modern styling practices.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/RG6GU5JJKTH7\" target=\"_blank\" class=\"text-blue\">View Certificate</a>"
+        "Enhanced presentation storytelling, slide design, and delivery techniques for technical audiences.",
+        "Practiced persuasive communication strategies and confidence-building exercises.",
+        "Certificate available below."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/RG6GU5JJKTH7"
+      "certificateUrl": "/certificates/coursera-successful-presentation.pdf"
     },
     {
-      "name": "Interactivity with JavaScript",
+      "name": "La Recherche Documentaire",
       "issuer": "Coursera",
       "date": "Completed",
-      "title": "JavaScript Development",
+      "title": "La Recherche Documentaire",
       "content": [
-        "Interactive web development using JavaScript.",
-        "DOM manipulation and event handling.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/TGFZZRRVVM2R\" target=\"_blank\" class=\"text-blue\">View Certificate</a>"
+        "Developed academic research strategies, source evaluation techniques, and structured documentation.",
+        "Strengthened information literacy skills for evidence-based technical writing.",
+        "Certificate available below."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/TGFZZRRVVM2R"
+      "certificateUrl": "/certificates/coursera-recherche-documentaire.pdf"
     },
     {
-      "name": "Introduction à la programmation orientée objet",
+      "name": "Villes Africaines",
       "issuer": "Coursera",
       "date": "Completed",
-      "title": "Object-Oriented Programming",
+      "title": "Villes Africaines",
       "content": [
-        "Fundamentals of object-oriented programming concepts.",
-        "Design patterns and OOP best practices.",
-        "<a href=\"https://www.coursera.org/account/accomplishments/verify/YJVVRN8TPPAZ\" target=\"_blank\" class=\"text-blue\">View Certificate</a>"
+        "Studied urban development challenges and resilience strategies across major African cities.",
+        "Connected socio-economic insights with infrastructure planning and smart city solutions.",
+        "Certificate available below."
       ],
-      "certificateUrl": "https://www.coursera.org/account/accomplishments/verify/YJVVRN8TPPAZ"
+      "certificateUrl": "/certificates/coursera-villes-africaines.pdf"
     }
   ]
 }
