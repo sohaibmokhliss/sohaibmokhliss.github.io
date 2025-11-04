@@ -1,16 +1,30 @@
 {
   "data": [
     {
-      "name": "Your Project Name",
-      "year": 2024,
-      "githubUrl": "https://github.com/yourusername/yourproject",
-      "demoUrl": "https://yourproject.com",
+      "name": "Todo Planner",
+      "year": 2025,
+      "githubUrl": "https://github.com/sohaibmokhliss/todo-planner",
+      "demoUrl": "https://todo-planner-six.vercel.app",
       "content": [
-        "Describe your project here.",
-        "Add key features and technologies used.",
-        "Explain the impact or results achieved."
+        "A modern to-do & personal planning web application designed to help users stay organized and productive.",
+        "Features include task management with create, organize, and complete tasks functionality, smart scheduling with due dates, reminders, and calendar integration, project organization for better workflow, tags & labels for efficient categorization, recurring tasks that repeat automatically, and smart notifications to never miss a deadline.",
+        "Built with a responsive design that works seamlessly across all devices, offering both light and dark mode themes for comfortable viewing in any environment."
       ],
-      "technologies": ["Tech 1", "Tech 2", "Tech 3"]
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT Authentication"],
+      "images": ["todo-planner1.webp", "todo-planner2.webp", "todo-planner3.webp", "todo-planner4.webp"]
+    },
+    {
+      "name": "Portfolio Terminal",
+      "year": 2025,
+      "githubUrl": "https://github.com/sohaibmokhliss/sohaibmokhliss.github.io",
+      "demoUrl": "https://sohaibmokhliss.github.io",
+      "content": [
+        "An interactive terminal-inspired portfolio website showcasing my work in Cybersecurity, Network Engineering, and DevOps with a unique retro command-line interface.",
+        "Features a dual-mode interface with both GUI and terminal modes, multilingual support (English/French), dark/light theme toggle, and smooth animations. The terminal mode includes a fully functional command-line interface with autocomplete, command history, and a custom file system navigation experience.",
+        "Built from scratch using vanilla JavaScript with no dependencies, demonstrating clean code architecture and modern web development practices. Optimized for performance with lazy loading, responsive design, and accessibility features."
+      ],
+      "technologies": ["JavaScript", "CSS3", "HTML5", "Vite", "Git"],
+      "images": ["portfolio1.webp", "portfolio2.webp", "portfolio3.webp", "portfolio4.webp"]
     }
   ]
 }

@@ -19,16 +19,7 @@ const Terminal = {
   fileSystem: {},
 
   async init() {
-    console.log('Terminal.init() called');
-
-    // Wait for LanguageManager to be ready before building file system
-    if (LanguageManager.initialized) {
-      await this.buildFileSystem();
-    } else {
-      window.addEventListener('languageManagerReady', async () => {
-        await this.buildFileSystem();
-      }, { once: true });
-    }
+    await this.buildFileSystem();
 
     // Delay attaching listeners to ensure DOM is ready
     setTimeout(() => {
@@ -646,20 +637,10 @@ Navigation:
       return;
     }
 
-    console.log('Attaching terminal event listeners to input:', input);
-    console.log('Input is visible:', input.offsetParent !== null);
-
-    // Test typing
-    input.addEventListener('input', (e) => {
-      console.log('Input event fired, value:', input.value);
-    });
-
     input.addEventListener('keydown', (e) => {
-      console.log('Keydown event:', e.key);
       if (e.key === 'Enter') {
         e.preventDefault();
         const command = input.value;
-        console.log('Executing command:', command);
         input.value = '';
         Terminal.executeCommand(command);
       } else if (e.key === 'ArrowUp') {
@@ -699,7 +680,6 @@ Navigation:
     const input = document.getElementById('terminal-input');
     if (input) {
       input.focus();
-      console.log('Terminal input focused');
     }
   },
 

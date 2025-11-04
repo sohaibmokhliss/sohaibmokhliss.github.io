@@ -69,10 +69,8 @@ const ModeManager = {
     if (guiToggleBtn) {
       guiToggleBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log('GUI toggle clicked - switching to terminal');
         this.switchMode('terminal');
       });
-      console.log('GUI toggle button listener attached');
     } else {
       console.warn('GUI toggle button not found');
     }
@@ -82,10 +80,8 @@ const ModeManager = {
     if (terminalToggleBtn) {
       terminalToggleBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log('Terminal toggle clicked - switching to GUI');
         this.switchMode('gui');
       });
-      console.log('Terminal toggle button listener attached');
     } else {
       console.warn('Terminal toggle button not found');
     }

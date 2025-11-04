@@ -1,7 +1,18 @@
-![image](https://github.com/zyriab/portfolio/assets/2111910/4562131f-4fca-4e18-861b-25ea53961eaa)
+# Sohaib Mokhliss - Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2e481815-7814-4a3b-b334-87a20b5c9d7d/deploy-status)](https://app.netlify.com/sites/wallenart/deploys)
+Personal portfolio showcasing my work in Cybersecurity, Network Engineering, and DevOps.
 
-Personal portfolio for the year 2024+  
-100% handmade without any dependencies.  
-Design based on the awesome [Lazygit](https://github.com/jesseduffield/lazygit)
+## Features
+- Terminal-inspired UI with GUI mode
+- Multilingual support (English/French)
+- Dark/Light theme toggle
+- Responsive design
+- Project showcase with live demos
+
+## Technologies
+- Vanilla JavaScript
+- CSS3
+- Vite
+
+## License
+MIT License - See LICENSE file for details

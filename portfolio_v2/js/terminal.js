@@ -19,7 +19,6 @@ const Terminal = {
   fileSystem: {},
 
   async init() {
-    console.log('Terminal.init() called');
     await this.buildFileSystem();
 
     // Delay attaching listeners to ensure DOM is ready
@@ -638,20 +637,10 @@ Navigation:
       return;
     }
 
-    console.log('Attaching terminal event listeners to input:', input);
-    console.log('Input is visible:', input.offsetParent !== null);
-
-    // Test typing
-    input.addEventListener('input', (e) => {
-      console.log('Input event fired, value:', input.value);
-    });
-
     input.addEventListener('keydown', (e) => {
-      console.log('Keydown event:', e.key);
       if (e.key === 'Enter') {
         e.preventDefault();
         const command = input.value;
-        console.log('Executing command:', command);
         input.value = '';
         Terminal.executeCommand(command);
       } else if (e.key === 'ArrowUp') {
@@ -691,7 +680,6 @@ Navigation:
     const input = document.getElementById('terminal-input');
     if (input) {
       input.focus();
-      console.log('Terminal input focused');
     }
   },
 

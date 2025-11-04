@@ -1,16 +1,30 @@
 {
   "data": [
     {
-      "name": "Nom de Votre Projet",
-      "year": 2024,
-      "githubUrl": "https://github.com/yourusername/yourproject",
-      "demoUrl": "https://yourproject.com",
+      "name": "Todo Planner",
+      "year": 2025,
+      "githubUrl": "https://github.com/sohaibmokhliss/todo-planner",
+      "demoUrl": "https://todo-planner-six.vercel.app",
       "content": [
-        "Décrivez votre projet ici.",
-        "Ajoutez les fonctionnalités clés et les technologies utilisées.",
-        "Expliquez l'impact ou les résultats obtenus."
+        "Une application web moderne de gestion de tâches et de planification personnelle conçue pour aider les utilisateurs à rester organisés et productifs.",
+        "Les fonctionnalités incluent la gestion des tâches avec création, organisation et achèvement des tâches, la planification intelligente avec dates d'échéance, rappels et intégration de calendrier, l'organisation par projets pour un meilleur flux de travail, les étiquettes et tags pour une catégorisation efficace, les tâches récurrentes qui se répètent automatiquement, et les notifications intelligentes pour ne jamais manquer une échéance.",
+        "Conçu avec un design responsive qui fonctionne parfaitement sur tous les appareils, offrant des thèmes clair et sombre pour un confort visuel dans n'importe quel environnement."
       ],
-      "technologies": ["Tech 1", "Tech 2", "Tech 3"]
+      "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT Authentication"],
+      "images": ["todo-planner1.webp", "todo-planner2.webp", "todo-planner3.webp", "todo-planner4.webp"]
+    },
+    {
+      "name": "Portfolio Terminal",
+      "year": 2025,
+      "githubUrl": "https://github.com/sohaibmokhliss/sohaibmokhliss.github.io",
+      "demoUrl": "https://sohaibmokhliss.github.io",
+      "content": [
+        "Un site portfolio interactif inspiré du terminal présentant mon travail en Cybersécurité, Ingénierie Réseau et DevOps avec une interface ligne de commande rétro unique.",
+        "Comprend une interface à double mode avec modes GUI et terminal, support multilingue (anglais/français), basculement de thème sombre/clair, et animations fluides. Le mode terminal inclut une interface ligne de commande entièrement fonctionnelle avec autocomplétion, historique des commandes, et une expérience de navigation dans un système de fichiers personnalisé.",
+        "Construit de zéro en JavaScript vanilla sans dépendances, démontrant une architecture de code propre et des pratiques de développement web modernes. Optimisé pour les performances avec chargement différé, design responsive, et fonctionnalités d'accessibilité."
+      ],
+      "technologies": ["JavaScript", "CSS3", "HTML5", "Vite", "Git"],
+      "images": ["portfolio1.webp", "portfolio2.webp", "portfolio3.webp", "portfolio4.webp"]
     }
   ]
 }

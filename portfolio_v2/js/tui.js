@@ -1081,7 +1081,6 @@ async function init() {
   // Listen for language changes (only add once)
   if (!languageChangeHandlerAdded) {
     window.addEventListener('languageChanged', async (event) => {
-      console.log('Language changed event received, reloading content');
       await displayContent();
     });
     languageChangeHandlerAdded = true;

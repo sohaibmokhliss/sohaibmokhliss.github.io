@@ -523,7 +523,6 @@ function setupProfilePicModal() {
 
   profilePic.dataset.modalBound = "true";
 }
-
 let isDisplayingContent = false;
 
 async function displayContent() {
@@ -1066,10 +1065,7 @@ function initTouchListeners() {
   });
 }
 
-// Listen for language changes (set up immediately when module loads)
-window.addEventListener('languageChanged', async (event) => {
-  await displayContent();
-});
+let languageChangeHandlerAdded = false;
 
 async function init() {
   // Initialize theme before anything else
@@ -1082,15 +1078,15 @@ async function init() {
   initSidebarScrollbar();
   initImageModal();
 
-  // Wait for LanguageManager to be ready before rendering content
-  if (LanguageManager.initialized) {
-    await render(true, true);
-  } else {
-    // Wait for languageManagerReady event
-    window.addEventListener('languageManagerReady', async () => {
-      await render(true, true);
-    }, { once: true });
+  // Listen for language changes (only add once)
+  if (!languageChangeHandlerAdded) {
+    window.addEventListener('languageChanged', async (event) => {
+      await displayContent();
+    });
+    languageChangeHandlerAdded = true;
   }
+
+  await render(true, true);
 
   // Initialize taskbar to show home as active
   updateTaskbarActive('home');
