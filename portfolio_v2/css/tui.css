@@ -2258,18 +2258,107 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
 
   #sidebar {
     transform: translate(150%);
-    width: 97vw;
+    width: 95vw;
     display: flex;
+    flex-direction: column;
     position: fixed;
-    left: 1.5vw;
+    left: 2.5vw;
+    top: 3.5rem;
+    bottom: 1rem;
     transition: transform 0.5s ease-in-out;
     z-index: 99;
-    background-color: var(--clr-primary-bg);
+    background: linear-gradient(180deg, rgba(22, 27, 34, 0.98) 0%, rgba(28, 33, 40, 0.98) 100%);
+    backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid var(--clr-border-subtle);
+    border-radius: 12px;
+    padding: 1.5rem 1rem 1rem 1rem;
+    gap: 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--clr-accent-primary) transparent;
+    box-shadow:
+      0 20px 25px rgba(0, 0, 0, 0.5),
+      0 8px 10px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(59, 130, 246, 0.1);
+  }
+
+  #sidebar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  #sidebar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  #sidebar::-webkit-scrollbar-thumb {
+    background: var(--clr-accent-primary);
+    border-radius: 3px;
+  }
+
+  #sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--clr-accent-secondary);
+  }
+
+  #sidebar .container {
+    margin-bottom: 0.5rem;
+  }
+
+  #sidebar .container-content {
+    padding: 1rem;
+  }
+
+  #sidebar .title {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  #sidebar .list-index {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #home-section-paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  #mobile-help {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 8px;
+  }
+
+  .sidebar-help {
+    display: none;
+  }
+
+  .selected-frame {
+    border-color: var(--clr-accent-primary) !important;
+    box-shadow:
+      0 0 0 1px var(--clr-accent-primary),
+      0 4px 12px rgba(59, 130, 246, 0.3) !important;
+  }
+
+  .selected-item {
+    background: var(--clr-accent-primary) !important;
+    color: var(--clr-primary-bg) !important;
+    border-color: var(--clr-accent-secondary) !important;
+  }
+
+  .sidebar-scrollbar {
+    display: none;
   }
 
   .menu-open {
     transform: translate(0) !important;
-    position: absolute !important;
   }
 
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
