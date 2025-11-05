@@ -636,34 +636,6 @@
   opacity: 0.8 !important;
 }
 
-/* Accessibility: Focus styles for both themes */
-button:focus,
-a:focus,
-input:focus,
-.os-taskbar-item:focus,
-.lang-btn:focus,
-.theme-btn:focus {
-  outline: 2px solid var(--clr-blue);
-  outline-offset: 2px;
-}
-
-/* Light theme focus styles */
-[data-theme="light"] button:focus,
-[data-theme="light"] a:focus,
-[data-theme="light"] input:focus,
-[data-theme="light"] .os-taskbar-item:focus,
-[data-theme="light"] .lang-btn:focus,
-[data-theme="light"] .theme-btn:focus,
-.lightmode button:focus,
-.lightmode a:focus,
-.lightmode input:focus,
-.lightmode .os-taskbar-item:focus,
-.lightmode .lang-btn:focus,
-.lightmode .theme-btn:focus {
-  outline: 2px solid #2563eb;
-  outline-offset: 2px;
-}
-
 /* Light theme terminal mode styles */
 [data-theme="light"] .terminal-container,
 .lightmode .terminal-container {
@@ -673,6 +645,7 @@ input:focus,
     linear-gradient(180deg, #f8fafc 0%, #ffffff 50%, #f8fafc 100%) !important;
 }
 
+/* Light scanline effect for terminal */
 [data-theme="light"] .terminal-container::before,
 .lightmode .terminal-container::before {
   background: repeating-linear-gradient(
@@ -685,11 +658,13 @@ input:focus,
   opacity: 0.5 !important;
 }
 
+/* Light vignette effect for terminal */
 [data-theme="light"] .terminal-container::after,
 .lightmode .terminal-container::after {
   background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.05) 100%) !important;
 }
 
+/* Light theme terminal header */
 [data-theme="light"] .terminal-header,
 .lightmode .terminal-header {
   background: linear-gradient(180deg, rgba(248, 250, 252, 0.98) 0%, rgba(241, 245, 249, 0.95) 100%) !important;
@@ -697,31 +672,37 @@ input:focus,
   box-shadow: 0 2px 8px rgba(100, 116, 139, 0.1) !important;
 }
 
+/* Light theme terminal title */
 [data-theme="light"] .terminal-title,
 .lightmode .terminal-title {
   color: #1e293b !important;
 }
 
+/* Light theme terminal output */
 [data-theme="light"] .terminal-output,
 .lightmode .terminal-output {
   color: #1e293b !important;
 }
 
+/* Light theme terminal welcome message */
 [data-theme="light"] .terminal-output .welcome,
 .lightmode .terminal-output .welcome {
   color: #2563eb !important;
 }
 
+/* Light theme terminal error */
 [data-theme="light"] .terminal-output .error,
 .lightmode .terminal-output .error {
   color: #dc2626 !important;
 }
 
+/* Light theme terminal prompt */
 [data-theme="light"] .terminal-prompt,
 .lightmode .terminal-prompt {
   color: #2563eb !important;
 }
 
+/* Light theme terminal input */
 [data-theme="light"] .terminal-input,
 .lightmode .terminal-input {
   color: #1e293b !important;
@@ -748,6 +729,34 @@ input:focus,
 [data-theme="light"] .terminal-output .text-pink,
 .lightmode .terminal-output .text-pink {
   color: #c026d3 !important;
+}
+
+/* Accessibility: Focus styles for both themes */
+button:focus,
+a:focus,
+input:focus,
+.os-taskbar-item:focus,
+.lang-btn:focus,
+.theme-btn:focus {
+  outline: 2px solid var(--clr-blue);
+  outline-offset: 2px;
+}
+
+/* Light theme focus styles */
+[data-theme="light"] button:focus,
+[data-theme="light"] a:focus,
+[data-theme="light"] input:focus,
+[data-theme="light"] .os-taskbar-item:focus,
+[data-theme="light"] .lang-btn:focus,
+[data-theme="light"] .theme-btn:focus,
+.lightmode button:focus,
+.lightmode a:focus,
+.lightmode input:focus,
+.lightmode .os-taskbar-item:focus,
+.lightmode .lang-btn:focus,
+.lightmode .theme-btn:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
 }
 
 * {
@@ -2140,7 +2149,7 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
   /* NAVBAR */
   .nav-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 0.75rem 1rem;
     position: fixed;
@@ -2151,6 +2160,43 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
     background: var(--clr-primary-bg);
     border-bottom: 1px solid var(--clr-border-subtle);
     height: 3rem;
+  }
+
+  .nav-mode-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(59, 130, 246, 0.15);
+    border: 1px solid rgba(59, 130, 246, 0.4);
+    border-radius: 6px;
+    color: var(--clr-accent-secondary);
+    font-size: 0.875rem;
+    padding: 6px 12px;
+    height: 32px;
+    cursor: pointer;
+    font-family: "Fira Mono", monospace;
+    transition: all 0.2s ease;
+    font-weight: 500;
+  }
+
+  .nav-mode-btn:hover {
+    background: rgba(59, 130, 246, 0.25);
+    border-color: rgba(59, 130, 246, 0.6);
+    transform: translateY(-1px);
+  }
+
+  .nav-mode-btn:active {
+    transform: translateY(0);
+  }
+
+  .nav-mode-btn .btn-emoji {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .nav-mode-btn .btn-text {
+    font-size: 0.85rem;
+    line-height: 1;
   }
 
   #logo-container {
@@ -2433,11 +2479,6 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
 
 .terminal-mobile-controls {
   display: none;
-  position: absolute;
-  top: calc(env(safe-area-inset-top, 0px) + 6px);
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
 }
 
 .terminal-title {
@@ -2651,18 +2692,21 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
 /* Responsive Terminal */
 @media (max-width: 768px) {
   .terminal-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: calc(env(safe-area-inset-top, 0px) + 10px) 12px 14px 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 8px;
+    padding: calc(env(safe-area-inset-top, 0px) + 12px) 16px 16px 16px;
   }
 
   .terminal-mobile-controls {
     display: flex;
-    position: absolute;
-    top: calc(env(safe-area-inset-top, 0px) + 6px);
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .terminal-mobile-controls .header-mode-btn {
+    order: 0;
   }
 
   .window-header-controls {
@@ -2670,7 +2714,7 @@ div.selected-frame > ::-webkit-scrollbar-thumb {
   }
 
   .terminal-title {
-    flex: 1;
+    width: 100%;
     text-align: center;
   }
 

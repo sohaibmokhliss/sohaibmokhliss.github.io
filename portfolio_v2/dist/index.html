@@ -33,17 +33,16 @@
 
     <link href="images/favicon-light-2025.ico" rel="icon" media="(prefers-color-scheme: light)" />
     <link href="images/favicon-dark-2025.ico" rel="icon" media="(prefers-color-scheme: dark)" />
-    <link rel="preload" as="font" href="/assets/fira-mono-v14-latin-regular-DKjLVgQi.woff2" type="font/otf"
+    <link rel="preload" as="font" href="fonts/fira-mono-v14-latin-regular.woff2" type="font/otf"
         crossorigin="anonymous">
-    <link rel="preload" as="font" href="/assets/fira-mono-v14-latin-700-Cv3UdvRX.woff2" type="font/otf" crossorigin="anonymous">
-    <link id="min-style" rel="stylesheet" type="text/css" href="/css/tui.css?v=7">
+    <link rel="preload" as="font" href="fonts/fira-mono-v14-latin-700.woff2" type="font/otf" crossorigin="anonymous">
+    <link id="min-style" rel="stylesheet" type="text/css" href="/css/tui.css?v=8">
     <script type="module" src="/js/language.js?v=6"></script>
     <script type="module" src="/js/tui.js?v=6"></script>
     <script type="module" src="/js/modeManager.js?v=6"></script>
     <script type="module" src="/js/terminal.js?v=10"></script>
     <script type="module" src="/js/loader/loader.js"></script>
     <title>Sohaib Mokhliss - Cybersecurity & Network Engineering Student</title>
-  <script type="module" crossorigin src="/assets/index-B5Qt9EMX.js"></script>
 </head>
 
 <body class="darkmode">
@@ -57,6 +56,10 @@
                     <span class="line line3"></span>
                 </div>
             </div>
+            <button id="mode-toggle-nav" class="nav-mode-btn" aria-label="Switch mode" title="Switch mode">
+                <span class="btn-emoji">⌨️</span>
+                <span class="btn-text">Terminal</span>
+            </button>
         </div>
         <div id="layout" class="gui-mode">
             <aside id="sidebar">
@@ -242,8 +245,18 @@
                     <div class="terminal-content">
                         <div id="terminal-output" class="terminal-output"></div>
                         <div class="terminal-input-line">
-                        <span id="terminal-prompt" class="terminal-prompt">sohaibmokhliss@portfolio:~$ </span>
-                        <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" autocapitalize="none" autocorrect="off" inputmode="text" enterkeyhint="send" />
+                            <span id="terminal-prompt" class="terminal-prompt">sohaibmokhliss@portfolio:~$ </span>
+                            <input
+                                type="text"
+                                id="terminal-input"
+                                class="terminal-input"
+                                autocomplete="off"
+                                spellcheck="false"
+                                autocapitalize="none"
+                                autocorrect="off"
+                                inputmode="text"
+                                enterkeyhint="send"
+                            />
                         </div>
                     </div>
                 </div>

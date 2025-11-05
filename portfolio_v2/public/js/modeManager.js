@@ -67,10 +67,35 @@ const ModeManager = {
       layout.classList.add('gui-mode');
       layout.classList.remove('terminal-mode');
     }
+
+    // Update nav toggle button
+    this.updateNavToggleButton();
+  },
+
+  updateNavToggleButton() {
+    const navToggleBtn = document.getElementById('mode-toggle-nav');
+    if (!navToggleBtn) return;
+
+    const emoji = navToggleBtn.querySelector('.btn-emoji');
+    const text = navToggleBtn.querySelector('.btn-text');
+
+    if (this.currentMode === 'gui') {
+      // In GUI mode, show Terminal button
+      emoji.textContent = '⌨️';
+      text.textContent = 'Terminal';
+      navToggleBtn.setAttribute('aria-label', 'Switch to Terminal mode');
+      navToggleBtn.setAttribute('title', 'Switch to Terminal');
+    } else {
+      // In Terminal mode, show GUI button
+      emoji.textContent = '🖥️';
+      text.textContent = 'GUI';
+      navToggleBtn.setAttribute('aria-label', 'Switch to GUI mode');
+      navToggleBtn.setAttribute('title', 'Switch to GUI');
+    }
   },
 
   attachEventListeners() {
-    // GUI mode toggle button
+    // GUI mode toggle button (desktop)
     const guiToggleBtn = document.getElementById('mode-toggle-gui');
     if (guiToggleBtn) {
       guiToggleBtn.addEventListener('click', (e) => {
@@ -81,7 +106,7 @@ const ModeManager = {
       console.warn('GUI toggle button not found');
     }
 
-    // Terminal mode toggle button
+    // Terminal mode toggle button (desktop)
     const terminalToggleBtn = document.getElementById('mode-toggle-terminal');
     if (terminalToggleBtn) {
       terminalToggleBtn.addEventListener('click', (e) => {
@@ -92,11 +117,23 @@ const ModeManager = {
       console.warn('Terminal toggle button not found');
     }
 
+    // Mobile terminal header toggle button
     const terminalToggleMobileBtn = document.getElementById('mode-toggle-terminal-mobile');
     if (terminalToggleMobileBtn) {
       terminalToggleMobileBtn.addEventListener('click', (e) => {
         e.preventDefault();
         this.switchMode('gui');
+      });
+    }
+
+    // Navbar toggle button (mobile)
+    const navToggleBtn = document.getElementById('mode-toggle-nav');
+    if (navToggleBtn) {
+      navToggleBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        // Toggle between modes
+        const newMode = this.currentMode === 'gui' ? 'terminal' : 'gui';
+        this.switchMode(newMode);
       });
     }
   }
