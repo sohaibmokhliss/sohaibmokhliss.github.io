@@ -52,6 +52,12 @@ const ModeManager = {
       layout.classList.add('terminal-mode');
       layout.classList.remove('gui-mode');
 
+      if (window.matchMedia && window.matchMedia('(max-width: 768px)').matches) {
+        setTimeout(() => {
+          terminalContainer.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+        }, 0);
+      }
+
       // Focus terminal input
       setTimeout(() => {
         const input = document.getElementById('terminal-input');
@@ -84,6 +90,14 @@ const ModeManager = {
       });
     } else {
       console.warn('Terminal toggle button not found');
+    }
+
+    const terminalToggleMobileBtn = document.getElementById('mode-toggle-terminal-mobile');
+    if (terminalToggleMobileBtn) {
+      terminalToggleMobileBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.switchMode('gui');
+      });
     }
   }
 };

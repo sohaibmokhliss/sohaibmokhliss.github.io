@@ -25,6 +25,20 @@
       ],
       "technologies": ["JavaScript", "CSS3", "HTML5", "Vite", "Git"],
       "images": ["portfolio1.webp", "portfolio2.webp", "portfolio3.webp", "portfolio4.webp"]
+    },
+    {
+      "name": "DevOps Internship Infrastructure",
+      "year": 2025,
+      "githubUrl": null,
+      "demoUrl": null,
+      "reportUrl": "/documents/rapport_de_stage_4IIR.pdf",
+      "content": [
+        "Two-month internship delivering a full DevOps infrastructure transformation, moving from a Proxmox-based lab environment to a production-ready setup tailored for a growing startup.",
+        "Designed and deployed HAProxy load balancing, Harbor as a hardened private container registry, and Rancher for unified Kubernetes and container fleet management.",
+        "Industrialized the deployments with Ansible playbooks to provide reproducible, idempotent Infrastructure as Code across laboratory and production environments while handling SELinux, firewalld, and port conflicts on AlmaLinux."
+      ],
+      "technologies": ["HAProxy", "Harbor", "Rancher", "Ansible", "Proxmox VE", "AlmaLinux"],
+      "images": []
     }
   ]
 }

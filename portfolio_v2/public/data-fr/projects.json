@@ -25,6 +25,20 @@
       ],
       "technologies": ["JavaScript", "CSS3", "HTML5", "Vite", "Git"],
       "images": ["portfolio1.webp", "portfolio2.webp", "portfolio3.webp", "portfolio4.webp"]
+    },
+    {
+      "name": "Infrastructure DevOps en Stage",
+      "year": 2025,
+      "githubUrl": null,
+      "demoUrl": null,
+      "reportUrl": "/documents/rapport_de_stage_4IIR.pdf",
+      "content": [
+        "Stage de deux mois consacré à la transformation d'une infrastructure DevOps, en passant d'un laboratoire basé sur Proxmox à une plate-forme prête pour la production adaptée à la croissance d'une startup.",
+        "Conception et déploiement de HAProxy pour l'équilibrage de charge, Harbor comme registre privé sécurisé, et Rancher pour la gestion unifiée des conteneurs et clusters Kubernetes.",
+        "Industrialisation des déploiements via des playbooks Ansible reproductibles et idempotents, tout en gérant SELinux, firewalld et les conflits de ports sur AlmaLinux."
+      ],
+      "technologies": ["HAProxy", "Harbor", "Rancher", "Ansible", "Proxmox VE", "AlmaLinux"],
+      "images": []
     }
   ]
 }

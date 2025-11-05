@@ -111,12 +111,13 @@
                             <div></div>
                         </div>
                         <div class="list-index decorating-text">
-                            <p>1 of 2</p>
+                            <p>1 of 3</p>
                             <div></div>
                         </div>
                         <div class="ui-list">
                             <div>Todo Planner</div>
                             <div>Portfolio Terminal</div>
+                            <div>DevOps Internship Infrastructure</div>
                         </div>
                     </div>
                 </div>
@@ -218,6 +219,12 @@
                 <!-- Terminal Mode -->
                 <div id="terminal-container" class="terminal-container">
                     <div class="terminal-header">
+                        <div class="terminal-mobile-controls">
+                            <button id="mode-toggle-terminal-mobile" class="header-mode-btn" aria-label="Switch to GUI mode" title="Switch to GUI">
+                                <span class="btn-emoji">🖥️</span>
+                                <span class="btn-text">GUI</span>
+                            </button>
+                        </div>
                         <div class="terminal-title">sohaibmokhliss@portfolio: ~</div>
                         <div class="window-header-controls">
                             <button id="mode-toggle-terminal" class="header-mode-btn" aria-label="Switch to GUI mode" title="Switch to GUI">
@@ -235,7 +242,17 @@
                         <div id="terminal-output" class="terminal-output"></div>
                         <div class="terminal-input-line">
                             <span id="terminal-prompt" class="terminal-prompt">sohaibmokhliss@portfolio:~$ </span>
-                            <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" />
+                            <input
+                                type="text"
+                                id="terminal-input"
+                                class="terminal-input"
+                                autocomplete="off"
+                                spellcheck="false"
+                                autocapitalize="none"
+                                autocorrect="off"
+                                inputmode="text"
+                                enterkeyhint="send"
+                            />
                         </div>
                     </div>
                 </div>

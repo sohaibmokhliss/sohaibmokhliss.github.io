@@ -648,6 +648,16 @@ async function displayContent() {
         buttonsContainerElement.appendChild(certificateButtonElement);
       }
 
+      if (sectionName === "projects" && sectionData?.reportUrl) {
+        const reportButtonElement = document.createElement("a");
+        reportButtonElement.classList.add("project-button");
+        reportButtonElement.href = sectionData.reportUrl;
+        reportButtonElement.target = "_blank";
+        reportButtonElement.rel = "noopener";
+        reportButtonElement.innerText = "View Report";
+        buttonsContainerElement.appendChild(reportButtonElement);
+      }
+
       if (titleElement.innerHTML != null) {
         topElement.appendChild(titleElement);
       }
@@ -665,8 +675,11 @@ async function displayContent() {
       }
 
       const shouldRenderButtons = buttonsContainerElement.children.length > 0;
-      const shouldRenderViewer =
+      const shouldRenderCertificate =
         sectionName === "certifications" && sectionData?.certificateUrl;
+      const shouldRenderReport =
+        sectionName === "projects" && sectionData?.reportUrl;
+      const shouldRenderViewer = shouldRenderCertificate || shouldRenderReport;
 
       if (shouldRenderButtons) {
         topElement.appendChild(buttonsContainerElement);
@@ -719,26 +732,28 @@ async function displayContent() {
       }
 
       if (shouldRenderViewer) {
-        const certificateViewerWrapper = document.createElement("div");
-        certificateViewerWrapper.style.marginTop = shouldRenderButtons
-          ? "16px"
-          : "24px";
+        const viewerWrapper = document.createElement("div");
+        viewerWrapper.style.marginTop = shouldRenderButtons ? "16px" : "24px";
 
-        const certificateViewer = document.createElement("iframe");
-        certificateViewer.src = sectionData.certificateUrl;
-        certificateViewer.title =
-          (sectionData.title || "Certificate") + " preview";
-        certificateViewer.loading = "lazy";
-        certificateViewer.style.width = "100%";
-        certificateViewer.style.minHeight = "520px";
-        certificateViewer.style.border = "1px solid rgba(148, 163, 184, 0.2)";
-        certificateViewer.style.borderRadius = "12px";
-        certificateViewer.style.backgroundColor = "rgba(15, 23, 42, 0.55)";
-        certificateViewer.style.boxShadow =
-          "0 12px 32px rgba(15, 23, 42, 0.35)";
+        const viewer = document.createElement("iframe");
+        viewer.src = shouldRenderCertificate
+          ? sectionData.certificateUrl
+          : sectionData.reportUrl;
+        const defaultTitle = shouldRenderCertificate ? "Certificate" : "Report";
+        const entityName =
+          sectionData.title || sectionData.name || sectionData.company || "";
+        viewer.title =
+          (entityName ? `${entityName} ` : "") + `${defaultTitle} preview`;
+        viewer.loading = "lazy";
+        viewer.style.width = "100%";
+        viewer.style.minHeight = "520px";
+        viewer.style.border = "1px solid rgba(148, 163, 184, 0.2)";
+        viewer.style.borderRadius = "12px";
+        viewer.style.backgroundColor = "rgba(15, 23, 42, 0.55)";
+        viewer.style.boxShadow = "0 12px 32px rgba(15, 23, 42, 0.35)";
 
-        certificateViewerWrapper.appendChild(certificateViewer);
-        innerContainerElement.appendChild(certificateViewerWrapper);
+        viewerWrapper.appendChild(viewer);
+        innerContainerElement.appendChild(viewerWrapper);
       }
 
       if (resolvedLang !== LanguageManager.currentLang) {

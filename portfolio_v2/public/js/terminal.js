@@ -192,6 +192,7 @@ const Terminal = {
 
       if (project.githubUrl) content += `GitHub: ${project.githubUrl}\n`;
       if (project.demoUrl) content += `Demo: ${project.demoUrl}\n`;
+      if (project.reportUrl) content += `Report: ${project.reportUrl}\n`;
 
       files[filename] = {
         type: 'file',
@@ -265,7 +266,7 @@ const Terminal = {
     if (className) line.className = className;
     line.textContent = text;
     output.appendChild(line);
-    output.scrollTop = output.scrollHeight;
+    this.updateScrollPosition();
   },
 
   printHTML(html) {
@@ -275,13 +276,39 @@ const Terminal = {
     const line = document.createElement('div');
     line.innerHTML = html;
     output.appendChild(line);
-    output.scrollTop = output.scrollHeight;
+    this.updateScrollPosition();
   },
 
   printPrompt() {
     const prompt = document.getElementById('terminal-prompt');
     if (prompt) {
       prompt.textContent = `sohaib@portfolio:${this.currentPath}$ `;
+    }
+  },
+
+  isMobileViewport() {
+    if (typeof window === 'undefined' || !window.matchMedia) {
+      return false;
+    }
+
+    return window.matchMedia('(max-width: 768px)').matches;
+  },
+
+  updateScrollPosition(behavior = 'auto') {
+    const output = document.getElementById('terminal-output');
+    if (!output) return;
+
+    output.scrollTop = output.scrollHeight;
+
+    if (this.isMobileViewport()) {
+      const lastLine = output.lastElementChild;
+      if (lastLine && typeof lastLine.scrollIntoView === 'function') {
+        lastLine.scrollIntoView({
+          behavior,
+          block: 'center',
+          inline: 'nearest'
+        });
+      }
     }
   },
 
@@ -646,6 +673,7 @@ Navigation:
     }
 
     this.printPrompt();
+    this.updateScrollPosition('smooth');
   },
 
   attachEventListeners() {
@@ -654,6 +682,14 @@ Navigation:
       console.warn('Terminal input not found');
       return;
     }
+
+    input.addEventListener('focus', () => {
+      if (this.isMobileViewport()) {
+        setTimeout(() => {
+          input.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+        }, 50);
+      }
+    });
 
     input.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
