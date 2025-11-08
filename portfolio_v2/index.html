@@ -300,6 +300,176 @@
             <img class="image-modal-content" id="modal-image">
         </div>
 
+        <!-- Navigation Tutorial -->
+        <div id="navigation-tutorial" class="navigation-tutorial">
+            <div class="tutorial-overlay"></div>
+            <div class="tutorial-content">
+                <div class="tutorial-header">
+                    <h2 class="tutorial-title">Welcome to My Portfolio!</h2>
+                    <button class="tutorial-skip" aria-label="Skip tutorial">Skip</button>
+                </div>
+                <div class="tutorial-body">
+                    <!-- Step 1: Introduction -->
+                    <div class="tutorial-step active" data-step="1">
+                        <div class="tutorial-step-content">
+                            <div class="tutorial-icon">👋</div>
+                            <h3 class="tutorial-step-title">Let's learn to navigate</h3>
+                            <p class="tutorial-step-description">
+                                This portfolio has keyboard navigation built in!<br>
+                                Let me show you how it works.
+                            </p>
+                        </div>
+                        <div class="tutorial-actions">
+                            <button class="tutorial-btn tutorial-next">Get Started</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Arrow Keys for Sections -->
+                    <div class="tutorial-step" data-step="2">
+                        <div class="tutorial-step-content">
+                            <div class="tutorial-icon">⬅️➡️</div>
+                            <h3 class="tutorial-step-title">Switch between sections</h3>
+                            <p class="tutorial-step-description">
+                                Use <kbd class="tutorial-key" data-key="ArrowLeft">←</kbd> and <kbd class="tutorial-key" data-key="ArrowRight">→</kbd> arrow keys<br>
+                                to navigate between sections.
+                            </p>
+                            <div class="tutorial-preview tutorial-preview--sections" aria-hidden="true">
+                                <div class="tutorial-preview-window">
+                                    <div class="preview-section active" data-label="Home">
+                                        <span class="preview-section-name">Home</span>
+                                        <span class="preview-section-note">Intro</span>
+                                    </div>
+                                    <div class="preview-section" data-label="Experience">
+                                        <span class="preview-section-name">Experience</span>
+                                        <span class="preview-section-note">Timeline</span>
+                                    </div>
+                                    <div class="preview-section" data-label="Projects">
+                                        <span class="preview-section-name">Projects</span>
+                                        <span class="preview-section-note">Highlights</span>
+                                    </div>
+                                    <div class="preview-section" data-label="Skills">
+                                        <span class="preview-section-name">Skills</span>
+                                        <span class="preview-section-note">Stack</span>
+                                    </div>
+                                    <div class="preview-section" data-label="Certifications">
+                                        <span class="preview-section-name">Cert</span>
+                                        <span class="preview-section-note">Proof</span>
+                                    </div>
+                                </div>
+                                <div class="tutorial-preview-status" role="status" aria-live="polite">
+                                    Currently focused section:
+                                    <span class="tutorial-preview-value" data-section-preview-label>Home</span>
+                                </div>
+                            </div>
+                            <p class="tutorial-hint">
+                                <strong>Try it now:</strong> Press the right arrow key →
+                            </p>
+                        </div>
+                        <div class="tutorial-actions">
+                            <button class="tutorial-btn tutorial-prev">Back</button>
+                            <button class="tutorial-btn tutorial-next">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Up/Down for Items -->
+                    <div class="tutorial-step" data-step="3">
+                        <div class="tutorial-step-content">
+                            <div class="tutorial-icon">⬆️⬇️</div>
+                            <h3 class="tutorial-step-title">Browse items in a section</h3>
+                            <p class="tutorial-step-description">
+                                Use <kbd class="tutorial-key" data-key="ArrowUp">↑</kbd> and <kbd class="tutorial-key" data-key="ArrowDown">↓</kbd> arrow keys<br>
+                                to browse through different items within a section.
+                            </p>
+                            <div class="tutorial-preview tutorial-preview--items" aria-hidden="true">
+                                <div class="tutorial-preview-column">
+                                    <div class="preview-item active" data-label="Project Alpha">
+                                        <span class="preview-item-title">Project Alpha</span>
+                                        <span class="preview-item-desc">Selected</span>
+                                    </div>
+                                    <div class="preview-item" data-label="Project Beta">
+                                        <span class="preview-item-title">Project Beta</span>
+                                        <span class="preview-item-desc">Next</span>
+                                    </div>
+                                    <div class="preview-item" data-label="Project Gamma">
+                                        <span class="preview-item-title">Project Gamma</span>
+                                        <span class="preview-item-desc">Queue</span>
+                                    </div>
+                                    <div class="preview-item" data-label="Project Delta">
+                                        <span class="preview-item-title">Project Delta</span>
+                                        <span class="preview-item-desc">Queue</span>
+                                    </div>
+                                </div>
+                                <div class="tutorial-preview-status" role="status" aria-live="polite">
+                                    Highlighted item:
+                                    <span class="tutorial-preview-value" data-item-preview-label>Project Alpha</span>
+                                </div>
+                            </div>
+                            <p class="tutorial-hint">
+                                <strong>Try it:</strong> Press the down arrow key ↓
+                            </p>
+                        </div>
+                        <div class="tutorial-actions">
+                            <button class="tutorial-btn tutorial-prev">Back</button>
+                            <button class="tutorial-btn tutorial-next">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Number Keys -->
+                    <div class="tutorial-step" data-step="4">
+                        <div class="tutorial-step-content">
+                            <div class="tutorial-icon">🔢</div>
+                            <h3 class="tutorial-step-title">Quick jump to sections</h3>
+                            <p class="tutorial-step-description">
+                                Use number keys to jump directly to sections:
+                            </p>
+                            <div class="tutorial-shortcuts">
+                                <div><kbd class="tutorial-key" data-key="Digit1">1</kbd> Home</div>
+                                <div><kbd class="tutorial-key" data-key="Digit2">2</kbd> Experience</div>
+                                <div><kbd class="tutorial-key" data-key="Digit3">3</kbd> Projects</div>
+                                <div><kbd class="tutorial-key" data-key="Digit4">4</kbd> Skills</div>
+                                <div><kbd class="tutorial-key" data-key="Digit5">5</kbd> Certifications</div>
+                            </div>
+                            <p class="tutorial-hint">
+                                <strong>Try it:</strong> Press any number key (1-5)
+                            </p>
+                        </div>
+                        <div class="tutorial-actions">
+                            <button class="tutorial-btn tutorial-prev">Back</button>
+                            <button class="tutorial-btn tutorial-next">Next</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Scrolling & Bonus -->
+                    <div class="tutorial-step" data-step="5">
+                        <div class="tutorial-step-content">
+                            <div class="tutorial-icon">📜</div>
+                            <h3 class="tutorial-step-title">Scroll through content</h3>
+                            <p class="tutorial-step-description">
+                                Use <kbd class="tutorial-key">PageUp</kbd> and <kbd class="tutorial-key">PageDown</kbd><br>
+                                to scroll through long content.
+                            </p>
+                            <p class="tutorial-hint">
+                                <strong>Bonus tip:</strong> Vim users can use <kbd class="tutorial-key">h</kbd><kbd class="tutorial-key">j</kbd><kbd class="tutorial-key">k</kbd><kbd class="tutorial-key">l</kbd> keys too!
+                            </p>
+                        </div>
+                        <div class="tutorial-actions">
+                            <button class="tutorial-btn tutorial-prev">Back</button>
+                            <button class="tutorial-btn tutorial-finish">Got it!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Indicator -->
+                <div class="tutorial-progress">
+                    <div class="tutorial-progress-dot active" data-step="1"></div>
+                    <div class="tutorial-progress-dot" data-step="2"></div>
+                    <div class="tutorial-progress-dot" data-step="3"></div>
+                    <div class="tutorial-progress-dot" data-step="4"></div>
+                    <div class="tutorial-progress-dot" data-step="5"></div>
+                </div>
+            </div>
+        </div>
+
         <footer class="container text-blue" id="footer">
             <div class="footer-item" id="footer-help">
                 &lt;pgup&gt;/&lt;pgdown&gt;: Scroll,

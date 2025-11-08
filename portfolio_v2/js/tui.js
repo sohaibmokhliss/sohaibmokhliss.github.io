@@ -1142,6 +1142,9 @@ async function init() {
 
   // Initialize taskbar to show home as active
   updateTaskbarActive('home');
+
+  // Initialize navigation tutorial (shows on first visit only)
+  initTutorial();
 }
 
 /** HIGHLIGHTING STUFF **/
@@ -1416,6 +1419,417 @@ const arduinoKeywords = [
   ],
   [...cKeywords[1], "long", "int", "switch", "case", "break"],
 ];
+
+// Navigation Tutorial Functionality
+class NavigationTutorial {
+  constructor() {
+    this.currentStep = 1;
+    this.totalSteps = 5;
+    this.tutorial = null;
+    this.isActive = false;
+    this.hasInteractedStep2 = false;
+    this.hasInteractedStep3 = false;
+    this.hasInteractedStep4 = false;
+    this.boundKeyHandler = null;
+    this.sectionPreviewEls = [];
+    this.itemPreviewEls = [];
+    this.sectionPreviewLabel = null;
+    this.itemPreviewLabel = null;
+    this.sectionPreviewIndex = 0;
+    this.itemPreviewIndex = 0;
+    this.keyFlashTimers = new Map();
+    this.stepAdvanceTimeout = null;
+  }
+
+  init() {
+    // Check if tutorial has been completed
+    if (localStorage.getItem('portfolio-tutorial-completed')) {
+      return;
+    }
+
+    this.tutorial = document.getElementById('navigation-tutorial');
+    if (!this.tutorial) {
+      console.warn('Tutorial element not found');
+      return;
+    }
+
+    this.cachePreviewElements();
+
+    this.attachEventListeners();
+    this.show();
+  }
+
+  show() {
+    if (!this.tutorial) return;
+
+    this.tutorial.classList.add('active');
+    this.isActive = true;
+    this.goToStep(1);
+
+    // Add keyboard listener for ESC and arrow keys
+    this.boundKeyHandler = this.handleKeyPress.bind(this);
+    document.addEventListener('keydown', this.boundKeyHandler);
+  }
+
+  hide() {
+    if (!this.tutorial) return;
+
+    this.tutorial.classList.remove('active');
+    this.isActive = false;
+
+    // Remove keyboard listener
+    if (this.boundKeyHandler) {
+      document.removeEventListener('keydown', this.boundKeyHandler);
+      this.boundKeyHandler = null;
+    }
+
+    this.clearStepAdvanceTimeout();
+    this.clearKeyFlashTimers();
+  }
+
+  complete() {
+    localStorage.setItem('portfolio-tutorial-completed', 'true');
+    this.hide();
+  }
+
+  skip() {
+    this.complete();
+  }
+
+  goToStep(step) {
+    if (step < 1 || step > this.totalSteps) return;
+
+    // Update current step
+    this.currentStep = step;
+    this.clearStepAdvanceTimeout();
+
+    // Update step visibility
+    const steps = this.tutorial.querySelectorAll('.tutorial-step');
+    steps.forEach((stepEl, index) => {
+      if (index + 1 === step) {
+        stepEl.classList.add('active');
+      } else {
+        stepEl.classList.remove('active');
+      }
+    });
+
+    // Update progress dots
+    const dots = this.tutorial.querySelectorAll('.tutorial-progress-dot');
+    dots.forEach((dot, index) => {
+      if (index + 1 === step) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+
+    // Reset interaction flags for new steps
+    if (step === 2) {
+      this.hasInteractedStep2 = false;
+      this.updateSectionPreview(0, true);
+    } else if (step === 3) {
+      this.hasInteractedStep3 = false;
+      this.updateItemPreview(0, true);
+    } else if (step === 4) {
+      this.hasInteractedStep4 = false;
+    }
+  }
+
+  nextStep() {
+    if (this.currentStep < this.totalSteps) {
+      this.goToStep(this.currentStep + 1);
+    }
+  }
+
+  prevStep() {
+    if (this.currentStep > 1) {
+      this.goToStep(this.currentStep - 1);
+    }
+  }
+
+  handleKeyPress(e) {
+    if (!this.isActive) return;
+
+    // ESC key closes tutorial
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      this.skip();
+      return;
+    }
+
+    // Step 2: Detect left/right arrow key usage
+    if (this.currentStep === 2) {
+      const horizontalDirection = this.getHorizontalDirection(e.key);
+      if (horizontalDirection !== 0) {
+        e.preventDefault();
+        this.updateSectionPreview(horizontalDirection);
+        this.flashKey(e.key);
+
+        if (!this.hasInteractedStep2) {
+          this.hasInteractedStep2 = true;
+          this.showInteractionFeedback(2);
+        }
+
+        // Auto-advance disabled - user must click Next
+        // this.scheduleStepAdvance(2);
+      }
+    }
+
+    // Step 3: Detect up/down arrow key usage
+    if (this.currentStep === 3) {
+      const verticalDirection = this.getVerticalDirection(e.key);
+      if (verticalDirection !== 0) {
+        e.preventDefault();
+        this.updateItemPreview(verticalDirection);
+        this.flashKey(e.key);
+
+        if (!this.hasInteractedStep3) {
+          this.hasInteractedStep3 = true;
+          this.showInteractionFeedback(3);
+        }
+
+        // Auto-advance disabled - user must click Next
+        // this.scheduleStepAdvance(3);
+      }
+    }
+
+    // Step 4: Detect number key usage
+    if (this.currentStep === 4) {
+      const numberKey = this.getNumberKey(e.key, e.code);
+      if (numberKey !== null) {
+        e.preventDefault();
+        this.flashNumberKey(e.code);
+
+        if (!this.hasInteractedStep4) {
+          this.hasInteractedStep4 = true;
+          this.showInteractionFeedback(4);
+        }
+      }
+    }
+  }
+
+  showInteractionFeedback(step) {
+    const stepEl = this.tutorial.querySelector(`.tutorial-step[data-step="${step}"]`);
+    if (!stepEl) return;
+
+    const hint = stepEl.querySelector('.tutorial-hint');
+    if (hint) {
+      hint.style.borderColor = 'var(--clr-blue)';
+      hint.style.background = 'rgba(59, 130, 246, 0.15)';
+
+      const strong = hint.querySelector('strong');
+      if (strong) {
+        strong.textContent = 'Great job! ✓';
+        strong.style.color = 'var(--clr-blue)';
+      }
+    }
+  }
+
+  attachEventListeners() {
+    if (!this.tutorial) return;
+
+    // Skip button
+    const skipBtn = this.tutorial.querySelector('.tutorial-skip');
+    if (skipBtn) {
+      skipBtn.addEventListener('click', () => this.skip());
+    }
+
+    // Next buttons
+    const nextBtns = this.tutorial.querySelectorAll('.tutorial-next');
+    nextBtns.forEach(btn => {
+      btn.addEventListener('click', () => this.nextStep());
+    });
+
+    // Previous buttons
+    const prevBtns = this.tutorial.querySelectorAll('.tutorial-prev');
+    prevBtns.forEach(btn => {
+      btn.addEventListener('click', () => this.prevStep());
+    });
+
+    // Finish button
+    const finishBtn = this.tutorial.querySelector('.tutorial-finish');
+    if (finishBtn) {
+      finishBtn.addEventListener('click', () => this.complete());
+    }
+
+    // Progress dots (allow clicking to jump to steps)
+    const dots = this.tutorial.querySelectorAll('.tutorial-progress-dot');
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => this.goToStep(index + 1));
+    });
+
+    // Close on overlay click
+    const overlay = this.tutorial.querySelector('.tutorial-overlay');
+    if (overlay) {
+      overlay.addEventListener('click', () => this.skip());
+    }
+  }
+
+  cachePreviewElements() {
+    if (!this.tutorial) return;
+
+    this.sectionPreviewEls = Array.from(this.tutorial.querySelectorAll('.tutorial-preview--sections .preview-section'));
+    this.itemPreviewEls = Array.from(this.tutorial.querySelectorAll('.tutorial-preview--items .preview-item'));
+    this.sectionPreviewLabel = this.tutorial.querySelector('[data-section-preview-label]');
+    this.itemPreviewLabel = this.tutorial.querySelector('[data-item-preview-label]');
+    this.updateSectionPreview(0, true);
+    this.updateItemPreview(0, true);
+  }
+
+  updateSectionPreview(direction = 0, reset = false) {
+    if (!this.sectionPreviewEls.length) return;
+
+    if (reset) {
+      this.sectionPreviewIndex = 0;
+    } else if (direction !== 0) {
+      this.sectionPreviewIndex = (this.sectionPreviewIndex + direction + this.sectionPreviewEls.length) % this.sectionPreviewEls.length;
+    }
+
+    const activeSection = this.sectionPreviewEls[this.sectionPreviewIndex];
+    this.sectionPreviewEls.forEach((el, index) => {
+      el.classList.toggle('active', index === this.sectionPreviewIndex);
+    });
+
+    if (this.sectionPreviewLabel && activeSection) {
+      this.sectionPreviewLabel.textContent = activeSection.dataset.label || `Section ${this.sectionPreviewIndex + 1}`;
+    }
+  }
+
+  updateItemPreview(direction = 0, reset = false) {
+    if (!this.itemPreviewEls.length) return;
+
+    if (reset) {
+      this.itemPreviewIndex = 0;
+    } else if (direction !== 0) {
+      this.itemPreviewIndex = (this.itemPreviewIndex + direction + this.itemPreviewEls.length) % this.itemPreviewEls.length;
+    }
+
+    const activeItem = this.itemPreviewEls[this.itemPreviewIndex];
+    this.itemPreviewEls.forEach((el, index) => {
+      el.classList.toggle('active', index === this.itemPreviewIndex);
+    });
+
+    if (this.itemPreviewLabel && activeItem) {
+      this.itemPreviewLabel.textContent = activeItem.dataset.label || `Item ${this.itemPreviewIndex + 1}`;
+    }
+  }
+
+  getHorizontalDirection(key) {
+    if (['ArrowLeft', 'h', 'H'].includes(key)) return -1;
+    if (['ArrowRight', 'l', 'L'].includes(key)) return 1;
+    return 0;
+  }
+
+  getVerticalDirection(key) {
+    if (['ArrowUp', 'k', 'K'].includes(key)) return -1;
+    if (['ArrowDown', 'j', 'J'].includes(key)) return 1;
+    return 0;
+  }
+
+  getNumberKey(key, code) {
+    // Check for number keys 1-5
+    const validKeys = ['1', '2', '3', '4', '5'];
+    const validCodes = ['Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Numpad1', 'Numpad2', 'Numpad3', 'Numpad4', 'Numpad5'];
+
+    if (validKeys.includes(key) || validCodes.includes(code)) {
+      return parseInt(key) || parseInt(code.replace(/\D/g, ''));
+    }
+    return null;
+  }
+
+  flashNumberKey(code) {
+    if (!this.tutorial) return;
+
+    // Normalize numpad keys to regular digit codes
+    const normalizedCode = code.startsWith('Numpad') ? code.replace('Numpad', 'Digit') : code;
+    const keyEls = this.tutorial.querySelectorAll(`.tutorial-key[data-key="${normalizedCode}"]`);
+    if (!keyEls.length) return;
+
+    keyEls.forEach(keyEl => {
+      keyEl.classList.add('pressed');
+
+      if (this.keyFlashTimers.has(keyEl)) {
+        clearTimeout(this.keyFlashTimers.get(keyEl));
+      }
+
+      const timeout = setTimeout(() => {
+        keyEl.classList.remove('pressed');
+        this.keyFlashTimers.delete(keyEl);
+      }, 200);
+
+      this.keyFlashTimers.set(keyEl, timeout);
+    });
+  }
+
+  normalizeKeyForPreview(key) {
+    const map = {
+      h: 'ArrowLeft',
+      H: 'ArrowLeft',
+      l: 'ArrowRight',
+      L: 'ArrowRight',
+      j: 'ArrowDown',
+      J: 'ArrowDown',
+      k: 'ArrowUp',
+      K: 'ArrowUp'
+    };
+    return map[key] || key;
+  }
+
+  flashKey(key) {
+    if (!this.tutorial) return;
+    const normalized = this.normalizeKeyForPreview(key);
+    const keyEls = this.tutorial.querySelectorAll(`.tutorial-key[data-key="${normalized}"]`);
+    if (!keyEls.length) return;
+
+    keyEls.forEach(keyEl => {
+      keyEl.classList.add('pressed');
+
+      if (this.keyFlashTimers.has(keyEl)) {
+        clearTimeout(this.keyFlashTimers.get(keyEl));
+      }
+
+      const timeout = setTimeout(() => {
+        keyEl.classList.remove('pressed');
+        this.keyFlashTimers.delete(keyEl);
+      }, 200);
+
+      this.keyFlashTimers.set(keyEl, timeout);
+    });
+  }
+
+  clearKeyFlashTimers() {
+    this.keyFlashTimers.forEach(timeout => clearTimeout(timeout));
+    this.keyFlashTimers.clear();
+
+    if (this.tutorial) {
+      this.tutorial.querySelectorAll('.tutorial-key.pressed').forEach(el => el.classList.remove('pressed'));
+    }
+  }
+
+  clearStepAdvanceTimeout() {
+    if (this.stepAdvanceTimeout) {
+      clearTimeout(this.stepAdvanceTimeout);
+      this.stepAdvanceTimeout = null;
+    }
+  }
+
+  scheduleStepAdvance(stepNumber) {
+    this.clearStepAdvanceTimeout();
+    this.stepAdvanceTimeout = setTimeout(() => {
+      if (this.currentStep === stepNumber) {
+        this.nextStep();
+      }
+    }, 1200);
+  }
+}
+
+// Initialize tutorial
+let tutorialInstance = null;
+
+function initTutorial() {
+  tutorialInstance = new NavigationTutorial();
+  tutorialInstance.init();
+}
 
 // Image Modal Functionality
 function initImageModal() {
