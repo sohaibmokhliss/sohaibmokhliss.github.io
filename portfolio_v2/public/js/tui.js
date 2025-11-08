@@ -1442,6 +1442,11 @@ class NavigationTutorial {
   }
 
   init() {
+    // Don't show tutorial on mobile devices
+    if (window.innerWidth <= 768) {
+      return;
+    }
+
     // Check if tutorial has been completed
     if (localStorage.getItem('portfolio-tutorial-completed')) {
       return;
