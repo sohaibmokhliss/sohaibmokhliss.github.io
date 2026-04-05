@@ -13,7 +13,7 @@ const LanguageManager = {
       skills: 'Skills - Tools',
       certifications: 'Certifications',
       windowTitle: 'Sohaib Mokhliss - Portfolio Terminal',
-      homeIntro: "Hi! I'm <span class=\"text-blue\">Sohaib Mokhliss</span>, a security-minded engineer building <span class=\"text-orange\">DevOps automation</span> and <span class=\"text-pink\">resilient infrastructures</span>."
+      homeIntro: "Hi! I'm <span class=\"text-blue\">Sohaib Mokhliss</span>, a builder interested in <span class=\"text-orange\">development</span>, <span class=\"text-pink\">DevOps</span>, and secure systems."
     },
     fr: {
       home: 'Accueil',
@@ -22,7 +22,7 @@ const LanguageManager = {
       skills: 'Compétences - Outils',
       certifications: 'Certifications',
       windowTitle: 'Sohaib Mokhliss - Portfolio Terminal',
-      homeIntro: "Salut ! Je suis <span class=\"text-blue\">Sohaib Mokhliss</span>, un ingénieur orienté sécurité qui crée des <span class=\"text-orange\">automatismes DevOps</span> et des <span class=\"text-pink\">infrastructures résilientes</span>."
+      homeIntro: "Salut ! Je suis <span class=\"text-blue\">Sohaib Mokhliss</span>, passionné par le <span class=\"text-orange\">développement</span>, le <span class=\"text-pink\">DevOps</span> et les systèmes sécurisés."
     }
   },
 

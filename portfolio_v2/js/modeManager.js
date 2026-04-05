@@ -51,6 +51,7 @@ const ModeManager = {
     if (mode === 'terminal') {
       layout.classList.add('terminal-mode');
       layout.classList.remove('gui-mode');
+      document.body.classList.add('terminal-mode-active');
 
       if (window.matchMedia && window.matchMedia('(max-width: 768px)').matches) {
         setTimeout(() => {
@@ -66,10 +67,14 @@ const ModeManager = {
     } else {
       layout.classList.add('gui-mode');
       layout.classList.remove('terminal-mode');
+      document.body.classList.remove('terminal-mode-active');
     }
 
     // Update nav toggle button
     this.updateNavToggleButton();
+    window.dispatchEvent(new CustomEvent('portfolioModeChanged', {
+      detail: { mode }
+    }));
   },
 
   updateNavToggleButton() {

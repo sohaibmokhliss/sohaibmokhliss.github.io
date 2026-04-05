@@ -6,9 +6,9 @@
       "githubUrl": "https://github.com/sohaibmokhliss/todo-planner",
       "demoUrl": "https://todo-planner-six.vercel.app",
       "content": [
-        "A modern to-do & personal planning web application designed to help users stay organized and productive.",
-        "Features include task management with create, organize, and complete tasks functionality, smart scheduling with due dates, reminders, and calendar integration, project organization for better workflow, tags & labels for efficient categorization, recurring tasks that repeat automatically, and smart notifications to never miss a deadline.",
-        "Built with a responsive design that works seamlessly across all devices, offering both light and dark mode themes for comfortable viewing in any environment."
+        "A full-stack planning application designed to make personal organization feel fast, clear, and low-friction.",
+        "The product combines task tracking, scheduling, categorization, and reminders in a workflow that stays usable across desktop and mobile devices.",
+        "It reflects my interest in building complete products where interface quality, backend logic, and security-aware implementation all matter."
       ],
       "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT Authentication"],
       "images": ["todo-planner1.webp", "todo-planner2.webp", "todo-planner3.webp", "todo-planner4.webp"]
@@ -19,25 +19,25 @@
       "githubUrl": "https://github.com/sohaibmokhliss/sohaibmokhliss.github.io",
       "demoUrl": "https://sohaibmokhliss.github.io",
       "content": [
-        "An interactive terminal-inspired portfolio website showcasing my work in Cybersecurity, Network Engineering, and DevOps with a unique retro command-line interface.",
-        "Features a dual-mode interface with both GUI and terminal modes, multilingual support (English/French), dark/light theme toggle, and smooth animations. The terminal mode includes a fully functional command-line interface with autocomplete, command history, and a custom file system navigation experience.",
-        "Built from scratch using vanilla JavaScript with no dependencies, demonstrating clean code architecture and modern web development practices. Optimized for performance with lazy loading, responsive design, and accessibility features."
+        "An interactive portfolio that combines a visual interface with a terminal-inspired navigation mode.",
+        "The goal was to make the site memorable without losing usability: bilingual content, theme switching, keyboard navigation, and a small command-line experience all live in the same product.",
+        "It is also a showcase of how far careful vanilla JavaScript, CSS, and HTML can go when the structure is deliberate."
       ],
       "technologies": ["JavaScript", "CSS3", "HTML5", "Vite", "Git"],
       "images": ["portfolio1.webp", "portfolio2.webp", "portfolio3.webp", "portfolio4.webp"]
     },
     {
-      "name": "DevOps Internship Infrastructure",
+      "name": "BMCE Share Request Platform",
       "year": 2025,
       "githubUrl": null,
       "demoUrl": null,
-      "reportUrl": "/documents/rapport_de_stage_4IIR.pdf",
+      "reportUrl": null,
       "content": [
-        "Two-month internship delivering a full DevOps infrastructure transformation, moving from a Proxmox-based lab environment to a production-ready setup tailored for a growing startup.",
-        "Designed and deployed HAProxy load balancing, Harbor as a hardened private container registry, and Rancher for unified Kubernetes and container fleet management.",
-        "Industrialized the deployments with Ansible playbooks to provide reproducible, idempotent Infrastructure as Code across laboratory and production environments while handling SELinux, firewalld, and port conflicts on AlmaLinux."
+        "A full-stack share request management platform built around Spring Boot microservices, React, PostgreSQL, Kafka, and Eureka.",
+        "The platform handles authentication, request processing, exports, audit flows, and role-based access through a structured service architecture.",
+        "This project reflects where I am now: interested in development and DevOps, while keeping security, access control, and operational reliability central to the design."
       ],
-      "technologies": ["HAProxy", "Harbor", "Rancher", "Ansible", "Proxmox VE", "AlmaLinux"],
+      "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"],
       "images": []
     }
   ]

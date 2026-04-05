@@ -1,47 +1,47 @@
 {
   "data": [
     {
-      "name": "Penetration Testing",
+      "name": "Application Development",
       "content": [
-        "Experienced in conducting security assessments and intrusion testing.",
-        "Proficient in identifying vulnerabilities in web applications and networks.",
-        "Hands-on practice with modern penetration testing tools and methodologies."
+        "Interested in building applications that are useful, maintainable, and thoughtful in both UX and structure.",
+        "Comfortable moving from interface work into application logic and implementation details.",
+        "I treat development as engineering work, not just visual assembly."
       ],
       "snippet": null
     },
     {
-      "name": "Network Security",
+      "name": "Backend & APIs",
       "content": [
-        "Strong understanding of network protocols and security measures.",
-        "Experience monitoring network traffic and identifying security threats.",
-        "Knowledge of firewalls, IDS/IPS, and network segmentation."
-      ],
-      "snippet": null
-    },
-    {
-      "name": "Incident Response",
-      "content": [
-        "Trained in responding to security incidents and breaches.",
-        "Experience with security monitoring and threat detection.",
-        "Familiar with incident response procedures and best practices."
-      ],
-      "snippet": null
-    },
-    {
-      "name": "Security Analysis",
-      "content": [
-        "Skilled in analyzing security vulnerabilities and threats.",
-        "Experience with vulnerability assessment tools and techniques.",
-        "Ability to provide security recommendations and implement protective measures."
+        "Interested in backend systems, business logic, authentication flows, and service-to-service thinking.",
+        "Comfortable reasoning about APIs, data flow, and the operational side of application architecture.",
+        "I enjoy turning product requirements into structured backend behavior."
       ],
       "snippet": null
     },
     {
       "name": "DevOps & Automation",
       "content": [
-        "Growing interest in DevOps practices and automation.",
-        "Experience with system administration tasks.",
-        "Curiosity for cloud security and infrastructure management."
+        "Building repeatable workflows for delivery, system administration, and infrastructure setup.",
+        "Interested in CI/CD, platform reliability, and reducing manual operational work.",
+        "Approach DevOps as a discipline that should improve both speed and system safety."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "Security Engineering",
+      "content": [
+        "Strong security foundations still shape how I think about software, infrastructure, and deployment choices.",
+        "Comfortable analyzing risk, identifying weak points, and improving systems with secure-by-default thinking.",
+        "I see security as part of product and platform quality, not as a separate afterthought."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "Infrastructure & Cloud",
+      "content": [
+        "Comfortable working in Linux environments, virtualized setups, and container-driven workflows.",
+        "Interested in infrastructure that is observable, reproducible, and easier to operate over time.",
+        "I enjoy the layer where development, deployment, and platform reliability meet."
       ],
       "snippet": null
     }

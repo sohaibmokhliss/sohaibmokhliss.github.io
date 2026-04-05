@@ -2,26 +2,26 @@
   "data": [
     {
       "content": [
-        "Hi, I'm {{Sohaib Mokhliss}} 👨‍💻",
-        "5th-year {{Computer & Network Engineering}} student at EMSI with a background in {{Cybersecurity}}."
+        "I'm {{Sohaib Mokhliss}}, a {{Computer & Network Engineering}} student interested in {{development}}, {{DevOps}}, and {{security-first engineering}}.",
+        "I like building applications and systems that combine {{clean architecture}}, {{automation}}, and {{strong security principles}}."
       ]
     },
     {
       "content": [
-        "I hold a {{Specialized Technician}} diploma in Cybersecurity from ISTA and have hands-on experience through internships at {{HPS}}, {{CIH}}, and {{ITPay}}.",
-        "Started with {{security}} and {{penetration testing}}, I've grown increasingly interested in {{DevOps}} and infrastructure automation."
+        "I hold a {{Specialized Technician}} diploma in Cybersecurity from ISTA and gained hands-on experience through internships at {{HPS}}, {{CIH}}, and {{ITPay}}.",
+        "My path started with {{security assessment}} and {{penetration testing}}, then grew into {{application development}}, {{CI/CD}}, and platform-oriented engineering."
       ]
     },
     {
       "content": [
-        "Current focus: {{Creation, configuration and maintenance}} of information systems, {{CI/CD automation}}, and modern DevOps practices.",
-        "Passionate about {{virtualization}} and {{hypervisors}}, I love working with virtual infrastructure and containerized environments to build flexible, efficient systems."
+        "Current focus: {{full-stack development}}, {{backend systems}}, {{CI/CD automation}}, and the day-to-day work required to keep platforms {{reliable}}, {{repeatable}}, and {{secure}}.",
+        "I especially enjoy working across {{product development}}, {{Linux environments}}, and container-based infrastructure without losing sight of secure design."
       ]
     },
     {
       "content": [
-        "Connect with me on <a href=\"https://www.linkedin.com/in/sohaib-mokhliss/\" target=\"_blank\" class=\"text-blue\">LinkedIn</a> or explore my work on <a href=\"https://github.com/sohaibmokhliss\" target=\"_blank\" class=\"text-pink\">GitHub</a>.",
-        "Feel free to reach out at <a href=\"mailto:sohaibmokhliss@gmail.com\" class=\"text-orange\">sohaibmokhliss@gmail.com</a> or call {{0679035810}}"
+        "You can connect with me on <a href=\"https://www.linkedin.com/in/sohaib-mokhliss/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue\">LinkedIn</a> or review my work on <a href=\"https://github.com/sohaibmokhliss\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-pink\">GitHub</a>.",
+        "For internships, collaboration, or freelance opportunities, reach me at <a href=\"mailto:sohaibmokhliss@gmail.com\" class=\"text-orange\">sohaibmokhliss@gmail.com</a>."
       ]
     }
   ]

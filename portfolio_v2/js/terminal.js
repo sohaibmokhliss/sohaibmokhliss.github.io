@@ -300,12 +300,21 @@ const Terminal = {
 
     output.scrollTop = output.scrollHeight;
 
+    const inputLine = document.querySelector('.terminal-input-line');
+    if (inputLine && typeof inputLine.scrollIntoView === 'function') {
+      inputLine.scrollIntoView({
+        behavior,
+        block: 'end',
+        inline: 'nearest'
+      });
+    }
+
     if (this.isMobileViewport()) {
       const lastLine = output.lastElementChild;
       if (lastLine && typeof lastLine.scrollIntoView === 'function') {
         lastLine.scrollIntoView({
           behavior,
-          block: 'center',
+          block: 'nearest',
           inline: 'nearest'
         });
       }
@@ -674,6 +683,7 @@ Navigation:
 
     this.printPrompt();
     this.updateScrollPosition('smooth');
+    this.focusInput();
   },
 
   attachEventListeners() {

@@ -6,9 +6,9 @@
       "date": "June–July 2023 (2 months)",
       "title": "Cybersecurity Analyst",
       "content": [
-        "Worked with the wider security team on network monitoring and vulnerability assessment.",
-        "Monitored network traffic and identified security vulnerabilities.",
-        "Implemented security measures to protect critical systems and infrastructure."
+        "Worked with the security team on monitoring, vulnerability analysis, and operational hardening across enterprise systems.",
+        "Reviewed network activity, identified weak points, and contributed to remediation efforts with practical security controls.",
+        "Strengthened my understanding of how security operations support business-critical infrastructure at scale."
       ],
       "technologies": ["Network Security", "Vulnerability Assessment", "Security Monitoring", "Incident Response"]
     },
@@ -18,9 +18,9 @@
       "date": "2024 (1 month)",
       "title": "Penetration Tester",
       "content": [
-        "Collaborated with the development team on security testing initiatives.",
-        "Participated in intrusion testing and vulnerability assessments.",
-        "Gained exposure to web design/content and SEO/branding tasks."
+        "Supported security testing activities focused on web applications and common attack surfaces.",
+        "Participated in vulnerability assessment workflows, reporting, and practical validation of findings.",
+        "Built a stronger offensive-security mindset while learning how to communicate technical risk clearly."
       ],
       "technologies": ["Penetration Testing", "Web Application Security", "Security Testing", "Vulnerability Assessment"]
     },
@@ -30,9 +30,9 @@
       "date": "August–September 2025 (2 months)",
       "title": "DevOps & Security Intern",
       "content": [
-        "Contributed to payment systems security and infrastructure.",
-        "Worked on automation and system administration tasks.",
-        "Gained hands-on experience with modern DevOps practices."
+        "Worked on infrastructure and automation for a payment-focused environment where reliability and security both mattered.",
+        "Contributed to administration, tooling, and operational improvements aimed at making deployment and maintenance more consistent.",
+        "This internship pushed my profile beyond security into practical DevOps execution and infrastructure thinking."
       ],
       "technologies": ["DevOps", "Security", "Automation", "System Administration"]
     }
