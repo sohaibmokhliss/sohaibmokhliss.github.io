@@ -6,9 +6,9 @@
       "githubUrl": null,
       "demoUrl": null,
       "content": [
-        "A web and mobile platform for managing purchase operations and OPV workflows (Offre Publique de Vente), with dedicated admin and mobile user journeys.",
-        "The screenshots highlight the login flow, OPV administration, dashboard activity, catalog browsing, and request submission on mobile.",
-        "This project reflects my work on product delivery with authentication, access control, and operational reliability at the center of the design."
+        "A web and mobile platform for BMCE OPV workflows, designed to support both internal administration and client-side request journeys.",
+        "The screenshots show the login experience, OPV administration, dashboard visibility, and the mobile flow for browsing and submitting requests.",
+        "Built with a product-first mindset, the project puts authentication, role-based access, and operational reliability at the center of the experience."
       ],
       "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"],
       "images": ["bmce-login-screen.png", "bmce-admin-opv-screen.png", "bmce-spectator-dashboard-screen.png", "bmce-mobile-login-screen.jpeg", "bmce-mobile-home-screen.jpeg", "bmce-mobile-opv-catalog-screen.jpeg", "bmce-mobile-opv-request-screen.jpeg"]
