@@ -6,9 +6,9 @@
       "date": "juin–juillet 2023 (2 mois)",
       "title": "Analyste cybersécurité",
       "content": [
-        "Collaboration avec l'équipe de sécurité élargie sur la surveillance réseau et l'évaluation des vulnérabilités.",
-        "Surveillance du trafic réseau et identification des vulnérabilités de sécurité.",
-        "Mise en œuvre de mesures de sécurité pour protéger les systèmes et infrastructures critiques."
+        "Collaboration avec l'équipe de sécurité sur la surveillance réseau et l'évaluation des vulnérabilités.",
+        "Analyse du trafic réseau, identification des points faibles et contribution aux mesures de remédiation.",
+        "Renforcement de ma compréhension du rôle des opérations de sécurité dans la protection des infrastructures critiques."
       ],
       "technologies": ["Sécurité réseau", "Évaluation des vulnérabilités", "Surveillance de sécurité", "Réponse aux incidents"]
     },
@@ -18,9 +18,9 @@
       "date": "2024 (1 mois)",
       "title": "Pentester",
       "content": [
-        "Collaboration avec l'équipe de développement sur les initiatives de tests de sécurité.",
-        "Participation à des tests d'intrusion et évaluations de vulnérabilités.",
-        "Exposition à des tâches de design web/contenu et SEO/branding."
+        "Participation à des tests d'intrusion et à des évaluations de vulnérabilités sur des applications web.",
+        "Contribution aux workflows de validation, de reporting et de vérification des failles détectées.",
+        "Développement d'une vision plus offensive de la sécurité et d'une meilleure communication du risque technique."
       ],
       "technologies": ["Tests d'intrusion", "Sécurité des applications web", "Tests de sécurité", "Évaluation des vulnérabilités"]
     },
@@ -30,9 +30,9 @@
       "date": "août–septembre 2025 (2 mois)",
       "title": "Stagiaire DevOps & Sécurité",
       "content": [
-        "Contribution à la sécurité et l'infrastructure des systèmes de paiement.",
-        "Travail sur des tâches d'automatisation et d'administration système.",
-        "Acquisition d'une expérience pratique avec les pratiques DevOps modernes."
+        "Travail sur l'infrastructure et l'automatisation dans un environnement de paiement où fiabilité et sécurité comptaient autant.",
+        "Contribution à l'administration, aux outils et aux améliorations opérationnelles pour rendre les déploiements plus cohérents.",
+        "Ce stage m'a fait évoluer de la sécurité vers une pratique plus concrète du DevOps et de l'infrastructure."
       ],
       "technologies": ["DevOps", "Sécurité", "Automatisation", "Administration système"]
     }
