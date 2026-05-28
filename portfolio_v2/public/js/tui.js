@@ -20,6 +20,7 @@ const state = {
   theme: resolveInitialTheme(),
   attached: false,
   introMotionPlayed: false,
+  modalGallery: null,
 };
 
 const elements = {};
@@ -55,8 +56,6 @@ function cacheElements() {
   elements.modal = document.getElementById("image-modal");
   elements.modalImage = document.getElementById("modal-image");
   elements.modalClose = document.querySelector(".image-modal-close");
-  elements.modalPrev = document.querySelector(".image-modal-prev");
-  elements.modalNext = document.querySelector(".image-modal-next");
   elements.modalCounter = document.querySelector(".image-modal-counter");
   elements.windowTitle = document.querySelector(".window-title");
   elements.mobileNavToggle = document.getElementById("mobile-nav-toggle");
@@ -523,12 +522,6 @@ function updateModalImage() {
   if (elements.modalCounter) {
     elements.modalCounter.textContent = `${index + 1} / ${images.length}`;
   }
-  if (elements.modalPrev) {
-    elements.modalPrev.disabled = index <= 0;
-  }
-  if (elements.modalNext) {
-    elements.modalNext.disabled = index >= images.length - 1;
-  }
 }
 
 function openImageModal(projectName, images, index) {
@@ -705,14 +698,20 @@ function attachEventListeners() {
   if (elements.modalClose) {
     elements.modalClose.addEventListener("click", closeImageModal);
   }
-  if (elements.modalPrev) {
-    elements.modalPrev.addEventListener("click", () => stepModalImage(-1));
-  }
-  if (elements.modalNext) {
-    elements.modalNext.addEventListener("click", () => stepModalImage(1));
-  }
 
   if (elements.modal) {
+    let touchStartX = 0;
+    let touchEndX = 0;
+    elements.modal.addEventListener("touchstart", (event) => {
+      touchStartX = event.changedTouches?.[0]?.screenX || 0;
+    }, { passive: true });
+    elements.modal.addEventListener("touchend", (event) => {
+      touchEndX = event.changedTouches?.[0]?.screenX || 0;
+      const delta = touchEndX - touchStartX;
+      if (Math.abs(delta) > 50) {
+        stepModalImage(delta < 0 ? 1 : -1);
+      }
+    }, { passive: true });
     elements.modal.addEventListener("click", (event) => {
       if (event.target === elements.modal) {
         closeImageModal();

@@ -947,29 +947,6 @@ body.terminal-mode-active {
   cursor: pointer;
 }
 
-.image-modal-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 3.25rem;
-  height: 3.25rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text);
-  font-size: 2rem;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.image-modal-prev {
-  left: 1.5rem;
-}
-
-.image-modal-next {
-  right: 1.5rem;
-}
-
 .image-modal-counter {
   position: absolute;
   bottom: 1.5rem;
@@ -981,6 +958,7 @@ body.terminal-mode-active {
   color: #fff;
   font-size: 0.9rem;
 }
+
 
 @media (max-width: 960px) {
   #layout.gui-mode {
