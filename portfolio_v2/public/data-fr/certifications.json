@@ -145,18 +145,6 @@
       "certificateUrl": "/certificates/coursera-react-basics.pdf"
     },
     {
-      "name": "Mesure d'impact et gestion pour les ODD",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Mesure d'impact et gestion pour les ODD",
-      "content": [
-        "Apprentissage de cadres de mesure d'impact alignés sur les Objectifs de Développement Durable des Nations Unies.",
-        "Conception de plans de suivi des résultats et d'indicateurs pour des initiatives technologiques à impact.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-impact-measurement-sdgs.pdf"
-    },
-    {
       "name": "CSS3",
       "issuer": "Coursera",
       "date": "Complété",
@@ -191,54 +179,6 @@
         "Certificat disponible ci-dessous."
       ],
       "certificateUrl": "/certificates/coursera-software-design-project-management.pdf"
-    },
-    {
-      "name": "Collaborer efficacement pour réussir professionnellement",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Collaborer efficacement pour réussir professionnellement",
-      "content": [
-        "Développement des compétences de communication interpersonnelle, de résolution de conflits et d'alignement des parties prenantes.",
-        "Pratique de techniques de conduite d'initiatives collaboratives dans des équipes internationales et à distance.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-collaborate-effectively.pdf"
-    },
-    {
-      "name": "Réussir sa présentation",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Réussir sa présentation",
-      "content": [
-        "Amélioration du storytelling, de la conception de supports visuels et des techniques de prise de parole.",
-        "Pratique de stratégies de communication persuasive et d'exercices de confiance en soi.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-successful-presentation.pdf"
-    },
-    {
-      "name": "La recherche documentaire",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "La recherche documentaire",
-      "content": [
-        "Développement de stratégies de recherche académique, d'évaluation des sources et de rédaction structurée.",
-        "Renforcement des compétences d'information pour la rédaction technique fondée sur des preuves.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-recherche-documentaire.pdf"
-    },
-    {
-      "name": "Villes africaines",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Villes africaines",
-      "content": [
-        "Étude des défis du développement urbain et des stratégies de résilience dans les grandes villes africaines.",
-        "Mise en relation des enjeux socio-économiques avec la planification des infrastructures et les solutions smart city.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-villes-africaines.pdf"
     }
   ]
 }
