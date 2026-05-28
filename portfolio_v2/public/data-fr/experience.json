@@ -30,9 +30,9 @@
       "date": "à partir du 18 mars 2025 (5 mois)",
       "title": "Stagiaire DevOps & Sécurité",
       "content": [
-        "Travail sur l'infrastructure et l'automatisation dans un environnement de paiement où fiabilité et sécurité comptaient autant.",
-        "Contribution à l'administration, aux outils et aux améliorations opérationnelles pour rendre les déploiements plus cohérents.",
-        "Ce stage m'a fait évoluer de la sécurité vers une pratique plus concrète du DevOps et de l'infrastructure."
+        "Travail sur l'infrastructure et l'automatisation dans un environnement de paiement où la fiabilité et la sécurité étaient essentielles.",
+        "Contribution à l'administration, aux outils et aux améliorations opérationnelles pour rendre les déploiements et la maintenance plus cohérents.",
+        "Ce stage a renforcé mes compétences concrètes en DevOps et ma compréhension de l'infrastructure en production."
       ],
       "technologies": ["DevOps", "Sécurité", "Automatisation", "Administration système"]
     },
@@ -43,8 +43,8 @@
       "title": "Stagiaire plateforme BMCE OPV",
       "content": [
         "Travail sur une plateforme web et mobile pour les opérations d'achat et les workflows OPV.",
-        "Contribution à l'authentification, aux accès par rôle, aux parcours orientés audit et aux améliorations produit de la plateforme.",
-        "Collaboration sur la livraison fonctionnelle et l'exécution technique, entre logique produit et approche DevOps."
+        "Contribution à l'authentification, aux accès par rôle et aux parcours orientés audit, tout en améliorant l'expérience globale de la plateforme.",
+        "Livraison produit et exécution technique réunies dans un projet où la fiabilité et le contrôle d'accès étaient essentiels."
       ],
       "technologies": ["Développement web", "Mobile", "Authentification", "OPV"]
     }

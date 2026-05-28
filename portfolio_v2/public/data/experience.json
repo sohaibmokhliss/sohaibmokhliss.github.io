@@ -30,9 +30,9 @@
       "date": "18 March 2025 onward (5 months)",
       "title": "DevOps & Security Intern",
       "content": [
-        "Worked on infrastructure and automation for a payment-focused environment where reliability and security both mattered.",
-        "Contributed to administration, tooling, and operational improvements aimed at making deployment and maintenance more consistent.",
-        "This internship pushed my profile beyond security into practical DevOps execution and infrastructure thinking."
+        "Worked on infrastructure and automation in a payment-focused environment where reliability and security were both critical.",
+        "Supported administration, tooling, and operational improvements to make deployment and maintenance more consistent.",
+        "This internship strengthened my practical DevOps skills and deepened my understanding of infrastructure in production settings."
       ],
       "technologies": ["DevOps", "Security", "Automation", "System Administration"]
     },
@@ -43,8 +43,8 @@
       "title": "BMCE OPV Platform Intern",
       "content": [
         "Worked on a web and mobile platform supporting purchase operations and OPV workflows.",
-        "Contributed to authentication, role-based access, audit-oriented flows, and product improvements tied to the platform experience.",
-        "Collaborated on both functional delivery and technical execution, combining product thinking with DevOps-minded work."
+        "Contributed to authentication, role-based access, and audit-oriented flows, while helping improve the overall platform experience.",
+        "Combined product delivery with technical execution in a project where reliability and access control mattered."
       ],
       "technologies": ["Web Development", "Mobile", "Authentication", "OPV"]
     }
