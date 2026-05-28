@@ -10,7 +10,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://github.com/d-browncj/portfolio_v2.git"
+    "deploy": "gh-pages -d dist -r https://github.com/sohaibmokhliss/sohaibmokhliss.github.io.git"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
