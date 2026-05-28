@@ -1,6 +1,20 @@
 {
   "data": [
     {
+      "name": "Plateforme BMCE OPV",
+      "year": 2025,
+      "githubUrl": null,
+      "demoUrl": null,
+      "reportUrl": "/documents/rapport_de_stage_4IIR.pdf",
+      "content": [
+        "Plateforme web et mobile dédiée à la gestion des opérations d'achat et des flux OPV (Offre Publique de Vente), construite autour d'une architecture moderne et modulaire.",
+        "Le système gère l'authentification, le traitement des demandes, les exports, les flux d'audit et les accès par rôles à travers une architecture de services structurée.",
+        "Ce projet reflète mon travail sur le développement produit et le DevOps, avec la sécurité, le contrôle d'accès et la fiabilité opérationnelle au centre de la conception."
+      ],
+      "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"],
+      "images": []
+    },
+    {
       "name": "Todo Planner",
       "year": 2025,
       "githubUrl": "https://github.com/sohaibmokhliss/todo-planner",
@@ -25,20 +39,6 @@
       ],
       "technologies": ["JavaScript", "CSS3", "HTML5", "Vite", "Git"],
       "images": ["portfolio1.webp", "portfolio2.webp", "portfolio3.webp", "portfolio4.webp"]
-    },
-    {
-      "name": "Plateforme BMCE OPV",
-      "year": 2025,
-      "githubUrl": null,
-      "demoUrl": null,
-      "reportUrl": "/documents/rapport_de_stage_4IIR.pdf",
-      "content": [
-        "Plateforme web et mobile dédiée à la gestion des opérations d'achat et des flux OPV (Offre Publique de Vente), construite autour d'une architecture moderne et modulaire.",
-        "Le système gère l'authentification, le traitement des demandes, les exports, les flux d'audit et les accès par rôles à travers une architecture de services structurée.",
-        "Ce projet reflète mon travail sur le développement produit et le DevOps, avec la sécurité, le contrôle d'accès et la fiabilité opérationnelle au centre de la conception."
-      ],
-      "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"],
-      "images": []
     }
   ]
 }
