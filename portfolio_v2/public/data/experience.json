@@ -25,16 +25,16 @@
       "technologies": ["Penetration Testing", "Web Application Security", "Security Testing", "Vulnerability Assessment"]
     },
     {
-      "name": "DevOps/Security Intern",
-      "company": "ITPay",
+      "name": "BMCE OPV Intern",
+      "company": "BMCE",
       "date": "18 March 2025 onward (5 months)",
-      "title": "DevOps & Security Intern",
+      "title": "Web & Mobile Platform / DevOps Intern",
       "content": [
-        "Worked on infrastructure and automation for a payment-focused environment where reliability and security both mattered.",
-        "Contributed to administration, tooling, and operational improvements aimed at making deployment and maintenance more consistent.",
-        "This internship pushed my profile beyond security into practical DevOps execution and infrastructure thinking."
+        "Worked on the web and mobile platform for purchase operations and OPV (Offre Publique de Vente), contributing to product development and DevOps tasks.",
+        "Supported authentication, request workflows, exports, audit-related flows, and role-based access across a structured service architecture.",
+        "This internship strengthened my ability to bridge development, access control, and operational reliability in a business-critical platform."
       ],
-      "technologies": ["DevOps", "Security", "Automation", "System Administration"]
+      "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"]
     }
   ]
 }
