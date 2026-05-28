@@ -8,7 +8,7 @@
     },
     {
       "content": [
-        "Je suis titulaire d'un diplôme de {{technicien spécialisé}} en Cybersécurité de l'ISTA et j'ai acquis une expérience pratique grâce à des stages chez {{HPS}}, {{CIH}} et {{ITPay}}.",
+        "Je suis titulaire d'un diplôme de {{technicien spécialisé}} en Cybersécurité de l'ISTA et j'ai acquis une expérience pratique grâce à des stages chez {{HPS}}, {{CIH}}, {{ITPay}} et {{BMCE}}.",
         "J'ai commencé par la {{sécurité}} et les {{tests d'intrusion}}, puis je me suis orienté vers le {{développement}}, le {{CI/CD}} et l'ingénierie de plateforme."
       ]
     },
@@ -21,7 +21,7 @@
     {
       "content": [
         "Connectez-vous avec moi sur <a href=\"https://www.linkedin.com/in/sohaib-mokhliss/\" target=\"_blank\" class=\"text-blue\">LinkedIn</a> ou explorez mon travail sur <a href=\"https://github.com/sohaibmokhliss\" target=\"_blank\" class=\"text-pink\">GitHub</a>.",
-        "N'hésitez pas à me contacter à <a href=\"mailto:sohaibmokhliss@gmail.com\" class=\"text-orange\">sohaibmokhliss@gmail.com</a> ou appelez {{0679035810}}"
+        "N'hésitez pas à me contacter à <a href=\"mailto:sohaibmokhliss@gmail.com\" class=\"text-orange\">sohaibmokhliss@gmail.com</a>."
       ]
     }
   ]
