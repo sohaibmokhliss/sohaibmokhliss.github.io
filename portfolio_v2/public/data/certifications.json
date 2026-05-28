@@ -144,18 +144,7 @@
       ],
       "certificateUrl": "/certificates/coursera-react-basics.pdf"
     },
-    {
-      "name": "Impact Measurement & Management for the SDGs",
-      "issuer": "Coursera",
-      "date": "Completed",
-      "title": "Impact Measurement & Management for the SDGs",
-      "content": [
-        "Learned frameworks for measuring social impact aligned with the United Nations Sustainable Development Goals.",
-        "Designed outcome tracking plans and KPIs for mission-driven technology initiatives.",
-        "Certificate available below."
-      ],
-      "certificateUrl": "/certificates/coursera-impact-measurement-sdgs.pdf"
-    },
+
     {
       "name": "CSS3",
       "issuer": "Coursera",
@@ -191,54 +180,6 @@
         "Certificate available below."
       ],
       "certificateUrl": "/certificates/coursera-software-design-project-management.pdf"
-    },
-    {
-      "name": "Collaborate Effectively for Professional Success",
-      "issuer": "Coursera",
-      "date": "Completed",
-      "title": "Collaborate Effectively for Professional Success",
-      "content": [
-        "Developed interpersonal communication, conflict resolution, and stakeholder alignment skills.",
-        "Practiced techniques for leading collaborative initiatives in multicultural, remote teams.",
-        "Certificate available below."
-      ],
-      "certificateUrl": "/certificates/coursera-collaborate-effectively.pdf"
-    },
-    {
-      "name": "Successful Presentation",
-      "issuer": "Coursera",
-      "date": "Completed",
-      "title": "Successful Presentation",
-      "content": [
-        "Enhanced presentation storytelling, slide design, and delivery techniques for technical audiences.",
-        "Practiced persuasive communication strategies and confidence-building exercises.",
-        "Certificate available below."
-      ],
-      "certificateUrl": "/certificates/coursera-successful-presentation.pdf"
-    },
-    {
-      "name": "La Recherche Documentaire",
-      "issuer": "Coursera",
-      "date": "Completed",
-      "title": "La Recherche Documentaire",
-      "content": [
-        "Developed academic research strategies, source evaluation techniques, and structured documentation.",
-        "Strengthened information literacy skills for evidence-based technical writing.",
-        "Certificate available below."
-      ],
-      "certificateUrl": "/certificates/coursera-recherche-documentaire.pdf"
-    },
-    {
-      "name": "Villes Africaines",
-      "issuer": "Coursera",
-      "date": "Completed",
-      "title": "Villes Africaines",
-      "content": [
-        "Studied urban development challenges and resilience strategies across major African cities.",
-        "Connected socio-economic insights with infrastructure planning and smart city solutions.",
-        "Certificate available below."
-      ],
-      "certificateUrl": "/certificates/coursera-villes-africaines.pdf"
     }
   ]
 }

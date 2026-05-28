@@ -31,7 +31,6 @@
       "year": 2025,
       "githubUrl": null,
       "demoUrl": null,
-      "reportUrl": null,
       "content": [
         "A full-stack share request management platform built around Spring Boot microservices, React, PostgreSQL, Kafka, and Eureka.",
         "The platform handles authentication, request processing, exports, audit flows, and role-based access through a structured service architecture.",
