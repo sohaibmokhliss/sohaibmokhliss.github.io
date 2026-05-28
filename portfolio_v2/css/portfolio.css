@@ -931,6 +931,7 @@ body.terminal-mode-active {
   max-height: 85vh;
   border-radius: 18px;
   border: 1px solid var(--border);
+  touch-action: pan-y;
 }
 
 .image-modal-close {
@@ -945,6 +946,29 @@ body.terminal-mode-active {
   color: var(--text);
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.image-modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.image-modal-prev {
+  left: 1.5rem;
+}
+
+.image-modal-next {
+  right: 1.5rem;
 }
 
 .image-modal-counter {
@@ -1163,5 +1187,11 @@ body.terminal-mode-active {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .image-modal-nav {
+    display: none;
   }
 }

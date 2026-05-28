@@ -56,6 +56,8 @@ function cacheElements() {
   elements.modal = document.getElementById("image-modal");
   elements.modalImage = document.getElementById("modal-image");
   elements.modalClose = document.querySelector(".image-modal-close");
+  elements.modalPrev = document.querySelector(".image-modal-prev");
+  elements.modalNext = document.querySelector(".image-modal-next");
   elements.modalCounter = document.querySelector(".image-modal-counter");
   elements.windowTitle = document.querySelector(".window-title");
   elements.mobileNavToggle = document.getElementById("mobile-nav-toggle");
@@ -522,6 +524,12 @@ function updateModalImage() {
   if (elements.modalCounter) {
     elements.modalCounter.textContent = `${index + 1} / ${images.length}`;
   }
+  if (elements.modalPrev) {
+    elements.modalPrev.disabled = index <= 0;
+  }
+  if (elements.modalNext) {
+    elements.modalNext.disabled = index >= images.length - 1;
+  }
 }
 
 function openImageModal(projectName, images, index) {
@@ -698,20 +706,49 @@ function attachEventListeners() {
   if (elements.modalClose) {
     elements.modalClose.addEventListener("click", closeImageModal);
   }
+  if (elements.modalPrev) {
+    elements.modalPrev.addEventListener("click", () => stepModalImage(-1));
+  }
+  if (elements.modalNext) {
+    elements.modalNext.addEventListener("click", () => stepModalImage(1));
+  }
 
   if (elements.modal) {
-    let touchStartX = 0;
-    let touchEndX = 0;
-    elements.modal.addEventListener("touchstart", (event) => {
-      touchStartX = event.changedTouches?.[0]?.screenX || 0;
-    }, { passive: true });
-    elements.modal.addEventListener("touchend", (event) => {
-      touchEndX = event.changedTouches?.[0]?.screenX || 0;
-      const delta = touchEndX - touchStartX;
-      if (Math.abs(delta) > 50) {
-        stepModalImage(delta < 0 ? 1 : -1);
+    let pointerStartX = 0;
+    let pointerStartY = 0;
+    let pointerEndX = 0;
+    let pointerEndY = 0;
+    let isDragging = false;
+
+    elements.modalImage?.addEventListener("pointerdown", (event) => {
+      if (event.pointerType === "mouse") return;
+      isDragging = true;
+      pointerStartX = event.clientX;
+      pointerStartY = event.clientY;
+      pointerEndX = event.clientX;
+      pointerEndY = event.clientY;
+      elements.modalImage.setPointerCapture?.(event.pointerId);
+    });
+
+    elements.modalImage?.addEventListener("pointermove", (event) => {
+      if (!isDragging) return;
+      pointerEndX = event.clientX;
+      pointerEndY = event.clientY;
+    });
+
+    const finishSwipe = () => {
+      if (!isDragging) return;
+      const deltaX = pointerEndX - pointerStartX;
+      const deltaY = pointerEndY - pointerStartY;
+      isDragging = false;
+      if (Math.abs(deltaX) > 60 && Math.abs(deltaX) > Math.abs(deltaY) * 1.2) {
+        stepModalImage(deltaX < 0 ? 1 : -1);
       }
-    }, { passive: true });
+    };
+
+    elements.modalImage?.addEventListener("pointerup", finishSwipe);
+    elements.modalImage?.addEventListener("pointercancel", finishSwipe);
+
     elements.modal.addEventListener("click", (event) => {
       if (event.target === elements.modal) {
         closeImageModal();
