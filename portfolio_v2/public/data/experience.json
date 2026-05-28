@@ -35,6 +35,18 @@
         "This internship pushed my profile beyond security into practical DevOps execution and infrastructure thinking."
       ],
       "technologies": ["DevOps", "Security", "Automation", "System Administration"]
+    },
+    {
+      "name": "BMCE OPV Intern",
+      "company": "BMCE",
+      "date": "18 March 2025 onward (5 months)",
+      "title": "BMCE OPV Platform Intern",
+      "content": [
+        "Worked on a web and mobile platform supporting purchase operations and OPV workflows.",
+        "Contributed to authentication, role-based access, audit-oriented flows, and product improvements tied to the platform experience.",
+        "Collaborated on both functional delivery and technical execution, combining product thinking with DevOps-minded work."
+      ],
+      "technologies": ["Web Development", "Mobile", "Authentication", "OPV"]
     }
   ]
 }

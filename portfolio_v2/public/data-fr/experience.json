@@ -35,6 +35,18 @@
         "Ce stage m'a fait évoluer de la sécurité vers une pratique plus concrète du DevOps et de l'infrastructure."
       ],
       "technologies": ["DevOps", "Sécurité", "Automatisation", "Administration système"]
+    },
+    {
+      "name": "Stagiaire BMCE OPV",
+      "company": "BMCE",
+      "date": "à partir du 18 mars 2025 (5 mois)",
+      "title": "Stagiaire plateforme BMCE OPV",
+      "content": [
+        "Travail sur une plateforme web et mobile pour les opérations d'achat et les workflows OPV.",
+        "Contribution à l'authentification, aux accès par rôle, aux parcours orientés audit et aux améliorations produit de la plateforme.",
+        "Collaboration sur la livraison fonctionnelle et l'exécution technique, entre logique produit et approche DevOps."
+      ],
+      "technologies": ["Développement web", "Mobile", "Authentification", "OPV"]
     }
   ]
 }
