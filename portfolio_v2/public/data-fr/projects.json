@@ -5,14 +5,13 @@
       "year": 2025,
       "githubUrl": null,
       "demoUrl": null,
-      "reportUrl": "/documents/rapport_de_stage_4IIR.pdf",
       "content": [
-        "Plateforme web et mobile dédiée à la gestion des opérations d'achat et des flux OPV (Offre Publique de Vente), construite autour d'une architecture moderne et modulaire.",
-        "Le système gère l'authentification, le traitement des demandes, les exports, les flux d'audit et les accès par rôles à travers une architecture de services structurée.",
-        "Ce projet reflète mon travail sur le développement produit et le DevOps, avec la sécurité, le contrôle d'accès et la fiabilité opérationnelle au centre de la conception."
+        "Plateforme web et mobile dédiée à la gestion des opérations d'achat et des flux OPV (Offre Publique de Vente), avec des parcours distincts pour l'administration et le mobile.",
+        "Les captures montrent le login, l'administration OPV, le tableau de bord, la consultation du catalogue et la soumission de demandes sur mobile.",
+        "Ce projet reflète mon travail sur la livraison produit avec l'authentification, le contrôle d'accès et la fiabilité opérationnelle au centre de la conception."
       ],
       "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"],
-      "images": []
+      "images": ["bmce-login-screen.png", "bmce-admin-opv-screen.png", "bmce-spectator-dashboard-screen.png", "bmce-mobile-login-screen.jpeg", "bmce-mobile-home-screen.jpeg", "bmce-mobile-opv-catalog-screen.jpeg", "bmce-mobile-opv-request-screen.jpeg"]
     },
     {
       "name": "Todo Planner",
