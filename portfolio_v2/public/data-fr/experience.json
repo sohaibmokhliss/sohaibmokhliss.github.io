@@ -25,16 +25,16 @@
       "technologies": ["Tests d'intrusion", "Sécurité des applications web", "Tests de sécurité", "Évaluation des vulnérabilités"]
     },
     {
-      "name": "Stagiaire BMCE OPV",
-      "company": "BMCE",
+      "name": "Stagiaire DevOps/Sécurité",
+      "company": "ITPay",
       "date": "à partir du 18 mars 2025 (5 mois)",
-      "title": "Stagiaire Plateforme Web & Mobile / DevOps",
+      "title": "Stagiaire DevOps & Sécurité",
       "content": [
-        "Travail sur la plateforme web et mobile de gestion des opérations d'achat et des flux OPV (Offre Publique de Vente), en participant au développement produit et aux tâches DevOps.",
-        "Contribution à l'authentification, aux workflows de demande, aux exports, aux flux d'audit et aux accès par rôles dans une architecture de services structurée.",
-        "Ce stage a renforcé ma capacité à relier développement, contrôle d'accès et fiabilité opérationnelle sur une plateforme métier critique."
+        "Travail sur l'infrastructure et l'automatisation dans un environnement de paiement où fiabilité et sécurité comptaient autant.",
+        "Contribution à l'administration, aux outils et aux améliorations opérationnelles pour rendre les déploiements plus cohérents.",
+        "Ce stage m'a fait évoluer de la sécurité vers une pratique plus concrète du DevOps et de l'infrastructure."
       ],
-      "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"]
+      "technologies": ["DevOps", "Sécurité", "Automatisation", "Administration système"]
     }
   ]
 }
