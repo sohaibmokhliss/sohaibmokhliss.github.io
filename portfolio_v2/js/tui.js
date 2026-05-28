@@ -55,6 +55,9 @@ function cacheElements() {
   elements.modal = document.getElementById("image-modal");
   elements.modalImage = document.getElementById("modal-image");
   elements.modalClose = document.querySelector(".image-modal-close");
+  elements.modalPrev = document.querySelector(".image-modal-prev");
+  elements.modalNext = document.querySelector(".image-modal-next");
+  elements.modalCounter = document.querySelector(".image-modal-counter");
   elements.windowTitle = document.querySelector(".window-title");
   elements.mobileNavToggle = document.getElementById("mobile-nav-toggle");
   elements.mobileBackdrop = document.getElementById("mobile-sidebar-backdrop");
@@ -508,13 +511,33 @@ function toggleTheme() {
   render();
 }
 
-function openImageModal(src, alt) {
-  if (!elements.modal || !elements.modalImage) {
+function updateModalImage() {
+  if (!elements.modalImage || !state.modalGallery) {
     return;
   }
 
-  elements.modalImage.src = src;
-  elements.modalImage.alt = alt || "Portfolio image";
+  const { images, index, projectName } = state.modalGallery;
+  const image = images[index];
+  elements.modalImage.src = `/images/${image}`;
+  elements.modalImage.alt = `${projectName} screenshot ${index + 1}`;
+  if (elements.modalCounter) {
+    elements.modalCounter.textContent = `${index + 1} / ${images.length}`;
+  }
+  if (elements.modalPrev) {
+    elements.modalPrev.disabled = index <= 0;
+  }
+  if (elements.modalNext) {
+    elements.modalNext.disabled = index >= images.length - 1;
+  }
+}
+
+function openImageModal(projectName, images, index) {
+  if (!elements.modal || !elements.modalImage || !Array.isArray(images) || !images.length) {
+    return;
+  }
+
+  state.modalGallery = { projectName, images, index: Math.max(0, Math.min(index, images.length - 1)) };
+  updateModalImage();
   elements.modal.classList.add("open");
   document.body.classList.add("modal-open");
 }
@@ -526,7 +549,16 @@ function closeImageModal() {
 
   elements.modal.classList.remove("open");
   elements.modalImage.removeAttribute("src");
+  state.modalGallery = null;
   document.body.classList.remove("modal-open");
+}
+
+function stepModalImage(direction) {
+  if (!state.modalGallery) return;
+  const nextIndex = state.modalGallery.index + direction;
+  if (nextIndex < 0 || nextIndex >= state.modalGallery.images.length) return;
+  state.modalGallery.index = nextIndex;
+  updateModalImage();
 }
 
 async function loadAllSections() {
@@ -584,10 +616,11 @@ function handleDocumentClick(event) {
 
   const imageButton = event.target.closest("[data-image-src]");
   if (imageButton) {
-    openImageModal(
-      imageButton.getAttribute("data-image-src"),
-      imageButton.getAttribute("data-image-alt")
-    );
+    const projectCard = imageButton.closest(".portfolio-card");
+    const projectName = projectCard?.querySelector(".portfolio-card-title")?.textContent || "Portfolio image";
+    const projectImages = projectCard ? Array.from(projectCard.querySelectorAll("[data-image-src]")).map((button) => button.getAttribute("data-image-src").replace(/^\/images\//, "")) : [];
+    const index = projectImages.findIndex((img) => `/images/${img}` === imageButton.getAttribute("data-image-src"));
+    openImageModal(projectName, projectImages, index < 0 ? 0 : index);
   }
 }
 
@@ -633,6 +666,20 @@ function handleKeydown(event) {
 
   if (event.key === "Escape") {
     closeImageModal();
+    return;
+  }
+
+  if (state.modalGallery) {
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      stepModalImage(1);
+      return;
+    }
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      stepModalImage(-1);
+      return;
+    }
   }
 }
 
@@ -657,6 +704,12 @@ function attachEventListeners() {
 
   if (elements.modalClose) {
     elements.modalClose.addEventListener("click", closeImageModal);
+  }
+  if (elements.modalPrev) {
+    elements.modalPrev.addEventListener("click", () => stepModalImage(-1));
+  }
+  if (elements.modalNext) {
+    elements.modalNext.addEventListener("click", () => stepModalImage(1));
   }
 
   if (elements.modal) {
