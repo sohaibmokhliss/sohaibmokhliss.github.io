@@ -25,30 +25,6 @@
       "certificateUrl": "/certificates/coursera-ethical-hacking-essentials.pdf"
     },
     {
-      "name": "Introduction aux outils de cybersécurité et aux cyberattaques",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Introduction aux outils de cybersécurité et aux cyberattaques",
-      "content": [
-        "Panorama des outils de défense, des workflows de réponse aux incidents et des menaces émergentes.",
-        "Laboratoires pratiques couvrant la reconnaissance, l'exploitation et les stratégies de mitigation.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-intro-cybersecurity-tools-attacks.pdf"
-    },
-    {
-      "name": "Introduction aux conteneurs avec Docker, Kubernetes & OpenShift",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Introduction aux conteneurs avec Docker, Kubernetes & OpenShift",
-      "content": [
-        "Création de services conteneurisés, orchestration avec Kubernetes et découverte des workflows OpenShift.",
-        "Renforcement des notions de sécurité, de montée en charge et de déploiement automatisé des conteneurs.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-containers-docker-kubernetes-openshift.pdf"
-    },
-    {
       "name": "Droit du Cloud Computing",
       "issuer": "Coursera",
       "date": "Complété",
@@ -121,18 +97,6 @@
       "certificateUrl": "/certificates/coursera-poo-cpp.pdf"
     },
     {
-      "name": "Introduction à Java et à la programmation orientée objet",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Introduction à Java et à la programmation orientée objet",
-      "content": [
-        "Mise en œuvre des concepts POO en Java : encapsulation, héritage et polymorphisme.",
-        "Construction d'applications modulaires privilégiant une architecture propre et réutilisable.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-intro-java-oop.pdf"
-    },
-    {
       "name": "Bases de React",
       "issuer": "Coursera",
       "date": "Complété",
@@ -179,6 +143,42 @@
         "Certificat disponible ci-dessous."
       ],
       "certificateUrl": "/certificates/coursera-software-design-project-management.pdf"
+    },
+    {
+      "name": "Introduction aux conteneurs avec Docker, Kubernetes & OpenShift",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "Introduction aux conteneurs avec Docker, Kubernetes & OpenShift",
+      "content": [
+        "Création de services conteneurisés, orchestration avec Kubernetes et découverte des workflows OpenShift.",
+        "Renforcement des notions de sécurité, de montée en charge et de déploiement automatisé des conteneurs.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-containers-docker-kubernetes-openshift.pdf"
+    },
+    {
+      "name": "Introduction à Java et à la programmation orientée objet",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "Introduction à Java et à la programmation orientée objet",
+      "content": [
+        "Mise en œuvre des concepts POO en Java : encapsulation, héritage et polymorphisme.",
+        "Construction d'applications modulaires privilégiant une architecture propre et réutilisable.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-intro-java-oop.pdf"
+    },
+    {
+      "name": "Introduction aux outils de cybersécurité et aux cyberattaques",
+      "issuer": "Coursera",
+      "date": "Complété",
+      "title": "Introduction aux outils de cybersécurité et aux cyberattaques",
+      "content": [
+        "Panorama des outils de défense, des workflows de réponse aux incidents et des menaces émergentes.",
+        "Laboratoires pratiques couvrant la reconnaissance, l'exploitation et les stratégies de mitigation.",
+        "Certificat disponible ci-dessous."
+      ],
+      "certificateUrl": "/certificates/coursera-intro-cybersecurity-tools-attacks.pdf"
     }
   ]
 }
