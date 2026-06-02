@@ -3367,6 +3367,11 @@ kbd.tutorial-key.pressed {
   background: var(--clr-primary-bg);
 }
 
+#layout.terminal-mode #mode-toggle-nav,
+body.terminal-mode-active #mode-toggle-nav {
+  display: none !important;
+}
+
 #layout.terminal-mode .os-taskbar {
   display: none;
 }
@@ -3378,74 +3383,91 @@ kbd.tutorial-key.pressed {
     min-height: 100dvh;
   }
 
+  #layout.terminal-mode .terminal-container {
+    min-height: 100dvh;
+  }
+
   .terminal-header {
     display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    row-gap: 8px;
-    padding: calc(env(safe-area-inset-top, 0px) + 10px) 12px 12px 12px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px;
+    padding: calc(env(safe-area-inset-top, 0px) + 6px) 10px 8px 10px;
   }
 
   .terminal-mobile-controls {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .terminal-mobile-controls .header-mode-btn {
-    order: 0;
+    display: none;
   }
 
   .window-header-controls {
-    display: none;
+    display: flex !important;
+    justify-self: end;
+    grid-column: auto;
+    gap: 6px;
   }
 
   .terminal-title {
     width: 100%;
-    text-align: center;
-    font-size: 0.82rem;
-    overflow-wrap: anywhere;
+    text-align: left;
+    font-size: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.1;
   }
 
   .terminal-content {
-    padding: 10px 12px calc(12px + env(safe-area-inset-bottom, 0px));
+    padding: 8px 10px calc(10px + env(safe-area-inset-bottom, 0px));
     min-height: 0;
+    overflow: hidden;
   }
 
   .terminal-output {
-    font-size: 0.78rem;
-    line-height: 1.45;
-    margin-bottom: 12px;
+    font-size: 0.72rem;
+    line-height: 1.3;
+    margin-bottom: 8px;
     min-height: 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(148, 163, 184, 0.6) rgba(15, 23, 42, 0.4);
+  }
+
+  .terminal-output::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .terminal-output::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.6);
+    border-radius: 999px;
   }
 
   .terminal-input-line {
-    gap: 6px;
+    gap: 4px;
     align-items: flex-start;
     flex-wrap: wrap;
   }
 
   .terminal-prompt {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     white-space: normal;
     word-break: break-word;
     flex: 0 0 auto;
-    line-height: 1.35;
+    line-height: 1.25;
   }
 
   .terminal-input {
     min-width: 0;
-    font-size: 0.78rem;
+    font-size: 0.72rem;
   }
 
   .header-mode-btn {
-    padding: 4px 8px;
-    height: 28px;
-    font-size: 0.8rem;
-    gap: 4px;
+    padding: 3px 6px;
+    height: 24px;
+    font-size: 0.7rem;
+    gap: 3px;
   }
 
   .header-mode-btn .btn-text {
-    font-size: 0.7rem;
+    font-size: 0.64rem;
   }
 }
+

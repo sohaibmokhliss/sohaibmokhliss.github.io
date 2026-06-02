@@ -611,7 +611,9 @@ function handleDocumentClick(event) {
 
   const sidebarModeButton = event.target.closest("[data-sidebar-mode-toggle]");
   if (sidebarModeButton) {
-    document.getElementById("mode-toggle-nav")?.click();
+    if (!elements.layout?.classList.contains("terminal-mode")) {
+      document.getElementById("mode-toggle-nav")?.click();
+    }
     return;
   }
 

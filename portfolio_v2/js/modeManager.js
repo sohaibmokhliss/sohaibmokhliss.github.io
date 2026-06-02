@@ -122,15 +122,6 @@ const ModeManager = {
       console.warn('Terminal toggle button not found');
     }
 
-    // Mobile terminal header toggle button
-    const terminalToggleMobileBtn = document.getElementById('mode-toggle-terminal-mobile');
-    if (terminalToggleMobileBtn) {
-      terminalToggleMobileBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        this.switchMode('gui');
-      });
-    }
-
     // Navbar toggle button (mobile)
     const navToggleBtn = document.getElementById('mode-toggle-nav');
     if (navToggleBtn) {

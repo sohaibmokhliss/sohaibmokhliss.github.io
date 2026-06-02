@@ -837,6 +837,13 @@ body.portfolio-intro-motion .portfolio-card {
   overflow: hidden;
 }
 
+#layout.terminal-mode #mode-toggle-nav,
+body.terminal-mode-active #mode-toggle-nav,
+#layout.terminal-mode [data-sidebar-mode-toggle],
+body.terminal-mode-active [data-sidebar-mode-toggle] {
+  display: none !important;
+}
+
 #layout.terminal-mode .terminal-container {
   display: flex;
   flex-direction: column;
@@ -1082,10 +1089,25 @@ body.terminal-mode-active {
   }
 
   .content-shell-header,
-  .portfolio-card-header,
-  .terminal-header {
+  .portfolio-card-header {
     flex-direction: column;
     align-items: start;
+  }
+
+  .terminal-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.5rem;
+    padding: calc(env(safe-area-inset-top, 0px) + 0.4rem) 0.65rem 0.45rem;
+  }
+
+  .terminal-title {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.72rem;
   }
 
   .window-header {
@@ -1100,7 +1122,7 @@ body.terminal-mode-active {
   }
 
   .terminal-mobile-controls {
-    display: flex;
+    display: none;
   }
 
   .project-image-grid {
@@ -1154,6 +1176,140 @@ body.terminal-mode-active {
 
   .sidebar-mode-chip {
     min-width: 0;
+  }
+}
+
+/* Polished mobile terminal: compact Warp-inspired card, subtle neon depth */
+@media (max-width: 768px) {
+  body.terminal-mode-active {
+    background:
+      radial-gradient(circle at 12% 0%, rgba(103, 232, 249, 0.16), transparent 32rem),
+      radial-gradient(circle at 88% 10%, rgba(244, 114, 182, 0.12), transparent 26rem),
+      linear-gradient(180deg, #050816 0%, #0b1020 52%, #050816 100%);
+  }
+
+  #layout.terminal-mode {
+    padding: 0.75rem;
+  }
+
+  #layout.terminal-mode #content {
+    height: calc(100dvh - 1.5rem);
+  }
+
+  #layout.terminal-mode #terminal-container {
+    border-radius: 1.45rem;
+    border-color: rgba(103, 232, 249, 0.26);
+    background:
+      linear-gradient(180deg, rgba(8, 13, 28, 0.92), rgba(5, 10, 22, 0.96)),
+      radial-gradient(circle at 50% -10%, rgba(103, 232, 249, 0.12), transparent 42%);
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.035) inset,
+      0 18px 55px rgba(0, 0, 0, 0.48),
+      0 0 42px rgba(103, 232, 249, 0.08);
+  }
+
+  #layout.terminal-mode #terminal-container::before {
+    background:
+      linear-gradient(90deg, rgba(103, 232, 249, 0.06) 1px, transparent 1px),
+      linear-gradient(rgba(103, 232, 249, 0.035) 1px, transparent 1px),
+      radial-gradient(circle at 18% 12%, rgba(103, 232, 249, 0.18), transparent 18rem),
+      radial-gradient(circle at 85% 0%, rgba(244, 114, 182, 0.13), transparent 14rem);
+    background-size: 28px 28px, 28px 28px, auto, auto;
+    opacity: 0.5;
+    mask-image: linear-gradient(to bottom, black 0%, black 42%, transparent 100%);
+  }
+
+  .terminal-header {
+    min-height: 2.65rem;
+    border-bottom-color: rgba(103, 232, 249, 0.18);
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(9, 14, 28, 0.7));
+    backdrop-filter: blur(16px) saturate(160%);
+  }
+
+  .terminal-title {
+    color: rgba(220, 232, 255, 0.82);
+    letter-spacing: -0.02em;
+  }
+
+  .terminal-title::before {
+    content: "●";
+    color: var(--success);
+    margin-right: 0.42rem;
+    text-shadow: 0 0 10px rgba(74, 222, 128, 0.75);
+  }
+
+  .terminal-header .window-header-controls {
+    width: auto;
+    gap: 0.48rem;
+  }
+
+  .terminal-header .header-mode-btn {
+    height: 1.65rem;
+    padding-inline: 0.55rem;
+    border-radius: 999px;
+    border-color: rgba(103, 232, 249, 0.28);
+    background: rgba(103, 232, 249, 0.09);
+    box-shadow: 0 0 18px rgba(103, 232, 249, 0.08) inset;
+  }
+
+  .terminal-header .window-controls {
+    display: none;
+  }
+
+  .terminal-header .window-control {
+    width: 0.5rem;
+    height: 0.5rem;
+    box-shadow: 0 0 12px currentColor;
+    opacity: 0.88;
+  }
+
+  .terminal-content {
+    gap: 0.72rem;
+  }
+
+  #terminal-output {
+    padding: 0.2rem 0.05rem 0;
+    line-height: 1.48;
+  }
+
+  #terminal-output .welcome {
+    padding: 1rem;
+    border: 1px solid rgba(103, 232, 249, 0.18);
+    border-radius: 1.1rem;
+    background:
+      linear-gradient(180deg, rgba(103, 232, 249, 0.065), rgba(103, 232, 249, 0.018)),
+      rgba(2, 6, 23, 0.24);
+    color: #bff7ff;
+    text-shadow: 0 0 16px rgba(103, 232, 249, 0.18);
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.025) inset,
+      0 14px 34px rgba(0, 0, 0, 0.25);
+  }
+
+  #terminal-output .welcome::before {
+    content: "SESSION READY";
+    display: block;
+    margin-bottom: 0.62rem;
+    color: rgba(245, 158, 11, 0.92);
+    font-size: 0.64rem;
+    letter-spacing: 0.18em;
+  }
+
+  .terminal-input-line {
+    padding: 0.72rem 0.82rem;
+    border: 1px solid rgba(103, 232, 249, 0.18);
+    border-radius: 0.95rem;
+    background: rgba(2, 6, 23, 0.4);
+    box-shadow: 0 0 22px rgba(103, 232, 249, 0.055) inset;
+  }
+
+  .terminal-prompt {
+    color: #67e8f9;
+    text-shadow: 0 0 12px rgba(103, 232, 249, 0.28);
+  }
+
+  .terminal-input {
+    color: #f8fbff;
   }
 }
 

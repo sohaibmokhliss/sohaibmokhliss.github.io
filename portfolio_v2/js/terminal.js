@@ -245,7 +245,9 @@ const Terminal = {
   },
 
   printWelcome() {
-    const welcome = `
+    const welcome = this.isMobileViewport()
+      ? `Sohaib Mokhliss - Portfolio Terminal\n\nWelcome! Type 'help' for available commands\nType 'gui' to switch back to GUI mode\n`
+      : `
 ╔══════════════════════════════════════════════════════════════╗
 ║      Sohaib Mokhliss - Portfolio Terminal                   ║
 ║                                                             ║
