@@ -93,7 +93,7 @@ const Terminal = {
                   },
                   '.secrets': {
                     type: 'file',
-                    content: 'Hmm, you found the hidden file! 🕵️\n\nSome commands aren\'t what they seem...\nTry common typos, get some coffee, or just say hello.\nThe answer to everything might help.\nAnd remember: with great power comes great responsibility. 😉\n\n(Hint: Not all commands are listed in help!)'
+                    content: 'Hidden file found.\n\nSome commands are intentionally obscure.\nTry common typos, or just say hello.\nThe answer to everything might help.\n\n(Hint: Not all commands are listed in help!)'
                   }
                 }
               }

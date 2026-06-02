@@ -227,12 +227,7 @@ function renderSidebar() {
             <span class="sidebar-chip-icon">${themeControl.icon}</span>
           </button>
           <button class="sidebar-chip sidebar-download-chip" type="button" data-download-cv title="Download CV" aria-label="Download CV">
-            <span class="sidebar-chip-icon">⬇️</span>
             <span class="sidebar-chip-copy">CV</span>
-          </button>
-          <button class="sidebar-chip sidebar-download-chip" type="button" data-download-cv-en title="Download English CV" aria-label="Download English CV">
-            <span class="sidebar-chip-icon">⬇️</span>
-            <span class="sidebar-chip-copy">EN</span>
           </button>
         </div>
       </div>
@@ -266,7 +261,6 @@ function renderMobileSections() {
           <span class="sidebar-chip-icon">${themeControl.icon}</span>
         </button>
         <button class="sidebar-chip mobile-chip sidebar-mode-chip" type="button" data-sidebar-mode-toggle>
-          <span class="sidebar-chip-icon">${elements.layout?.classList.contains("terminal-mode") ? "🖥️" : "⌨️"}</span>
           <span class="sidebar-chip-copy">${elements.layout?.classList.contains("terminal-mode") ? "GUI" : "Terminal"}</span>
         </button>
       </div>
@@ -627,18 +621,6 @@ function handleDocumentClick(event) {
     const isFrench = LanguageManager.currentLang === "fr";
     a.href = isFrench ? "/documents/cv-fr.pdf" : "/documents/cv-eng.pdf";
     a.download = isFrench ? "cv-fr.pdf" : "cv-eng.pdf";
-    a.rel = "noopener";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    return;
-  }
-
-  const downloadCvEnButton = event.target.closest("[data-download-cv-en]");
-  if (downloadCvEnButton) {
-    const a = document.createElement("a");
-    a.href = "/documents/cv-eng.pdf";
-    a.download = "cv-eng.pdf";
     a.rel = "noopener";
     document.body.appendChild(a);
     a.click();
