@@ -11,7 +11,7 @@
         "It reflects my interest in building complete products where interface quality, backend logic, and security-aware implementation all matter."
       ],
       "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT Authentication"],
-      "images": ["todo-planner1.webp", "todo-planner2.webp", "todo-planner3.webp", "todo-planner4.webp"]
+      "images": []
     },
     {
       "name": "Portfolio Terminal",
@@ -24,7 +24,7 @@
         "It is also a showcase of how far careful vanilla JavaScript, CSS, and HTML can go when the structure is deliberate."
       ],
       "technologies": ["JavaScript", "CSS3", "HTML5", "Vite", "Git"],
-      "images": ["portfolio1.webp", "portfolio2.webp", "portfolio3.webp", "portfolio4.webp"]
+      "images": []
     },
     {
       "name": "BMCE Share Request Platform",

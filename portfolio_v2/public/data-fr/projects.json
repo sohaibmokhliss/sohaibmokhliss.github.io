@@ -11,7 +11,7 @@
         "Conçu avec une logique produit en priorité, ce projet met l'accent sur l'authentification, les accès par rôle et la fiabilité opérationnelle."
       ],
       "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"],
-      "images": ["bmce-login-screen.png", "bmce-admin-opv-screen.png", "bmce-spectator-dashboard-screen.png", "bmce-mobile-login-screen.jpeg", "bmce-mobile-home-screen.jpeg", "bmce-mobile-opv-catalog-screen.jpeg", "bmce-mobile-opv-request-screen.jpeg"]
+      "images": []
     },
     {
       "name": "Todo Planner",
@@ -24,7 +24,7 @@
         "Conçu avec un design responsive qui fonctionne parfaitement sur tous les appareils, offrant des thèmes clair et sombre pour un confort visuel dans n'importe quel environnement."
       ],
       "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT Authentication"],
-      "images": ["todo-planner1.webp", "todo-planner2.webp", "todo-planner3.webp", "todo-planner4.webp"]
+      "images": []
     },
     {
       "name": "Portfolio Terminal",
@@ -37,7 +37,7 @@
         "Construit de zéro en JavaScript vanilla sans dépendances, démontrant une architecture de code propre et des pratiques de développement web modernes. Optimisé pour les performances avec chargement différé, design responsive, et fonctionnalités d'accessibilité."
       ],
       "technologies": ["JavaScript", "CSS3", "HTML5", "Vite", "Git"],
-      "images": ["portfolio1.webp", "portfolio2.webp", "portfolio3.webp", "portfolio4.webp"]
+      "images": []
     }
   ]
 }
