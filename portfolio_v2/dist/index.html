@@ -1,303 +1,139 @@
-<!Doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta name="0cred-id" content="01e24af6-ad8e-4de9-9cb4-fe625eb96ab1" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0d1117">
+    <meta name="color-scheme" content="dark light">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="msapplication-navbutton-color" content="#0d1117" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self'; media-src 'self'; object-src 'none'; frame-src 'self';">
     <meta name="author" content="Sohaib Mokhliss" />
     <meta name="description"
-        content="Hi, I'm Sohaib Mokhliss, a 5th-year Computer & Network Engineering student with expertise in Cybersecurity, Penetration Testing, and Network Security. Check out my work and get in touch!" />
+        content="Sohaib Mokhliss is a Computer & Network Engineering student interested in development, DevOps, and secure system design." />
 
     <meta property="og:url" content="https://browncj.dev/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Sohaib Mokhliss - Cybersecurity & Network Engineering Student">
+    <meta property="og:title" content="Sohaib Mokhliss - Development, DevOps, and Secure Systems">
     <meta property="og:image" content="/images/social-banner.jpg">
     <meta property="og:image:alt" content="Sohaib Mokhliss Portfolio">
     <meta property="og:site_name" content="sohaibmokhliss.dev">
     <meta property="og:description"
-        content="Hi, I'm Sohaib Mokhliss, a 5th-year Computer & Network Engineering student with expertise in Cybersecurity, Penetration Testing, and Network Security. Check out my work and get in touch!">
+        content="Development-focused portfolio blending product building, DevOps thinking, and strong security principles.">
     <meta property="og:locale" content="en_US">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Sohaib Mokhliss - Cybersecurity & Network Engineering Student">
+    <meta name="twitter:title" content="Sohaib Mokhliss - Development, DevOps, and Secure Systems">
     <meta name="twitter:description"
-        content="Hi, I'm Sohaib Mokhliss, a 5th-year Computer & Network Engineering student with expertise in Cybersecurity, Penetration Testing, and Network Security. Check out my work and get in touch!">
+        content="Development-focused portfolio blending product building, DevOps thinking, and strong security principles.">
     <meta name="twitter:image" content="/images/social-banner.jpg">
     <meta name="twitter:image:alt" content="Sohaib Mokhliss Portfolio">
     <meta name="twitter:site" content="@sohaibmokhliss">
 
-    <link href="images/favicon-light-2025.ico" rel="icon" media="(prefers-color-scheme: light)" />
-    <link href="images/favicon-dark-2025.ico" rel="icon" media="(prefers-color-scheme: dark)" />
-    <link rel="preload" as="font" href="fonts/fira-mono-v14-latin-regular.woff2" type="font/woff2"
+    <link href="/assets/favicon-light-DWOzm9NL.ico" rel="icon" media="(prefers-color-scheme: light)" />
+    <link href="/assets/favicon-dark-CfQWmbkI.ico" rel="icon" media="(prefers-color-scheme: dark)" />
+    <link rel="preload" as="font" href="/assets/fira-mono-v14-latin-regular-DKjLVgQi.woff2" type="font/woff2"
         crossorigin="anonymous">
-    <link rel="preload" as="font" href="fonts/fira-mono-v14-latin-700.woff2" type="font/woff2" crossorigin="anonymous">
-    <link id="min-style" rel="stylesheet" type="text/css" href="/css/tui.css?v=8">
-    <script type="module" src="/js/language.js?v=6"></script>
-    <script type="module" src="/js/tui.js?v=6"></script>
-    <script type="module" src="/js/modeManager.js?v=6"></script>
-    <script type="module" src="/js/terminal.js?v=10"></script>
+    <link rel="preload" as="font" href="/assets/fira-mono-v14-latin-700-Cv3UdvRX.woff2" type="font/woff2" crossorigin="anonymous">
+    <link id="min-style" rel="stylesheet" type="text/css" href="/css/portfolio.css?v=33">
+    <script type="module" src="/js/language.js?v=7"></script>
+    <script type="module" src="/js/tui.js?v=27"></script>
+    <script type="module" src="/js/modeManager.js?v=9"></script>
+    <script type="module" src="/js/terminal.js?v=12"></script>
+    <script type="module" src="/js/background.js?v=1"></script>
     <script type="module" src="/js/loader/loader.js"></script>
-    <title>Sohaib Mokhliss - Cybersecurity & Network Engineering Student</title>
+    <title>Sohaib Mokhliss - Development, DevOps, and Secure Systems</title>
+  <script type="module" crossorigin src="/assets/index-B5Qt9EMX.js"></script>
 </head>
 
 <body class="darkmode">
-    <div id="main-container">
-        <div class="nav-container">
-            <div id="hamburger-menu">
-                <input class="checkbox" type="checkbox" name="hamburger-toggle" aria-label="Mobile menu toggle" />
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-            </div>
-            <button id="mode-toggle-nav" class="nav-mode-btn" aria-label="Switch mode" title="Switch mode">
+        <canvas id="backgroundCanvas" aria-hidden="true"></canvas>
+        <canvas id="starsCanvas" aria-hidden="true"></canvas>
+        <canvas id="milkyWayCanvas" aria-hidden="true"></canvas>
+        <div id="main-container">
+            <button id="mode-toggle-nav" class="nav-mode-btn nav-mode-btn-hidden" aria-label="Switch mode" title="Switch mode">
                 <span class="btn-emoji">⌨️</span>
                 <span class="btn-text">Terminal</span>
             </button>
-        </div>
-        <div id="layout" class="gui-mode">
-            <aside id="sidebar">
-                <header class="container selected-frame" id="home">
-                    <div class="container-content">
-                        <div class="title decorating-text">
-                            <p>
-                                Home
-                            </p>
-                            <div></div>
-                        </div>
-                        <p id="home-section-paragraph">
-                            Hi! I'm <span class="text-blue">Sohaib Mokhliss</span>, a security-minded engineer building <span class="text-orange">DevOps automation</span> and <span class="text-pink">resilient infrastructures</span>.
-                        </p>
-                        <p id="mobile-help">
-                            <span class="text-pink">Press</span> around to <span class="text-orange">explore</span>
-                            the website.
-                        </p>
-                    </div>
-                </header>
-                <div class="container" id="experience">
-                    <div class="container-content">
-                        <div id="experience-title" class="title decorating-text">
-                            <p>
-                                Experience
-                            </p>
-                            <div></div>
-                        </div>
-                        <div id="experience-index" class="list-index decorating-text">
-                            <p>1 of 3</p>
-                            <div></div>
-                        </div>
-                        <div class="ui-list">
-                            <div>
-                                <div>Cybersecurity Analyst (Intern)</div>
-                                <div>@ <span class="text-orange">HPS</span></div>
-                            </div>
-                            <div>
-                                <div>Penetration Tester (Intern)</div>
-                                <div>@ <span class="text-orange">CIH</span></div>
-                            </div>
-                            <div>
-                                <div>DevOps/Security Intern</div>
-                                <div>@ <span class="text-orange">ITPay</span></div>
+            <div id="mobile-sidebar-backdrop" class="mobile-sidebar-backdrop" aria-hidden="true"></div>
+            <div id="layout" class="gui-mode">
+                <aside id="sidebar" aria-label="Portfolio sections"></aside>
+                <main id="content">
+                    <section id="mobile-sections" class="mobile-sections" aria-label="Portfolio sections"></section>
+                    <div class="desktop-window">
+                        <div class="window-header">
+                            <div class="window-title">Sohaib Mokhliss - Portfolio Terminal</div>
+                            <div class="window-header-controls">
+                                <button id="mode-toggle-gui" class="header-mode-btn" aria-label="Switch to Terminal mode" title="Switch to Terminal">
+                                    <span class="btn-emoji">⌨️</span>
+                                    <span class="btn-text">Terminal</span>
+                                </button>
+                                <div class="window-controls">
+                                    <div class="window-control close"></div>
+                                    <div class="window-control minimize"></div>
+                                    <div class="window-control maximize"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="container" id="projects">
-                    <div class="container-content">
-                        <div class="title decorating-text">
-                            <p>Projects</p>
-                            <div></div>
-                        </div>
-                        <div class="list-index decorating-text">
-                            <p>1 of 3</p>
-                            <div></div>
-                        </div>
-                        <div class="ui-list">
-                            <div>Todo Planner</div>
-                            <div>Portfolio Terminal</div>
-                            <div>DevOps Internship Infrastructure</div>
+                        <div class="window-content">
+                            <div id="main-content"></div>
                         </div>
                     </div>
-                </div>
-                <div class="container" id="skills">
-                    <div class="container-content">
-                        <div id="skills-title" class="title decorating-text">
-                            <p>
-                                Skills - Tools
-                            </p>
-                            <div></div>
-                        </div>
-                        <div id="skills-index" class="list-index decorating-text">
-                            <p>1 of 5</p>
-                            <div></div>
-                        </div>
-                        <div class="ui-list">
-                            <div>Penetration Testing</div>
-                            <div>Network Security</div>
-                            <div>Incident Response</div>
-                            <div>Security Analysis</div>
-                            <div>DevOps & Automation</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container" id="certifications">
-                    <div class="container-content">
-                        <div id="certifications-title" class="title decorating-text">
-                            <p>
-                                Certifications
-                            </p>
-                            <div></div>
-                        </div>
-                        <div id="certifications-index" class="list-index decorating-text">
-                            <p>1 of 20</p>
-                            <div></div>
-                        </div>
-                        <div class="ui-list">
-                            <div>Oracle Cloud Infrastructure DevOps Professional (2025)</div>
-                            <div>Ethical Hacking Essentials</div>
-                            <div>Introduction to Cybersecurity Tools &amp; Cyber Attacks</div>
-                            <div>Introduction to Containers with Docker, Kubernetes &amp; OpenShift</div>
-                            <div>Cloud Computing Law</div>
-                            <div>Virtual Networks in Azure</div>
-                            <div>The Unix Workbench</div>
-                            <div>Python</div>
-                            <div>JavaScript</div>
-                            <div>Object-Oriented Programming (C++)</div>
-                            <div>Introduction to Java and Object-Oriented Programming</div>
-                            <div>React Basics</div>
-                            <div>Impact Measurement &amp; Management for the SDGs</div>
-                            <div>CSS3</div>
-                            <div>HTML5</div>
-                            <div>Software Design and Project Management</div>
-                            <div>Collaborate Effectively for Professional Success</div>
-                            <div>Successful Presentation</div>
-                            <div>La Recherche Documentaire</div>
-                            <div>Villes Africaines</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sidebar-help">
-                    <div class="help-text">
-                        <span class="help-keys">&lt;pgup&gt;/&lt;pgdown&gt;</span>: Scroll<br>
-                        <span class="help-keys">&lt;left&gt;/&lt;right&gt;</span>: Switch section<br>
-                        <span class="help-keys">&lt;1-5&gt;</span>: Jump to section<br>
-                        <span class="help-keys">&lt;up&gt;/&lt;down&gt;</span>: Switch item
-                    </div>
-                </div>
-                <div class="sidebar-scrollbar" id="sidebar-scrollbar" aria-hidden="true" role="presentation">
-                    <div class="sidebar-scrollbar-thumb" id="sidebar-scrollbar-thumb"></div>
-                </div>
-            </aside>
-            <main id="content">
-                <!-- Desktop Window -->
-                <div class="desktop-window">
-                    <div class="window-header">
-                        <div class="window-title">Sohaib Mokhliss - Portfolio Terminal</div>
-                        <div class="window-header-controls">
-                            <button id="mode-toggle-gui" class="header-mode-btn" aria-label="Switch to Terminal mode" title="Switch to Terminal">
-                                <span class="btn-emoji">⌨️</span>
-                                <span class="btn-text">Terminal</span>
-                            </button>
-                            <div class="window-controls">
-                                <div class="window-control close"></div>
-                                <div class="window-control minimize"></div>
-                                <div class="window-control maximize"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="window-content">
-                        <div class="container h-fill" id="main-content">
-                            <div class="container-content">
-                                <!-- Content will be dynamically loaded here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Terminal Mode -->
-                <div id="terminal-container" class="terminal-container">
-                    <div class="terminal-header">
-                        <div class="terminal-mobile-controls">
-                            <button id="mode-toggle-terminal-mobile" class="header-mode-btn" aria-label="Switch to GUI mode" title="Switch to GUI">
-                                <span class="btn-emoji">🖥️</span>
-                                <span class="btn-text">GUI</span>
-                            </button>
+                    <!-- Terminal Mode -->
+                    <div id="terminal-container" class="terminal-container">
+                        <div class="terminal-header">
+                            <div class="terminal-mobile-controls">
+                                <button id="mode-toggle-terminal-mobile" class="header-mode-btn" aria-label="Switch to GUI mode" title="Switch to GUI">
+                                    <span class="btn-emoji">🖥️</span>
+                                    <span class="btn-text">GUI</span>
+                                </button>
+                            </div>
+                            <div class="terminal-title">sohaibmokhliss@portfolio: ~</div>
+                            <div class="window-header-controls">
+                                <button id="mode-toggle-terminal" class="header-mode-btn" aria-label="Switch to GUI mode" title="Switch to GUI">
+                                    <span class="btn-emoji">🖥️</span>
+                                    <span class="btn-text">GUI</span>
+                                </button>
+                                <div class="window-controls">
+                                    <div class="window-control close"></div>
+                                    <div class="window-control minimize"></div>
+                                    <div class="window-control maximize"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="terminal-title">sohaibmokhliss@portfolio: ~</div>
-                        <div class="window-header-controls">
-                            <button id="mode-toggle-terminal" class="header-mode-btn" aria-label="Switch to GUI mode" title="Switch to GUI">
-                                <span class="btn-emoji">🖥️</span>
-                                <span class="btn-text">GUI</span>
-                            </button>
-                            <div class="window-controls">
-                                <div class="window-control close"></div>
-                                <div class="window-control minimize"></div>
-                                <div class="window-control maximize"></div>
+                        <div class="terminal-content">
+                            <div id="terminal-output" class="terminal-output"></div>
+                            <div class="terminal-input-line">
+                                <span id="terminal-prompt" class="terminal-prompt">sohaibmokhliss@portfolio:~$ </span>
+                                <input
+                                    type="text"
+                                    id="terminal-input"
+                                    class="terminal-input"
+                                    autocomplete="off"
+                                    spellcheck="false"
+                                    autocapitalize="none"
+                                    autocorrect="off"
+                                    inputmode="text"
+                                    enterkeyhint="send"
+                                />
                             </div>
                         </div>
                     </div>
-                    <div class="terminal-content">
-                        <div id="terminal-output" class="terminal-output"></div>
-                        <div class="terminal-input-line">
-                            <span id="terminal-prompt" class="terminal-prompt">sohaibmokhliss@portfolio:~$ </span>
-                            <input
-                                type="text"
-                                id="terminal-input"
-                                class="terminal-input"
-                                autocomplete="off"
-                                spellcheck="false"
-                                autocapitalize="none"
-                                autocorrect="off"
-                                inputmode="text"
-                                enterkeyhint="send"
-                            />
-                        </div>
-                    </div>
-                </div>
 
-                <!-- OS-like Taskbar -->
-                <div class="os-taskbar">
-                    <div class="os-taskbar-item active" data-section="home">
-                        <span>🏠</span> Home
-                    </div>
-                    <div class="os-taskbar-item" data-section="experience">
-                        <span>💼</span> Experience
-                    </div>
-                    <div class="os-taskbar-item" data-section="projects">
-                        <span>🚀</span> Projects
-                    </div>
-                    <div class="os-taskbar-item" data-section="skills">
-                        <span>⚡</span> Skills
-                    </div>
-                    <div class="os-taskbar-item" data-section="certifications">
-                        <span>🏆</span> Certifications
-                    </div>
-                    <div class="taskbar-divider"></div>
-                    <div class="theme-switcher">
-                        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
-                            <span class="theme-icon dark-icon">🌙</span>
-                            <span class="theme-icon light-icon">☀️</span>
-                        </button>
-                    </div>
-                    <div class="language-switcher">
-                        <button class="lang-btn active" data-lang="en">EN</button>
-                        <button class="lang-btn" data-lang="fr">FR</button>
-                    </div>
-                </div>
-            </main>
-        </div>
+                </main>
+            </div>
 
         <!-- Image Modal -->
-        <div id="image-modal" class="image-modal">
-            <span class="image-modal-close">&times;</span>
-            <img class="image-modal-content" id="modal-image">
+        <div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-label="Image preview">
+            <button type="button" class="image-modal-close" aria-label="Close image preview">&times;</button>
+            <button type="button" class="image-modal-nav image-modal-prev" aria-label="Previous image">‹</button>
+            <img class="image-modal-content" id="modal-image" alt="Expanded portfolio image">
+            <button type="button" class="image-modal-nav image-modal-next" aria-label="Next image">›</button>
+            <div class="image-modal-counter" aria-hidden="true"></div>
         </div>
 
         <!-- Navigation Tutorial -->
@@ -305,7 +141,7 @@
             <div class="tutorial-overlay"></div>
             <div class="tutorial-content">
                 <div class="tutorial-header">
-                    <h2 class="tutorial-title">Welcome to My Portfolio!</h2>
+                    <h2 class="tutorial-title">Welcome to the portfolio</h2>
                     <button class="tutorial-skip" aria-label="Skip tutorial">Skip</button>
                 </div>
                 <div class="tutorial-body">
@@ -313,10 +149,10 @@
                     <div class="tutorial-step active" data-step="1">
                         <div class="tutorial-step-content">
                             <div class="tutorial-icon">👋</div>
-                            <h3 class="tutorial-step-title">Let's learn to navigate</h3>
+                            <h3 class="tutorial-step-title">Learn the controls quickly</h3>
                             <p class="tutorial-step-description">
-                                This portfolio has keyboard navigation built in!<br>
-                                Let me show you how it works.
+                                This portfolio supports both keyboard and pointer navigation.<br>
+                                Here is the fastest way to move through it.
                             </p>
                         </div>
                         <div class="tutorial-actions">
@@ -470,25 +306,6 @@
             </div>
         </div>
 
-        <footer class="container text-blue" id="footer">
-            <div class="footer-item" id="footer-help">
-                &lt;pgup&gt;/&lt;pgdown&gt;: Scroll,
-                &lt;left&gt;/&lt;right&gt;: Switch section,
-                &lt;1-4&gt;: Jump to section,
-                &lt;up&gt;/&lt;down&gt;: Switch item
-                <span class="text-pink">
-                    (or just use the mouse)
-                </span>
-            </div>
-            <div class="footer-item">
-                <a class="text-blue" href="https://github.com/sohaibmokhliss" target="_blank">
-                    GitHub
-                </a>
-                <a class="text-pink" href="https://www.linkedin.com/in/sohaib-mokhliss/" target="_blank">
-                    LinkedIn
-                </a>
-            </div>
-        </footer>
     </div>
 </body>
 
