@@ -230,6 +230,10 @@ function renderSidebar() {
             <span class="sidebar-chip-icon">⬇️</span>
             <span class="sidebar-chip-copy">CV</span>
           </button>
+          <button class="sidebar-chip sidebar-download-chip" type="button" data-download-cv-en title="Download English CV" aria-label="Download English CV">
+            <span class="sidebar-chip-icon">⬇️</span>
+            <span class="sidebar-chip-copy">EN</span>
+          </button>
         </div>
       </div>
       <nav class="sidebar-section-nav" aria-label="Sections">
@@ -328,6 +332,14 @@ function renderHomeCards(data, activeIndex) {
       </div>
       <div class="portfolio-prose">
         ${(block.content || []).map((line) => `<p>${decorateText(line)}</p>`).join("")}
+        ${index === 0 ? `
+          <div class="home-cv-cta">
+            <button class="portfolio-inline-button home-cv-button" type="button" data-download-cv aria-label="Download CV">
+              <span class="home-cv-icon">⬇️</span>
+              <span class="home-cv-label">Download CV</span>
+            </button>
+          </div>
+        ` : ""}
       </div>
     </article>
   `).join("");
@@ -612,14 +624,28 @@ function handleDocumentClick(event) {
   const downloadCvButton = event.target.closest("[data-download-cv]");
   if (downloadCvButton) {
     const a = document.createElement("a");
-    a.href = "/documents/SohaibMokhlissCvBlack.pdf";
-    a.download = "SohaibMokhlissCvBlack.pdf";
+    const isFrench = LanguageManager.currentLang === "fr";
+    a.href = isFrench ? "/documents/cv-fr.pdf" : "/documents/cv-eng.pdf";
+    a.download = isFrench ? "cv-fr.pdf" : "cv-eng.pdf";
     a.rel = "noopener";
     document.body.appendChild(a);
     a.click();
     a.remove();
     return;
   }
+
+  const downloadCvEnButton = event.target.closest("[data-download-cv-en]");
+  if (downloadCvEnButton) {
+    const a = document.createElement("a");
+    a.href = "/documents/cv-eng.pdf";
+    a.download = "cv-eng.pdf";
+    a.rel = "noopener";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    return;
+  }
+
 
   const sidebarModeButton = event.target.closest("[data-sidebar-mode-toggle]");
   if (sidebarModeButton) {

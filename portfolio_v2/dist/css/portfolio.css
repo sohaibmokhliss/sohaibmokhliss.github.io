@@ -188,6 +188,36 @@ a {
   transform: translateY(-1px);
 }
 
+.mobile-section-pill {
+  animation: slow-left-to-right 14s linear infinite;
+  will-change: transform;
+}
+
+.mobile-section-pill:nth-child(2n) {
+  animation-duration: 16s;
+}
+
+.mobile-section-pill:nth-child(3n) {
+  animation-duration: 18s;
+}
+
+.mobile-section-pill:hover,
+.mobile-section-pill:focus-visible {
+  animation-play-state: paused;
+}
+
+@keyframes slow-left-to-right {
+  0% {
+    transform: translateX(-6px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-6px);
+  }
+}
+
 .nav-mode-btn,
 .header-mode-btn {
   display: inline-flex;
@@ -676,29 +706,21 @@ body.lightmode .portfolio-card::before {
 }
 
 .home-cv-cta {
-  margin-top: 0.4rem;
+  margin-top: 0.7rem;
 }
 
-.portfolio-inline-button {
-  display: inline-flex;
-  align-items: center;
+.portfolio-inline-button.home-cv-button {
+  width: 100%;
+  min-height: 54px;
   justify-content: center;
-  gap: 0.7rem;
-  width: min(100%, 280px);
-  padding: 1rem 1.25rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  color: var(--text);
-  background: linear-gradient(135deg, rgba(103, 232, 249, 0.18), rgba(244, 114, 182, 0.14));
-  border-color: rgba(103, 232, 249, 0.35);
-  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.22), 0 0 0 1px rgba(103, 232, 249, 0.1) inset;
 }
 
-.portfolio-inline-button:hover,
-.portfolio-inline-button:focus-visible {
-  transform: translateY(-2px);
-  background: linear-gradient(135deg, rgba(103, 232, 249, 0.24), rgba(244, 114, 182, 0.2));
-  border-color: rgba(103, 232, 249, 0.55);
+.home-cv-icon {
+  font-size: 1rem;
+}
+
+.home-cv-label {
+  font-size: 0.98rem;
 }
 
 .text-accent {
