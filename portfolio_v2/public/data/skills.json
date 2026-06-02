@@ -1,20 +1,29 @@
 {
   "data": [
     {
-      "name": "Application Development",
+      "name": "Frontend Development",
       "content": [
-        "Interested in building applications that are useful, maintainable, and thoughtful in both UX and structure.",
-        "Comfortable moving from interface work into application logic and implementation details.",
-        "I treat development as engineering work, not just visual assembly."
+        "Interested in building responsive interfaces that feel polished, usable, and fast on both desktop and mobile.",
+        "Comfortable moving from visual structure into state management, interaction details, and UX refinement.",
+        "I treat frontend work as engineering work, not just visual assembly."
       ],
       "snippet": null
     },
     {
-      "name": "Backend & APIs",
+      "name": "Backend Development",
       "content": [
         "Interested in backend systems, business logic, authentication flows, and service-to-service thinking.",
         "Comfortable reasoning about APIs, data flow, and the operational side of application architecture.",
         "I enjoy turning product requirements into structured backend behavior."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "Application Development",
+      "content": [
+        "Interested in building applications that are useful, maintainable, and thoughtful in both UX and structure.",
+        "Comfortable moving between frontend and backend concerns when the problem needs full-stack thinking.",
+        "I treat development as engineering work, not just visual assembly."
       ],
       "snippet": null
     },

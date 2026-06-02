@@ -1,11 +1,38 @@
 {
   "data": [
     {
-      "name": "Tests d'intrusion",
+      "name": "Développement front-end",
       "content": [
-        "Expérience dans la réalisation d'évaluations de sécurité et de tests d'intrusion.",
-        "Compétent dans l'identification des vulnérabilités des applications web et des réseaux.",
-        "Pratique des outils et méthodologies modernes de tests d'intrusion."
+        "Intérêt pour la création d'interfaces responsives, fluides et agréables sur mobile comme sur desktop.",
+        "À l'aise pour passer de la structure visuelle à la gestion d'état, aux détails d'interaction et au raffinement UX.",
+        "Je considère le front-end comme un vrai travail d'ingénierie, pas seulement comme de l'assemblage visuel."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "Développement back-end",
+      "content": [
+        "Intérêt pour les systèmes back-end, la logique métier, les flux d'authentification et les interactions entre services.",
+        "À l'aise pour raisonner sur les API, les flux de données et la partie opérationnelle de l'architecture applicative.",
+        "J'aime transformer les besoins produit en comportement back-end structuré."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "Développement d'applications",
+      "content": [
+        "Intérêt pour créer des applications utiles, maintenables et pensées à la fois pour l'UX et la structure.",
+        "À l'aise pour naviguer entre les besoins front-end et back-end quand le problème demande une vision full-stack.",
+        "Je considère le développement comme un travail d'ingénierie, pas seulement comme du visuel."
+      ],
+      "snippet": null
+    },
+    {
+      "name": "DevOps & Automatisation",
+      "content": [
+        "Construction de flux reproductibles pour le delivery, l'administration système et la mise en place d'infrastructures.",
+        "Intérêt pour les CI/CD, la fiabilité des plateformes et la réduction du travail manuel d'exploitation.",
+        "J'aborde le DevOps comme une discipline qui doit améliorer à la fois la vitesse et la sécurité des systèmes."
       ],
       "snippet": null
     },

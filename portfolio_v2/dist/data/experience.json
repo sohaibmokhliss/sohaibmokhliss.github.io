@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "name": "Cybersecurity Analyst (Intern)",
+      "company": "HPS",
+      "date": "June–July 2023 (2 months)",
+      "title": "Cybersecurity Analyst",
+      "content": [
+        "Worked with the security team on monitoring, vulnerability analysis, and operational hardening across enterprise systems.",
+        "Reviewed network activity, identified weak points, and contributed to remediation efforts with practical security controls.",
+        "Strengthened my understanding of how security operations support business-critical infrastructure at scale."
+      ],
+      "technologies": ["Network Security", "Vulnerability Assessment", "Security Monitoring", "Incident Response"]
+    },
+    {
+      "name": "Penetration Tester (Intern)",
+      "company": "CIH",
+      "date": "2024 (1 month)",
+      "title": "Penetration Tester",
+      "content": [
+        "Supported security testing activities focused on web applications and common attack surfaces.",
+        "Participated in vulnerability assessment workflows, reporting, and practical validation of findings.",
+        "Built a stronger offensive-security mindset while learning how to communicate technical risk clearly."
+      ],
+      "technologies": ["Penetration Testing", "Web Application Security", "Security Testing", "Vulnerability Assessment"]
+    },
+    {
+      "name": "DevOps/Security Intern",
+      "company": "ITPay",
+      "date": "18 March 2025 onward (5 months)",
+      "title": "DevOps & Security Intern",
+      "content": [
+        "Worked on infrastructure and automation in a payment-focused environment where reliability and security were both critical.",
+        "Supported administration, tooling, and operational improvements to make deployment and maintenance more consistent.",
+        "This internship strengthened my practical DevOps skills and deepened my understanding of infrastructure in production settings."
+      ],
+      "technologies": ["DevOps", "Security", "Automation", "System Administration"]
+    },
+    {
+      "name": "BMCE OPV Intern",
+      "company": "BMCE",
+      "date": "18 March 2025 onward (5 months)",
+      "title": "BMCE OPV Platform Intern",
+      "content": [
+        "Worked on a web and mobile platform supporting purchase operations and OPV workflows.",
+        "Contributed to authentication, role-based access, and audit-oriented flows, while helping improve the overall platform experience.",
+        "Combined product delivery with technical execution in a project where reliability and access control mattered."
+      ],
+      "technologies": ["Web Development", "Mobile", "Authentication", "OPV"]
+    }
+  ]
+}

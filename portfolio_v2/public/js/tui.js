@@ -226,9 +226,9 @@ function renderSidebar() {
           <button class="sidebar-chip sidebar-toggle-chip sidebar-theme-chip${state.theme === "light" ? " light" : " dark"}" type="button" data-sidebar-theme-toggle aria-pressed="${state.theme === "light"}" title="${themeControl.label}" aria-label="${themeControl.label}">
             <span class="sidebar-chip-icon">${themeControl.icon}</span>
           </button>
-          <button class="sidebar-chip sidebar-mode-chip" type="button" data-sidebar-mode-toggle aria-label="${elements.layout?.classList.contains("terminal-mode") ? "Switch to GUI mode" : "Switch to terminal mode"}">
-            <span class="sidebar-chip-icon">${elements.layout?.classList.contains("terminal-mode") ? "🖥️" : "⌨️"}</span>
-            <span class="sidebar-chip-copy">${elements.layout?.classList.contains("terminal-mode") ? "GUI" : "Terminal"}</span>
+          <button class="sidebar-chip sidebar-download-chip" type="button" data-download-cv title="Download CV" aria-label="Download CV">
+            <span class="sidebar-chip-icon">⬇️</span>
+            <span class="sidebar-chip-copy">CV</span>
           </button>
         </div>
       </div>
@@ -606,6 +606,18 @@ function handleDocumentClick(event) {
   const sidebarThemeButton = event.target.closest("[data-sidebar-theme-toggle]");
   if (sidebarThemeButton) {
     toggleTheme();
+    return;
+  }
+
+  const downloadCvButton = event.target.closest("[data-download-cv]");
+  if (downloadCvButton) {
+    const a = document.createElement("a");
+    a.href = "/documents/SohaibMokhlissCvBlack.pdf";
+    a.download = "SohaibMokhlissCvBlack.pdf";
+    a.rel = "noopener";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
     return;
   }
 

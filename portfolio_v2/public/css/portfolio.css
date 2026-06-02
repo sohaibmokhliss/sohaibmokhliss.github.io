@@ -152,7 +152,8 @@ a {
 .sidebar-item-button,
 .mobile-section-pill,
 .card-link,
-.project-image-button {
+.project-image-button,
+.portfolio-inline-button {
   appearance: none;
   border: 1px solid var(--border);
   background: var(--surface-strong);
@@ -258,9 +259,6 @@ body.lightmode #sidebar {
 
 .sidebar-brand-kicker,
 .mobile-brand-kicker {
-  margin: 0 0 0.35rem;
-  color: var(--accent);
-  text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.72rem;
   font-weight: 700;
@@ -677,6 +675,32 @@ body.lightmode .portfolio-card::before {
   line-height: 1.7;
 }
 
+.home-cv-cta {
+  margin-top: 0.4rem;
+}
+
+.portfolio-inline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  width: min(100%, 280px);
+  padding: 1rem 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background: linear-gradient(135deg, rgba(103, 232, 249, 0.18), rgba(244, 114, 182, 0.14));
+  border-color: rgba(103, 232, 249, 0.35);
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.22), 0 0 0 1px rgba(103, 232, 249, 0.1) inset;
+}
+
+.portfolio-inline-button:hover,
+.portfolio-inline-button:focus-visible {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, rgba(103, 232, 249, 0.24), rgba(244, 114, 182, 0.2));
+  border-color: rgba(103, 232, 249, 0.55);
+}
+
 .text-accent {
   color: var(--accent);
   font-weight: 700;
@@ -912,6 +936,11 @@ body.terminal-mode-active [data-sidebar-mode-toggle] {
   background: transparent;
   color: var(--text);
   font: inherit;
+  direction: ltr;
+  unicode-bidi: plaintext;
+  text-align: left;
+  caret-color: var(--accent);
+  -webkit-text-fill-color: var(--text);
 }
 
 body.terminal-mode-active {
@@ -1206,6 +1235,7 @@ body.terminal-mode-active {
       0 0 0 1px rgba(255, 255, 255, 0.035) inset,
       0 18px 55px rgba(0, 0, 0, 0.48),
       0 0 42px rgba(103, 232, 249, 0.08);
+    overflow: hidden;
   }
 
   #layout.terminal-mode #terminal-container::before {
@@ -1268,8 +1298,10 @@ body.terminal-mode-active {
   }
 
   #terminal-output {
-    padding: 0.2rem 0.05rem 0;
+    padding: 0.2rem 0.05rem 0.35rem;
     line-height: 1.48;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   #terminal-output .welcome {
@@ -1301,6 +1333,10 @@ body.terminal-mode-active {
     border-radius: 0.95rem;
     background: rgba(2, 6, 23, 0.4);
     box-shadow: 0 0 22px rgba(103, 232, 249, 0.055) inset;
+    position: sticky;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 0.5rem);
+    z-index: 2;
+    backdrop-filter: blur(14px) saturate(150%);
   }
 
   .terminal-prompt {
@@ -1310,6 +1346,13 @@ body.terminal-mode-active {
 
   .terminal-input {
     color: #f8fbff;
+    -webkit-text-fill-color: #f8fbff;
+    caret-color: #67e8f9;
+    font-size: 1rem;
+  }
+
+  #terminal-output {
+    padding-bottom: 0.35rem;
   }
 }
 
