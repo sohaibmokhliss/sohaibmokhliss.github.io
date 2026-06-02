@@ -328,6 +328,14 @@ function renderHomeCards(data, activeIndex) {
       </div>
       <div class="portfolio-prose">
         ${(block.content || []).map((line) => `<p>${decorateText(line)}</p>`).join("")}
+        ${index === 0 ? `
+          <div class="home-cv-cta">
+            <button class="portfolio-inline-button home-cv-button" type="button" data-download-cv aria-label="Download CV">
+              <span class="home-cv-icon">⬇️</span>
+              <span class="home-cv-label">Download CV</span>
+            </button>
+          </div>
+        ` : ""}
       </div>
     </article>
   `).join("");
