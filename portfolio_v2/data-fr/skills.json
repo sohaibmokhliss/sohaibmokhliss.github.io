@@ -3,8 +3,8 @@
     {
       "name": "Développement front-end",
       "content": [
-        "Intérêt pour la création d'interfaces responsives, fluides et agréables sur mobile comme sur desktop.",
-        "À l'aise pour passer de la structure visuelle à la gestion d'état, aux détails d'interaction et au raffinement UX.",
+        "Intérêt pour la création d'interfaces utilisateur soignées, utilisables et rapides sur desktop comme sur mobile.",
+        "À l'aise pour passer de la structure visuelle aux détails d'interaction et au raffinement UX.",
         "Je considère le front-end comme un vrai travail d'ingénierie, pas seulement comme de l'assemblage visuel."
       ],
       "snippet": null
@@ -12,8 +12,8 @@
     {
       "name": "Développement back-end",
       "content": [
-        "Intérêt pour les systèmes back-end, la logique métier, les flux d'authentification et les interactions entre services.",
-        "À l'aise pour raisonner sur les API, les flux de données et la partie opérationnelle de l'architecture applicative.",
+        "Intérêt pour les systèmes côté serveur, la logique métier, les flux d'authentification et les API.",
+        "À l'aise pour raisonner sur les flux de données et la partie opérationnelle de l'architecture applicative.",
         "J'aime transformer les besoins produit en comportement back-end structuré."
       ],
       "snippet": null
@@ -21,9 +21,9 @@
     {
       "name": "Développement d'applications",
       "content": [
-        "Intérêt pour créer des applications utiles, maintenables et pensées à la fois pour l'UX et la structure.",
-        "À l'aise pour naviguer entre les besoins front-end et back-end quand le problème demande une vision full-stack.",
-        "Je considère le développement comme un travail d'ingénierie, pas seulement comme du visuel."
+        "Intérêt pour la création d'applications complètes, utiles, maintenables et bien structurées.",
+        "À l'aise pour combiner front-end, back-end et base de données quand le problème demande une vision full-stack.",
+        "Je considère le développement d'applications comme le processus complet qui transforme une idée en produit fonctionnel."
       ],
       "snippet": null
     },
@@ -37,29 +37,20 @@
       "snippet": null
     },
     {
-      "name": "Sécurité réseau",
+      "name": "Ingénierie de la sécurité",
       "content": [
-        "Solide compréhension des protocoles réseau et des mesures de sécurité.",
-        "Expérience dans la surveillance du trafic réseau et l'identification des menaces de sécurité.",
-        "Connaissance des pare-feu, IDS/IPS et de la segmentation réseau."
+        "Les bases solides de la sécurité influencent encore ma manière de penser le logiciel, l'infrastructure et les choix de déploiement.",
+        "À l'aise pour analyser les risques, identifier les points faibles et améliorer les systèmes avec une approche secure-by-default.",
+        "Je vois la sécurité comme une composante de la qualité produit et plateforme, pas comme une réflexion séparée."
       ],
       "snippet": null
     },
     {
-      "name": "Réponse aux incidents",
+      "name": "Infrastructure & Cloud",
       "content": [
-        "Formé à la réponse aux incidents et violations de sécurité.",
-        "Expérience en surveillance de la sécurité et détection des menaces.",
-        "Familier avec les procédures et meilleures pratiques de réponse aux incidents."
-      ],
-      "snippet": null
-    },
-    {
-      "name": "Analyse de sécurité",
-      "content": [
-        "Compétent dans l'analyse des vulnérabilités et menaces de sécurité.",
-        "Expérience avec les outils et techniques d'évaluation des vulnérabilités.",
-        "Capacité à fournir des recommandations de sécurité et à mettre en œuvre des mesures de protection."
+        "À l'aise avec les environnements Linux, la virtualisation et les workflows conteneurisés.",
+        "Intérêt pour une infrastructure observable, reproductible et plus simple à exploiter dans le temps.",
+        "J'aime la couche où développement, déploiement et fiabilité des plateformes se rejoignent."
       ],
       "snippet": null
     }
