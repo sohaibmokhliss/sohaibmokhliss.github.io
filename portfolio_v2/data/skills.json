@@ -19,11 +19,11 @@
       "snippet": null
     },
     {
-      "name": "Application Development",
+      "name": "Mobile Development",
       "content": [
-        "Interested in building complete applications that are useful, maintainable, and thoughtfully structured.",
-        "Comfortable combining frontend, backend, and database concerns when the problem needs full-stack thinking.",
-        "I treat application development as the full process of turning ideas into working products."
+        "Interested in building mobile experiences that are useful, maintainable, and thoughtfully structured.",
+        "Comfortable combining UI, device constraints, and product thinking when the problem needs mobile-first design.",
+        "I treat mobile development as the process of turning ideas into working products on handheld devices."
       ],
       "snippet": null
     },
