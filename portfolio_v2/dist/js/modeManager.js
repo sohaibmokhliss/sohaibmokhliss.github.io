@@ -81,18 +81,15 @@ const ModeManager = {
     const navToggleBtn = document.getElementById('mode-toggle-nav');
     if (!navToggleBtn) return;
 
-    const emoji = navToggleBtn.querySelector('.btn-emoji');
     const text = navToggleBtn.querySelector('.btn-text');
 
+    if (!text) return;
+
     if (this.currentMode === 'gui') {
-      // In GUI mode, show Terminal button
-      emoji.textContent = '⌨️';
       text.textContent = 'Terminal';
       navToggleBtn.setAttribute('aria-label', 'Switch to Terminal mode');
       navToggleBtn.setAttribute('title', 'Switch to Terminal');
     } else {
-      // In Terminal mode, show GUI button
-      emoji.textContent = '🖥️';
       text.textContent = 'GUI';
       navToggleBtn.setAttribute('aria-label', 'Switch to GUI mode');
       navToggleBtn.setAttribute('title', 'Switch to GUI');

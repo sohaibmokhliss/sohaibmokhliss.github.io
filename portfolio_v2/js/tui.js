@@ -325,6 +325,11 @@ function renderHomeCards(data, activeIndex) {
         <p class="portfolio-card-kicker">${escapeHtml(labels[index] || `Block ${index + 1}`)}</p>
       </div>
       <div class="portfolio-prose">
+        ${index === 0 ? `
+          <figure class="home-portrait-wrap">
+            <img class="home-portrait" src="/images/home-portrait.jpg" alt="Portrait of Sohaib Mokhliss in a formal black suit" loading="eager">
+          </figure>
+        ` : ""}
         ${(block.content || []).map((line) => `<p>${decorateText(line)}</p>`).join("")}
         ${index === 0 ? `
           <div class="home-cv-cta">

@@ -261,7 +261,6 @@ function renderMobileSections() {
           <span class="sidebar-chip-icon">${themeControl.icon}</span>
         </button>
         <button class="sidebar-chip mobile-chip sidebar-mode-chip" type="button" data-sidebar-mode-toggle>
-          <span class="sidebar-chip-icon">${elements.layout?.classList.contains("terminal-mode") ? "🖥️" : "⌨️"}</span>
           <span class="sidebar-chip-copy">${elements.layout?.classList.contains("terminal-mode") ? "GUI" : "Terminal"}</span>
         </button>
       </div>
@@ -326,6 +325,11 @@ function renderHomeCards(data, activeIndex) {
         <p class="portfolio-card-kicker">${escapeHtml(labels[index] || `Block ${index + 1}`)}</p>
       </div>
       <div class="portfolio-prose">
+        ${index === 0 ? `
+          <figure class="home-portrait-wrap">
+            <img class="home-portrait" src="/images/home-portrait.jpg" alt="Portrait of Sohaib Mokhliss in a formal black suit" loading="eager">
+          </figure>
+        ` : ""}
         ${(block.content || []).map((line) => `<p>${decorateText(line)}</p>`).join("")}
         ${index === 0 ? `
           <div class="home-cv-cta">

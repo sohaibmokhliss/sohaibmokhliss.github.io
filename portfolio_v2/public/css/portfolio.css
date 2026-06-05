@@ -701,8 +701,23 @@ body.lightmode .portfolio-card::before {
 }
 
 .portfolio-prose p {
-  margin: 0 0 0.9rem;
-  line-height: 1.7;
+  margin: 0 0 0.85rem;
+}
+
+.home-portrait-wrap {
+  margin: 0 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.home-portrait {
+  width: min(100%, 320px);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 
 .home-cv-cta {
