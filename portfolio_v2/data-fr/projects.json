@@ -5,6 +5,13 @@
       "year": 2026,
       "githubUrl": null,
       "demoUrl": null,
+      "videoUrl": "/videos/devsecaudit-demo.mp4",
+      "videoPoster": "/images/devsecaudit-demo-poster.jpg",
+      "videoCaption": "Scan d'un domaine en direct, puis traitement des problèmes trouvés et re-test des corrections.",
+      "documents": [
+        { "label": "Rapport de projet", "meta": "PDF · 39 pages", "url": "/documents/devsecaudit-rapport.pdf", "thumb": "/images/devsecaudit-rapport-cover.jpg" },
+        { "label": "Présentation produit", "meta": "PDF · 30 diapositives", "url": "/documents/devsecaudit-presentation.pdf", "thumb": "/images/devsecaudit-presentation-cover.jpg" }
+      ],
       "content": [
         "Une plateforme d'audit de sécurité web qui analyse un domaine à la recherche de mauvaises configurations courantes et produit un rapport en langage clair, avec un score de risque et des recommandations concrètes.",
         "Elle exécute une vingtaine de contrôles indépendants — en-têtes de sécurité, CORS, TLS, enregistrements DNS et e-mail, fichiers exposés, ports ouverts, panneaux d'administration, empreinte technologique et domaines similaires — les contrôles passifs par défaut, les plus intrusifs derrière une option explicite.",

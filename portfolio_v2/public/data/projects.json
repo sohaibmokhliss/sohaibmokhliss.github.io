@@ -5,6 +5,13 @@
       "year": 2026,
       "githubUrl": null,
       "demoUrl": null,
+      "videoUrl": "/videos/devsecaudit-demo.mp4",
+      "videoPoster": "/images/devsecaudit-demo-poster.jpg",
+      "videoCaption": "Scanning a live domain, then working through the findings and re-testing them (in French).",
+      "documents": [
+        { "label": "Project report", "meta": "PDF · 39 pages", "url": "/documents/devsecaudit-rapport.pdf", "thumb": "/images/devsecaudit-rapport-cover.jpg" },
+        { "label": "Product presentation", "meta": "PDF · 30 slides", "url": "/documents/devsecaudit-presentation.pdf", "thumb": "/images/devsecaudit-presentation-cover.jpg" }
+      ],
       "content": [
         "A website security audit platform that scans a domain for common misconfigurations and returns a plain-English report with a risk score and concrete fix recommendations.",
         "It runs around twenty independent checks — security headers, CORS, TLS, DNS and email records, exposed files, open ports, admin panels, technology fingerprinting, and lookalike domains — with passive checks by default and intrusive ones kept behind an explicit flag.",
