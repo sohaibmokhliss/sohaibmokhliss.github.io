@@ -1,28 +1,16 @@
 {
   "data": [
     {
-      "name": "Analyste cybersécurité (Stagiaire)",
-      "company": "HPS",
-      "date": "juin–juillet 2023 (2 mois)",
-      "title": "Analyste cybersécurité",
+      "name": "Stagiaire BMCE OPV",
+      "company": "BMCE",
+      "date": "mars–août 2026 (5 mois)",
+      "title": "Stagiaire plateforme BMCE OPV",
       "content": [
-        "Collaboration avec l'équipe de sécurité sur la surveillance réseau et l'évaluation des vulnérabilités.",
-        "Analyse du trafic réseau, identification des points faibles et contribution aux mesures de remédiation.",
-        "Renforcement de ma compréhension du rôle des opérations de sécurité dans la protection des infrastructures critiques."
+        "Travail sur une plateforme web et mobile pour les opérations d'achat et les workflows OPV.",
+        "Contribution à l'authentification, aux accès par rôle et aux parcours orientés audit, tout en améliorant l'expérience globale de la plateforme.",
+        "Livraison produit et exécution technique réunies dans un projet où la fiabilité et le contrôle d'accès étaient essentiels."
       ],
-      "technologies": ["Sécurité réseau", "Évaluation des vulnérabilités", "Surveillance de sécurité", "Réponse aux incidents"]
-    },
-    {
-      "name": "Pentester (Stagiaire)",
-      "company": "CIH",
-      "date": "2024 (1 mois)",
-      "title": "Pentester",
-      "content": [
-        "Participation à des tests d'intrusion et à des évaluations de vulnérabilités sur des applications web.",
-        "Contribution aux workflows de validation, de reporting et de vérification des failles détectées.",
-        "Développement d'une vision plus offensive de la sécurité et d'une meilleure communication du risque technique."
-      ],
-      "technologies": ["Tests d'intrusion", "Sécurité des applications web", "Tests de sécurité", "Évaluation des vulnérabilités"]
+      "technologies": ["Développement web", "Mobile", "Authentification", "OPV"]
     },
     {
       "name": "Stagiaire DevOps/Sécurité",
@@ -37,16 +25,28 @@
       "technologies": ["DevOps", "Sécurité", "Automatisation", "Administration système"]
     },
     {
-      "name": "Stagiaire BMCE OPV",
-      "company": "BMCE",
-      "date": "mars–août 2026 (5 mois)",
-      "title": "Stagiaire plateforme BMCE OPV",
+      "name": "Pentester (Stagiaire)",
+      "company": "CIH",
+      "date": "2024 (1 mois)",
+      "title": "Pentester",
       "content": [
-        "Travail sur une plateforme web et mobile pour les opérations d'achat et les workflows OPV.",
-        "Contribution à l'authentification, aux accès par rôle et aux parcours orientés audit, tout en améliorant l'expérience globale de la plateforme.",
-        "Livraison produit et exécution technique réunies dans un projet où la fiabilité et le contrôle d'accès étaient essentiels."
+        "Participation à des tests d'intrusion et à des évaluations de vulnérabilités sur des applications web.",
+        "Contribution aux workflows de validation, de reporting et de vérification des failles détectées.",
+        "Développement d'une vision plus offensive de la sécurité et d'une meilleure communication du risque technique."
       ],
-      "technologies": ["Développement web", "Mobile", "Authentification", "OPV"]
+      "technologies": ["Tests d'intrusion", "Sécurité des applications web", "Tests de sécurité", "Évaluation des vulnérabilités"]
+    },
+    {
+      "name": "Analyste cybersécurité (Stagiaire)",
+      "company": "HPS",
+      "date": "juin–juillet 2023 (2 mois)",
+      "title": "Analyste cybersécurité",
+      "content": [
+        "Collaboration avec l'équipe de sécurité sur la surveillance réseau et l'évaluation des vulnérabilités.",
+        "Analyse du trafic réseau, identification des points faibles et contribution aux mesures de remédiation.",
+        "Renforcement de ma compréhension du rôle des opérations de sécurité dans la protection des infrastructures critiques."
+      ],
+      "technologies": ["Sécurité réseau", "Évaluation des vulnérabilités", "Surveillance de sécurité", "Réponse aux incidents"]
     }
   ]
 }
