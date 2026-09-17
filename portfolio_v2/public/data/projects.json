@@ -92,19 +92,6 @@
       ],
       "technologies": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT Authentication"],
       "images": []
-    },
-    {
-      "name": "Portfolio Terminal",
-      "year": 2025,
-      "githubUrl": "https://github.com/sohaibmokhliss/sohaibmokhliss.github.io",
-      "demoUrl": "https://sohaibmokhliss.github.io",
-      "content": [
-        "An interactive portfolio that combines a visual interface with a terminal-inspired navigation mode.",
-        "The goal was to make the site memorable without losing usability: bilingual content, theme switching, keyboard navigation, and a small command-line experience all live in the same product.",
-        "It is also a showcase of how far careful vanilla JavaScript, CSS, and HTML can go when the structure is deliberate."
-      ],
-      "technologies": ["JavaScript", "CSS3", "HTML5", "Vite", "Git"],
-      "images": []
     }
   ]
 }
