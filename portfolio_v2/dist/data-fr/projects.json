@@ -85,6 +85,13 @@
       "year": 2025,
       "githubUrl": "https://github.com/sohaibmokhliss/todo-planner",
       "demoUrl": "https://todo-planner-six.vercel.app",
+      "videoUrl": "/videos/todo-planner-demo.mp4",
+      "videoPoster": "/images/todo-planner-demo-poster.jpg",
+      "videoCaption": "Ajout de tâches et de sous-tâches, puis navigation entre les vues boîte de réception, aujourd'hui et à venir.",
+      "documents": [
+        { "label": "Rapport technique", "meta": "PDF · 14 pages", "url": "/documents/todo-planner-report.pdf", "thumb": "/images/todo-planner-report-cover.jpg" },
+        { "label": "Présentation du projet", "meta": "PDF · 23 diapositives", "url": "/documents/todo-planner-presentation.pdf", "thumb": "/images/todo-planner-presentation-cover.jpg" }
+      ],
       "content": [
         "Une application web moderne de gestion de tâches et de planification personnelle conçue pour aider les utilisateurs à rester organisés et productifs.",
         "Les fonctionnalités incluent la gestion des tâches avec création, organisation et achèvement des tâches, la planification intelligente avec dates d'échéance, rappels et intégration de calendrier, l'organisation par projets pour un meilleur flux de travail, les étiquettes et tags pour une catégorisation efficace, les tâches récurrentes qui se répètent automatiquement, et les notifications intelligentes pour ne jamais manquer une échéance.",

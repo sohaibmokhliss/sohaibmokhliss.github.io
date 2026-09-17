@@ -85,6 +85,13 @@
       "year": 2025,
       "githubUrl": "https://github.com/sohaibmokhliss/todo-planner",
       "demoUrl": "https://todo-planner-six.vercel.app",
+      "videoUrl": "/videos/todo-planner-demo.mp4",
+      "videoPoster": "/images/todo-planner-demo-poster.jpg",
+      "videoCaption": "Adding tasks and subtasks, then moving through inbox, today and upcoming views.",
+      "documents": [
+        { "label": "Technical report", "meta": "PDF · 14 pages", "url": "/documents/todo-planner-report.pdf", "thumb": "/images/todo-planner-report-cover.jpg" },
+        { "label": "Project presentation", "meta": "PDF · 23 slides", "url": "/documents/todo-planner-presentation.pdf", "thumb": "/images/todo-planner-presentation-cover.jpg" }
+      ],
       "content": [
         "A full-stack planning application designed to make personal organization feel fast, clear, and low-friction.",
         "The product combines task tracking, scheduling, categorization, and reminders in a workflow that stays usable across desktop and mobile devices.",
