@@ -97,14 +97,8 @@ function buildLinks(item, sectionKey) {
   if (item.demoUrl) {
     links.push({ href: item.demoUrl, label: "Live Demo" });
   }
-  if (item.reportUrl) {
+  if (item.reportUrl && sectionKey !== "projects") {
     links.push({ href: item.reportUrl, label: "Report" });
-  }
-  if (item.presentationUrl) {
-    links.push({ href: item.presentationUrl, label: "Presentation" });
-  }
-  if (item.videoUrl) {
-    links.push({ href: item.videoUrl, label: "Demo Video" });
   }
   if (sectionKey === "certifications" && item.certificateUrl) {
     links.push({ href: item.certificateUrl, label: "Certificate" });
@@ -281,6 +275,52 @@ function renderMobileSections() {
   `;
 }
 
+function renderProjectMedia(project) {
+  const documents = Array.isArray(project.documents) ? project.documents : [];
+  if (!project.videoUrl && documents.length === 0) {
+    return "";
+  }
+
+  const video = project.videoUrl ? `
+    <figure class="project-video">
+      <video
+        controls
+        preload="none"
+        playsinline
+        ${project.videoPoster ? `poster="${escapeHtml(project.videoPoster)}"` : ""}
+        aria-label="${escapeHtml(`${project.name} demonstration video`)}"
+      >
+        <source src="${escapeHtml(project.videoUrl)}" type="video/mp4">
+      </video>
+      ${project.videoCaption ? `<figcaption>${escapeHtml(project.videoCaption)}</figcaption>` : ""}
+    </figure>
+  ` : "";
+
+  const docs = documents.length ? `
+    <div class="project-doc-grid">
+      ${documents.map((doc) => `
+        <a class="project-doc" href="${escapeHtml(doc.url)}" target="_blank" rel="noopener noreferrer">
+          ${doc.thumb ? `<img src="${escapeHtml(doc.thumb)}" alt="${escapeHtml(`${doc.label} cover page`)}" loading="lazy">` : ""}
+          <span class="project-doc-body">
+            <span class="project-doc-label">${escapeHtml(doc.label)}</span>
+            ${doc.meta ? `<span class="project-doc-meta">${escapeHtml(doc.meta)}</span>` : ""}
+          </span>
+        </a>
+      `).join("")}
+    </div>
+  ` : "";
+
+  return `
+    <section class="project-preview-panel project-media-panel" aria-label="${escapeHtml(project.name)} documents and demo">
+      <div class="project-preview-header">
+        <p class="project-preview-kicker">Documents &amp; demo</p>
+      </div>
+      ${video}
+      ${docs}
+    </section>
+  `;
+}
+
 function renderProjectImages(project, activeIndex) {
   if (!Array.isArray(project.images) || project.images.length === 0) {
     return "";
@@ -383,6 +423,7 @@ function renderProjectCards(data, activeIndex) {
         </div>
         <p class="portfolio-card-meta">${escapeHtml(item.year || "")}</p>
       </div>
+      ${renderProjectMedia(item)}
       ${renderProjectImages(item, index)}
       <div class="portfolio-prose">
         ${(item.content || []).map((line) => `<p>${decorateText(line)}</p>`).join("")}

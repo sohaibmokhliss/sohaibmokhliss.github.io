@@ -193,8 +193,12 @@ const Terminal = {
       if (project.githubUrl) content += `GitHub: ${project.githubUrl}\n`;
       if (project.demoUrl) content += `Demo: ${project.demoUrl}\n`;
       if (project.reportUrl) content += `Report: ${project.reportUrl}\n`;
-      if (project.presentationUrl) content += `Presentation: ${project.presentationUrl}\n`;
       if (project.videoUrl) content += `Demo video: ${project.videoUrl}\n`;
+      if (Array.isArray(project.documents)) {
+        project.documents.forEach(doc => {
+          content += `${doc.label}: ${doc.url}\n`;
+        });
+      }
 
       files[filename] = {
         type: 'file',

@@ -18,9 +18,13 @@
       "year": 2026,
       "githubUrl": null,
       "demoUrl": null,
-      "reportUrl": "/documents/bmce-opv-rapport-pfe.pdf",
-      "presentationUrl": "/documents/bmce-opv-presentation-pfe.pdf",
       "videoUrl": "/videos/bmce-opv-demo.mp4",
+      "videoPoster": "/images/bmce-opv-demo-poster.jpg",
+      "videoCaption": "Démonstration du portail web et du parcours mobile de souscription OPV.",
+      "documents": [
+        { "label": "Rapport de fin d'études", "meta": "PDF · 60 pages", "url": "/documents/bmce-opv-rapport-pfe.pdf", "thumb": "/images/bmce-opv-rapport-cover.jpg" },
+        { "label": "Présentation de soutenance", "meta": "PDF · 31 diapositives", "url": "/documents/bmce-opv-presentation-pfe.pdf", "thumb": "/images/bmce-opv-presentation-cover.jpg" }
+      ],
       "content": [
         "Une plateforme web et mobile pour les workflows OPV de BMCE, conçue pour soutenir à la fois l'administration interne et les parcours de demande côté client.",
         "Les captures montrent l'expérience de connexion, l'administration OPV, la visibilité du tableau de bord et le flux mobile de consultation et de soumission de demandes.",
