@@ -58,6 +58,13 @@
       "year": 2026,
       "githubUrl": "https://github.com/sohaibmokhliss/spotifyPLdownloader",
       "demoUrl": null,
+      "videoUrl": "/videos/playlist-downloader-demo.mp4",
+      "videoPoster": "/images/playlist-downloader-demo-poster.jpg",
+      "videoCaption": "Importing an exported list and fetching the matching audio, run locally on public-domain tracks.",
+      "documents": [
+        { "label": "Technical report", "meta": "PDF · 18 pages", "url": "/documents/playlist-downloader-report.pdf", "thumb": "/images/playlist-downloader-report-cover.jpg" },
+        { "label": "Project presentation", "meta": "PDF · 16 slides", "url": "/documents/playlist-downloader-presentation.pdf", "thumb": "/images/playlist-downloader-presentation-cover.jpg" }
+      ],
       "content": [
         "An educational Flask application that takes a Spotify playlist exported as TXT or CSV and fetches the matching tracks from YouTube as MP3 or MP4.",
         "Working from an exported file keeps the main flow free of API keys, and downloads are zipped and streamed straight to the browser rather than kept on the server.",
