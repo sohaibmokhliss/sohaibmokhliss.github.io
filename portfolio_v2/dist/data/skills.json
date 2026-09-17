@@ -3,8 +3,8 @@
     {
       "name": "Frontend Development",
       "content": [
-        "Interested in building responsive interfaces that feel polished, usable, and fast on both desktop and mobile.",
-        "Comfortable moving from visual structure into state management, interaction details, and UX refinement.",
+        "Interested in building user interfaces that feel polished, usable, and fast on desktop and mobile.",
+        "Comfortable moving from visual structure into interaction details and UX refinement.",
         "I treat frontend work as engineering work, not just visual assembly."
       ],
       "snippet": null
@@ -12,18 +12,18 @@
     {
       "name": "Backend Development",
       "content": [
-        "Interested in backend systems, business logic, authentication flows, and service-to-service thinking.",
-        "Comfortable reasoning about APIs, data flow, and the operational side of application architecture.",
+        "Interested in server-side systems, business logic, authentication flows, and APIs.",
+        "Comfortable reasoning about data flow and the operational side of application architecture.",
         "I enjoy turning product requirements into structured backend behavior."
       ],
       "snippet": null
     },
     {
-      "name": "Application Development",
+      "name": "Mobile Development",
       "content": [
-        "Interested in building applications that are useful, maintainable, and thoughtful in both UX and structure.",
-        "Comfortable moving between frontend and backend concerns when the problem needs full-stack thinking.",
-        "I treat development as engineering work, not just visual assembly."
+        "Interested in building mobile experiences that are useful, maintainable, and thoughtfully structured.",
+        "Comfortable combining UI, device constraints, and product thinking when the problem needs mobile-first design.",
+        "I treat mobile development as the process of turning ideas into working products on handheld devices."
       ],
       "snippet": null
     },

@@ -25,30 +25,6 @@
       "certificateUrl": "/certificates/coursera-ethical-hacking-essentials.pdf"
     },
     {
-      "name": "Introduction aux outils de cybersécurité et aux cyberattaques",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Introduction aux outils de cybersécurité et aux cyberattaques",
-      "content": [
-        "Panorama des outils de défense, des workflows de réponse aux incidents et des menaces émergentes.",
-        "Laboratoires pratiques couvrant la reconnaissance, l'exploitation et les stratégies de mitigation.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-intro-cybersecurity-tools-attacks.pdf"
-    },
-    {
-      "name": "Introduction aux conteneurs avec Docker, Kubernetes & OpenShift",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Introduction aux conteneurs avec Docker, Kubernetes & OpenShift",
-      "content": [
-        "Création de services conteneurisés, orchestration avec Kubernetes et découverte des workflows OpenShift.",
-        "Renforcement des notions de sécurité, de montée en charge et de déploiement automatisé des conteneurs.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-containers-docker-kubernetes-openshift.pdf"
-    },
-    {
       "name": "Droit du Cloud Computing",
       "issuer": "Coursera",
       "date": "Complété",
@@ -121,18 +97,6 @@
       "certificateUrl": "/certificates/coursera-poo-cpp.pdf"
     },
     {
-      "name": "Introduction à Java et à la programmation orientée objet",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Introduction à Java et à la programmation orientée objet",
-      "content": [
-        "Mise en œuvre des concepts POO en Java : encapsulation, héritage et polymorphisme.",
-        "Construction d'applications modulaires privilégiant une architecture propre et réutilisable.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-intro-java-oop.pdf"
-    },
-    {
       "name": "Bases de React",
       "issuer": "Coursera",
       "date": "Complété",
@@ -143,18 +107,6 @@
         "Certificat disponible ci-dessous."
       ],
       "certificateUrl": "/certificates/coursera-react-basics.pdf"
-    },
-    {
-      "name": "Mesure d'impact et gestion pour les ODD",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Mesure d'impact et gestion pour les ODD",
-      "content": [
-        "Apprentissage de cadres de mesure d'impact alignés sur les Objectifs de Développement Durable des Nations Unies.",
-        "Conception de plans de suivi des résultats et d'indicateurs pour des initiatives technologiques à impact.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-impact-measurement-sdgs.pdf"
     },
     {
       "name": "CSS3",
@@ -193,52 +145,40 @@
       "certificateUrl": "/certificates/coursera-software-design-project-management.pdf"
     },
     {
-      "name": "Collaborer efficacement pour réussir professionnellement",
+      "name": "Introduction aux conteneurs avec Docker, Kubernetes & OpenShift",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "Collaborer efficacement pour réussir professionnellement",
+      "title": "Introduction aux conteneurs avec Docker, Kubernetes & OpenShift",
       "content": [
-        "Développement des compétences de communication interpersonnelle, de résolution de conflits et d'alignement des parties prenantes.",
-        "Pratique de techniques de conduite d'initiatives collaboratives dans des équipes internationales et à distance.",
+        "Création de services conteneurisés, orchestration avec Kubernetes et découverte des workflows OpenShift.",
+        "Renforcement des notions de sécurité, de montée en charge et de déploiement automatisé des conteneurs.",
         "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "/certificates/coursera-collaborate-effectively.pdf"
+      "certificateUrl": "/certificates/coursera-containers-docker-kubernetes-openshift.pdf"
     },
     {
-      "name": "Réussir sa présentation",
+      "name": "Introduction à Java et à la programmation orientée objet",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "Réussir sa présentation",
+      "title": "Introduction à Java et à la programmation orientée objet",
       "content": [
-        "Amélioration du storytelling, de la conception de supports visuels et des techniques de prise de parole.",
-        "Pratique de stratégies de communication persuasive et d'exercices de confiance en soi.",
+        "Mise en œuvre des concepts POO en Java : encapsulation, héritage et polymorphisme.",
+        "Construction d'applications modulaires privilégiant une architecture propre et réutilisable.",
         "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "/certificates/coursera-successful-presentation.pdf"
+      "certificateUrl": "/certificates/coursera-intro-java-oop.pdf"
     },
     {
-      "name": "La recherche documentaire",
+      "name": "Introduction aux outils de cybersécurité et aux cyberattaques",
       "issuer": "Coursera",
       "date": "Complété",
-      "title": "La recherche documentaire",
+      "title": "Introduction aux outils de cybersécurité et aux cyberattaques",
       "content": [
-        "Développement de stratégies de recherche académique, d'évaluation des sources et de rédaction structurée.",
-        "Renforcement des compétences d'information pour la rédaction technique fondée sur des preuves.",
+        "Panorama des outils de défense, des workflows de réponse aux incidents et des menaces émergentes.",
+        "Laboratoires pratiques couvrant la reconnaissance, l'exploitation et les stratégies de mitigation.",
         "Certificat disponible ci-dessous."
       ],
-      "certificateUrl": "/certificates/coursera-recherche-documentaire.pdf"
-    },
-    {
-      "name": "Villes africaines",
-      "issuer": "Coursera",
-      "date": "Complété",
-      "title": "Villes africaines",
-      "content": [
-        "Étude des défis du développement urbain et des stratégies de résilience dans les grandes villes africaines.",
-        "Mise en relation des enjeux socio-économiques avec la planification des infrastructures et les solutions smart city.",
-        "Certificat disponible ci-dessous."
-      ],
-      "certificateUrl": "/certificates/coursera-villes-africaines.pdf"
+      "certificateUrl": "/certificates/coursera-intro-cybersecurity-tools-attacks.pdf"
     }
   ]
 }

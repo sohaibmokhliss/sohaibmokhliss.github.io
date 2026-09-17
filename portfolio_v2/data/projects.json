@@ -1,6 +1,19 @@
 {
   "data": [
     {
+      "name": "BMCE OPV Platform",
+      "year": 2025,
+      "githubUrl": null,
+      "demoUrl": null,
+      "content": [
+        "A web and mobile platform for BMCE OPV workflows, designed to support both internal administration and client-side request journeys.",
+        "The screenshots show the login experience, OPV administration, dashboard visibility, and the mobile flow for browsing and submitting requests.",
+        "Built with a product-first mindset, the project puts authentication, role-based access, and operational reliability at the center of the experience."
+      ],
+      "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"],
+      "images": []
+    },
+    {
       "name": "Todo Planner",
       "year": 2025,
       "githubUrl": "https://github.com/sohaibmokhliss/todo-planner",
@@ -24,20 +37,6 @@
         "It is also a showcase of how far careful vanilla JavaScript, CSS, and HTML can go when the structure is deliberate."
       ],
       "technologies": ["JavaScript", "CSS3", "HTML5", "Vite", "Git"],
-      "images": []
-    },
-    {
-      "name": "BMCE Share Request Platform",
-      "year": 2025,
-      "githubUrl": null,
-      "demoUrl": null,
-      "reportUrl": null,
-      "content": [
-        "A full-stack share request management platform built around Spring Boot microservices, React, PostgreSQL, Kafka, and Eureka.",
-        "The platform handles authentication, request processing, exports, audit flows, and role-based access through a structured service architecture.",
-        "This project reflects where I am now: interested in development and DevOps, while keeping security, access control, and operational reliability central to the design."
-      ],
-      "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"],
       "images": []
     }
   ]
