@@ -1,8 +1,21 @@
 {
   "data": [
     {
+      "name": "DevSecAudit",
+      "year": 2026,
+      "githubUrl": null,
+      "demoUrl": null,
+      "content": [
+        "Une plateforme d'audit de sécurité web qui analyse un domaine à la recherche de mauvaises configurations courantes et produit un rapport en langage clair, avec un score de risque et des recommandations concrètes.",
+        "Elle exécute une vingtaine de contrôles indépendants — en-têtes de sécurité, CORS, TLS, enregistrements DNS et e-mail, fichiers exposés, ports ouverts, panneaux d'administration, empreinte technologique et domaines similaires — les contrôles passifs par défaut, les plus intrusifs derrière une option explicite.",
+        "Ce projet réunit mon profil sécurité et mon travail de plateforme : une CLI Typer et un service FastAPI partagent le même moteur, les scans longs tournent en tâches Celery, et les résultats sont exposés dans un tableau de bord Next.js."
+      ],
+      "technologies": ["Python", "FastAPI", "Typer", "Celery", "Redis", "PostgreSQL", "SQLAlchemy", "Playwright", "Next.js", "TypeScript", "Docker"],
+      "images": []
+    },
+    {
       "name": "Plateforme BMCE OPV",
-      "year": 2025,
+      "year": 2026,
       "githubUrl": null,
       "demoUrl": null,
       "content": [
@@ -11,6 +24,32 @@
         "Conçu avec une logique produit en priorité, ce projet met l'accent sur l'authentification, les accès par rôle et la fiabilité opérationnelle."
       ],
       "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"],
+      "images": []
+    },
+    {
+      "name": "DriveLux — Location de voitures",
+      "year": 2026,
+      "githubUrl": null,
+      "demoUrl": null,
+      "content": [
+        "Un front office de location de voitures haut de gamme pour le marché marocain, où le client parcourt une flotte sélectionnée et finalise sa réservation par WhatsApp ou par téléphone.",
+        "La réservation se faisant hors plateforme, le backend reste volontairement centré sur la diffusion du catalogue — mais le schéma a été pensé pour qu'un futur back office de gestion de flotte et de tarifs puisse s'ajouter sans réécriture.",
+        "Le front end s'appuie sur l'animation et un contenu bilingue (FR/EN) pour rendre la navigation plus proche d'un showroom que d'un formulaire."
+      ],
+      "technologies": ["Spring Boot", "Java 17", "Spring Data JPA", "Flyway", "PostgreSQL", "React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "Docker"],
+      "images": []
+    },
+    {
+      "name": "Spotify Playlist Downloader",
+      "year": 2026,
+      "githubUrl": "https://github.com/sohaibmokhliss/spotifyPLdownloader",
+      "demoUrl": null,
+      "content": [
+        "Une application Flask éducative qui prend une playlist Spotify exportée en TXT ou CSV et récupère les morceaux correspondants depuis YouTube en MP3 ou MP4.",
+        "Partir d'un fichier exporté évite les clés d'API dans le flux principal, et les téléchargements sont compressés puis envoyés directement au navigateur plutôt que stockés sur le serveur.",
+        "Je l'ai construite pour pratiquer l'intégration d'API, le traitement média avec yt-dlp et la gestion de tâches en arrière-plan ; elle est destinée à un usage local et personnel uniquement."
+      ],
+      "technologies": ["Python", "Flask", "yt-dlp", "SQLite", "JavaScript"],
       "images": []
     },
     {

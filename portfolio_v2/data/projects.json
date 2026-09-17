@@ -1,8 +1,21 @@
 {
   "data": [
     {
+      "name": "DevSecAudit",
+      "year": 2026,
+      "githubUrl": null,
+      "demoUrl": null,
+      "content": [
+        "A website security audit platform that scans a domain for common misconfigurations and returns a plain-English report with a risk score and concrete fix recommendations.",
+        "It runs around twenty independent checks — security headers, CORS, TLS, DNS and email records, exposed files, open ports, admin panels, technology fingerprinting, and lookalike domains — with passive checks by default and intrusive ones kept behind an explicit flag.",
+        "The project brings my security background and my platform work together: a Typer CLI and a FastAPI service share the same engine, long scans run as Celery jobs, and results are served through a Next.js dashboard."
+      ],
+      "technologies": ["Python", "FastAPI", "Typer", "Celery", "Redis", "PostgreSQL", "SQLAlchemy", "Playwright", "Next.js", "TypeScript", "Docker"],
+      "images": []
+    },
+    {
       "name": "BMCE OPV Platform",
-      "year": 2025,
+      "year": 2026,
       "githubUrl": null,
       "demoUrl": null,
       "content": [
@@ -11,6 +24,32 @@
         "Built with a product-first mindset, the project puts authentication, role-based access, and operational reliability at the center of the experience."
       ],
       "technologies": ["Spring Boot", "React", "PostgreSQL", "Kafka", "Eureka", "Docker"],
+      "images": []
+    },
+    {
+      "name": "DriveLux — Car Rental",
+      "year": 2026,
+      "githubUrl": null,
+      "demoUrl": null,
+      "content": [
+        "A premium car rental front office for the Moroccan market, where clients browse a curated fleet and complete the reservation over WhatsApp or by phone.",
+        "Because booking happens off-platform, the backend stays deliberately focused on serving the catalog — but the schema was designed so a future back office for fleet and pricing management can be added without a rewrite.",
+        "The front end leans on motion and bilingual content (FR/EN) to make the browsing experience feel closer to a showroom than a form."
+      ],
+      "technologies": ["Spring Boot", "Java 17", "Spring Data JPA", "Flyway", "PostgreSQL", "React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "Docker"],
+      "images": []
+    },
+    {
+      "name": "Spotify Playlist Downloader",
+      "year": 2026,
+      "githubUrl": "https://github.com/sohaibmokhliss/spotifyPLdownloader",
+      "demoUrl": null,
+      "content": [
+        "An educational Flask application that takes a Spotify playlist exported as TXT or CSV and fetches the matching tracks from YouTube as MP3 or MP4.",
+        "Working from an exported file keeps the main flow free of API keys, and downloads are zipped and streamed straight to the browser rather than kept on the server.",
+        "I built it to get hands-on with API integration, media processing with yt-dlp, and background job handling; it is intended for local and personal use only."
+      ],
+      "technologies": ["Python", "Flask", "yt-dlp", "SQLite", "JavaScript"],
       "images": []
     },
     {
