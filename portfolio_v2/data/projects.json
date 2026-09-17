@@ -18,6 +18,9 @@
       "year": 2026,
       "githubUrl": null,
       "demoUrl": null,
+      "reportUrl": "/documents/bmce-opv-rapport-pfe.pdf",
+      "presentationUrl": "/documents/bmce-opv-presentation-pfe.pdf",
+      "videoUrl": "/videos/bmce-opv-demo.mp4",
       "content": [
         "A web and mobile platform for BMCE OPV workflows, designed to support both internal administration and client-side request journeys.",
         "The screenshots show the login experience, OPV administration, dashboard visibility, and the mobile flow for browsing and submitting requests.",

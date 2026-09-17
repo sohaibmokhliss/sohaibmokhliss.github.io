@@ -100,6 +100,12 @@ function buildLinks(item, sectionKey) {
   if (item.reportUrl) {
     links.push({ href: item.reportUrl, label: "Report" });
   }
+  if (item.presentationUrl) {
+    links.push({ href: item.presentationUrl, label: "Presentation" });
+  }
+  if (item.videoUrl) {
+    links.push({ href: item.videoUrl, label: "Demo Video" });
+  }
   if (sectionKey === "certifications" && item.certificateUrl) {
     links.push({ href: item.certificateUrl, label: "Certificate" });
   }

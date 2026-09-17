@@ -193,6 +193,8 @@ const Terminal = {
       if (project.githubUrl) content += `GitHub: ${project.githubUrl}\n`;
       if (project.demoUrl) content += `Demo: ${project.demoUrl}\n`;
       if (project.reportUrl) content += `Report: ${project.reportUrl}\n`;
+      if (project.presentationUrl) content += `Presentation: ${project.presentationUrl}\n`;
+      if (project.videoUrl) content += `Demo video: ${project.videoUrl}\n`;
 
       files[filename] = {
         type: 'file',
@@ -497,8 +499,8 @@ Navigation:
     sudo(args) {
       const command = args.join(' ');
       Terminal.print('');
-      Terminal.print('Nice try! But this is a portfolio, not a production server. 😄');
-      Terminal.print('Here, have a cookie instead: 🍪');
+      Terminal.print('Nice try! But this is a portfolio, not a production server.');
+      Terminal.print('Here is a placeholder response instead.');
     },
 
     hack() {
@@ -516,17 +518,17 @@ Navigation:
       setTimeout(() => {
         Terminal.print('Access granted! ██████████ 100%');
         Terminal.print('');
-        Terminal.print('Just kidding! 😂 This isn\'t Mr. Robot.');
-        Terminal.print('But I appreciate your hacker spirit! 💻');
+        Terminal.print('Just kidding. This is not Mr. Robot.');
+        Terminal.print('But I appreciate your curiosity.');
         Terminal.printPrompt();
       }, 2000);
     },
 
     matrix() {
       Terminal.print('');
-      Terminal.print('Wake up, Neo... 🟢');
+      Terminal.print('Wake up, Neo...');
       Terminal.print('The portfolio has you...');
-      Terminal.print('Follow the white rabbit. 🐰');
+      Terminal.print('Follow the white rabbit.');
       Terminal.print('');
       Terminal.print('Knock, knock.');
     },
