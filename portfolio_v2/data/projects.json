@@ -45,12 +45,19 @@
       "year": 2026,
       "githubUrl": null,
       "demoUrl": null,
-      "content": [
-        "A premium car rental front office for the Moroccan market, where clients browse a curated fleet and complete the reservation over WhatsApp or by phone.",
-        "Because booking happens off-platform, the backend stays deliberately focused on serving the catalog — but the schema was designed so a future back office for fleet and pricing management can be added without a rewrite.",
-        "The front end leans on motion and bilingual content (FR/EN) to make the browsing experience feel closer to a showroom than a form."
+      "videoUrl": "/videos/drivelux-demo.mp4",
+      "videoPoster": "/images/drivelux-demo-poster.jpg",
+      "videoCaption": "The public showcase, then the admin side: fleet, rentals and maintenance deadlines.",
+      "documents": [
+        { "label": "Project report", "meta": "PDF · 8 pages", "url": "/documents/drivelux-report.pdf", "thumb": "/images/drivelux-report-cover.jpg" },
+        { "label": "Project presentation", "meta": "PDF · 13 slides", "url": "/documents/drivelux-presentation.pdf", "thumb": "/images/drivelux-presentation-cover.jpg" }
       ],
-      "technologies": ["Spring Boot", "Java 17", "Spring Data JPA", "Flyway", "PostgreSQL", "React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "Docker"],
+      "content": [
+        "A premium car rental platform for the Moroccan market: a dark, bilingual showcase where clients browse the fleet and book instantly over WhatsApp, with no online payment to handle.",
+        "Behind it runs a full back office covering the whole rental lifecycle — fleet and client records, bookings, maintenance and regulatory deadlines such as insurance, vignette and technical inspection, scheduling, financial reporting, and per-section account permissions.",
+        "It is built to run at close to zero hosting cost: a Hono API and the React front end are served from the same origin on Vercel, backed by Supabase Postgres, with a daily cron handling renewals."
+      ],
+      "technologies": ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "Hono", "Supabase", "PostgreSQL", "Zod", "JWT", "Vercel"],
       "images": []
     },
     {

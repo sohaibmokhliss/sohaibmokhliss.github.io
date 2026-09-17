@@ -45,12 +45,19 @@
       "year": 2026,
       "githubUrl": null,
       "demoUrl": null,
-      "content": [
-        "Un front office de location de voitures haut de gamme pour le marché marocain, où le client parcourt une flotte sélectionnée et finalise sa réservation par WhatsApp ou par téléphone.",
-        "La réservation se faisant hors plateforme, le backend reste volontairement centré sur la diffusion du catalogue — mais le schéma a été pensé pour qu'un futur back office de gestion de flotte et de tarifs puisse s'ajouter sans réécriture.",
-        "Le front end s'appuie sur l'animation et un contenu bilingue (FR/EN) pour rendre la navigation plus proche d'un showroom que d'un formulaire."
+      "videoUrl": "/videos/drivelux-demo.mp4",
+      "videoPoster": "/images/drivelux-demo-poster.jpg",
+      "videoCaption": "La vitrine publique, puis l'espace administrateur : flotte, locations et échéances d'entretien.",
+      "documents": [
+        { "label": "Rapport de projet", "meta": "PDF · 8 pages", "url": "/documents/drivelux-report.pdf", "thumb": "/images/drivelux-report-cover.jpg" },
+        { "label": "Présentation du projet", "meta": "PDF · 13 diapositives", "url": "/documents/drivelux-presentation.pdf", "thumb": "/images/drivelux-presentation-cover.jpg" }
       ],
-      "technologies": ["Spring Boot", "Java 17", "Spring Data JPA", "Flyway", "PostgreSQL", "React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "Docker"],
+      "content": [
+        "Une plateforme de location de voitures haut de gamme pour le marché marocain : une vitrine sombre et bilingue où le client parcourt la flotte et réserve instantanément par WhatsApp, sans paiement en ligne à gérer.",
+        "Derrière, un back-office complet couvre tout le cycle de vie d'une location — flotte et clients, réservations, entretien et échéances réglementaires comme l'assurance, la vignette et la visite technique, planning, rapports financiers et permissions par section.",
+        "L'ensemble est conçu pour tourner à un coût d'hébergement quasi nul : une API Hono et le front React servis depuis la même origine sur Vercel, adossés à Supabase Postgres, avec un cron quotidien pour les renouvellements."
+      ],
+      "technologies": ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion", "Hono", "Supabase", "PostgreSQL", "Zod", "JWT", "Vercel"],
       "images": []
     },
     {
