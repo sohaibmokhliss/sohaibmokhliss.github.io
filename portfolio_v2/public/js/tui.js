@@ -370,6 +370,12 @@ function renderHomeCards(data, activeIndex) {
       <div class="portfolio-card-header">
         <p class="portfolio-card-kicker">${escapeHtml(labels[index] || `Block ${index + 1}`)}</p>
       </div>
+      ${index === 0 && block.availability ? `
+        <p class="home-availability">
+          <span class="home-availability-dot" aria-hidden="true"></span>
+          <span>${escapeHtml(block.availability)}</span>
+        </p>
+      ` : ""}
       <div class="portfolio-prose">
         ${index === 0 ? `
           <figure class="home-portrait-wrap">

@@ -1,14 +1,17 @@
 {
   "data": [
     {
+      "availability": "Available now — open to a pre-hire internship (stage pré-embauche) or a full-time role",
       "content": [
-        "I'm {{Sohaib Mokhliss}}, a {{Computer & Network Engineering}} student interested in {{development}}, {{DevOps}}, and {{security-first engineering}}.",
-        "I like building applications and systems that combine {{clean architecture}}, {{automation}}, and {{strong security principles}}."
+        "I'm {{Sohaib Mokhliss}} — an {{engineer in Computer & Network Engineering}} (EMSI) and a {{Specialized Technician in Cybersecurity}} (ISTA).",
+        "Two diplomas, one thread: I build applications and systems that combine {{clean architecture}}, {{automation}}, and {{strong security principles}}.",
+        "You can download my CV from the button below."
       ]
     },
     {
       "content": [
-        "I hold a {{Specialized Technician}} diploma in Cybersecurity from ISTA and gained hands-on experience through internships at {{HPS}}, {{CIH}}, and {{ITPay}}.",
+        "I hold {{two diplomas}}: an {{engineering degree in Computer & Network Engineering}} from EMSI, and a {{Specialized Technician diploma in Cybersecurity}} from ISTA.",
+        "I gained hands-on experience through internships at {{HPS}}, {{CIH}}, {{ITPay}}, and {{BMCE}}.",
         "My path started with {{security assessment}} and {{penetration testing}}, then grew into {{application development}}, {{CI/CD}}, and platform-oriented engineering."
       ]
     },
@@ -16,13 +19,13 @@
       "content": [
         "Current focus: {{full-stack development}}, {{backend systems}}, {{CI/CD automation}}, and the day-to-day work required to keep platforms {{reliable}}, {{repeatable}}, and {{secure}}.",
         "I especially enjoy working across {{product development}}, {{Linux environments}}, and container-based infrastructure without losing sight of secure design.",
-        "You can download my CV from the button below."
+        "{{I am looking for a pre-hire internship (stage pré-embauche) or a full-time position}}, and I can start immediately."
       ]
     },
     {
       "content": [
         "You can connect with me on <a href=\"https://www.linkedin.com/in/sohaib-mokhliss/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blue\">LinkedIn</a> or review my work on <a href=\"https://github.com/sohaibmokhliss\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-pink\">GitHub</a>.",
-        "For internships, collaboration, or freelance opportunities, reach me at <a href=\"mailto:sohaibmokhliss@gmail.com\" class=\"text-orange\">sohaibmokhliss@gmail.com</a>."
+        "For a {{pre-hire internship}}, a {{full-time role}}, or freelance work, reach me at <a href=\"mailto:sohaibmokhliss@gmail.com\" class=\"text-orange\">sohaibmokhliss@gmail.com</a>."
       ]
     }
   ]

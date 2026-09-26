@@ -109,6 +109,9 @@ const Terminal = {
 
     let content = '';
     data.data.forEach(section => {
+      if (section.availability) {
+        content += `[ ${section.availability} ]\n\n`;
+      }
       section.content.forEach(line => {
         // Remove HTML tags and {{}} markers
         const cleaned = line

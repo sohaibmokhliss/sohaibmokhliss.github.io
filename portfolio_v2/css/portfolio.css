@@ -704,6 +704,64 @@ body.lightmode .portfolio-card::before {
   margin: 0 0 0.85rem;
 }
 
+/* Availability badge on the Profile card. Sohaib is actively looking, so this
+   sits above the portrait rather than inside the prose — it is the first thing
+   a recruiter should read, not a sentence they have to find. */
+.home-availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 0.9rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.home-availability-dot {
+  flex: none;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 70%, transparent);
+  animation: availability-pulse 2.4s ease-out infinite;
+}
+
+@keyframes availability-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 65%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 9px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-availability-dot {
+    animation: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-availability {
+    font-size: 0.8rem;
+    padding: 0.45rem 0.75rem;
+    align-items: flex-start;
+  }
+
+  .home-availability-dot {
+    margin-top: 0.3rem;
+  }
+}
+
 .home-portrait-wrap {
   margin: 0 0 1rem;
   display: flex;
